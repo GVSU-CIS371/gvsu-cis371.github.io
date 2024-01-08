@@ -31,6 +31,7 @@ Web Application Programming (Winter 2024)
 - Midterm: (Monday) February 19, 10:00 am - 10:50 am
 - Final exam: (Monday) April 22, 10:00 am - 11:50 am
 
+Syllabus can be found [here](assets/pdf/syllabus.pdf).
 
 Check out the chapters.
 
