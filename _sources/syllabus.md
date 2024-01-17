@@ -1,42 +1,53 @@
 # Welcome
+
 to Web Application Programming. This course offers an in-depth exploration of how websites and applications are crafted and function. We'll examine prevalent methods and tools in web development and study key programming and markup languages. Additionally, we'll learn about integrating databases, adhering to standard guidelines, and understanding the rationale behind various techniques. We'll explore HTML, CSS, Java/TypeScript, cloud databases, Ajax, and Vue.js, a leading framework in today's digital landscape.
 
 ## Course Information
 
-**Instructor:** Dr. Yong Zhuang  
-<i class="fa fa-envelope"></i> **E-mail:** [yong.zhuang@gvsu.edu](mailto:yong.zhuang@gvsu.edu)  
-<i class="fa fa-building"></i> **Office:** MAK D-2-234  
-<i class="fa fa-book"></i> **Course Page:** [Blackboard](https://lms.gvsu.edu/)  
-<i class="fa fa-video"></i> **Zoom:** Meeting ID: 396 668 6420, Password: 587684  
+**Instructor:** Dr. Yong Zhuang
 
-## Syllabus
-
-The syllabus provides a comprehensive outline of the course structure, schedule, and policies. [View the syllabus here](assets/pdf/syllabus.pdf).
+- <i class="fa fa-envelope"></i> **E-mail:** [yong.zhuang@gvsu.edu](mailto:yong.zhuang@gvsu.edu)
+- <i class="fa fa-building"></i> **Office:** MAK D-2-234
+- <i class="fa fa-chalkboard-teacher"></i> **Course Delivery:** In person
+- <i class="fa fa-book-reader"></i> **Syllabus:** [View the syllabus here](assets/pdf/syllabus.pdf)
+- <i class="fa fa-book"></i> **Course Page:** [Blackboard](https://lms.gvsu.edu/)
+- <i class="fa fa-video"></i> **Zoom:** Meeting ID: 396 668 6420, Password: 587684
+- <i class="fa fa-calendar"></i> [**Schedule a One-on-One Meeting with Me**](https://outlook.office.com/bookwithme/user/8e0ad8c680e644aab3c32cd9c13b690b@gvsu.edu/meetingtype/sK-RN8cGbkq2UzIiUaRehA2?anonymous&ep=mlink)
 
 ## Class Schedule
 
-### Section 01:
+### Section 01
 
 - **Class Time:** MWF 2:00 pm - 2:50 pm
 - **Room:** MAK D-1-117
 - **Midterm:** February 19 (Monday), 2:00 pm - 2:50 pm
 - **Final Exam:** April 24 (Wednesday), 2:00 pm - 3:50 pm
 
-### Section 02:
+### Section 02
 
 - **Class Time:** MWF 10:00 am - 10:50 am
 - **Room:** MAK B-1-124
 - **Midterm:** February 19 (Monday), 10:00 am - 10:50 am
 - **Final Exam:** April 22 (Monday), 10:00 am - 11:50 am
+- <!-- Table of Contents will be auto-generated here -->
 
-## Resources
+## Tentative Schedule
 
-Explore additional resources to enhance your learning experience.
-
-- **Course Page:** [Blackboard](https://lms.gvsu.edu/)
-
-<!-- Table of Contents will be auto-generated here -->
-
-```{tableofcontents}
-
-```
+| Week | Monday | Wednesday | Thursday | Reading |
+| --- | --- | --- | --- | --- |
+| 1 (01/08) | [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pptx.pdf) | [CSS 1](assets/pdf/CSS%20I.pdf) |  |
+| 2 (01/15) | MLK Day | [Quiz 1](quizzes/1) | [CSS 2]() |  |
+| 3 (01/22) | [CSS Grid & Flexbox]() | Quiz 2 | Project 1 |  |
+| 4 (01/29) | [Docker]() | [TypeScript 1]() | [TypeScript 2]() |  |
+| 5 (02/05) | Quiz 3 | [TypeScript 3]() | [TypeScript 4]() |  |
+| 6 (02/12) | Quiz 4 | [HTTP](), [JS Modules]() | Midterm Review |  |
+| 7 (02/19) | Midterm | Midterm Answer | [Promises I]() |  |
+| 8 (02/26) | Quiz 5 | [Promises II]() | [Fetch & Axios]() |  |
+| 9 (03/04) | Spring | Break | No | Class |
+| 10 (03/11) | Quiz 6 | [Firestore 1]() | [Firestore 2]() |  |
+| 11 (03/18) | Quiz 7 | [Firebase Authentication]() | Project 2 |  |
+| 12 (03/25) | [Vue.js 1]() | [Vue.js 2]() | [Vue Router]() |  |
+| 13 (04/01) | Quiz 8 | [Vuetify 1]() | [Vuetify 2]() |  |
+| 14 (04/08) | [Pinia 1]() | [Pinia 2]() | Project 3 |  |
+| 15 (04/15) | Quiz 10 | Final Review | Project 3 |  |
+| 16 (04/22) | Final | Final |  |  |
