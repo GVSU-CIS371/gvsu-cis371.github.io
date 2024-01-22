@@ -35,9 +35,9 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 
 | Week | Monday | Wednesday | Thursday | Reading |
 | --- | --- | --- | --- | --- |
-| 1 (01/08) | [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pptx.pdf) | [CSS 1](assets/pdf/CSS%20I.pdf) |  |
-| 2 (01/15) | MLK Day | [Quiz 1](quizzes/1) | [CSS 2](assets/pdf/CSS-II.pdf) |  |
-| 3 (01/22) | [CSS Grid & Flexbox]() | Quiz 2 | Project 1 |  |
+| 1 (01/08) | [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pptx.pdf) | [CSS 1](assets/pdf/CSS-I.pdf) | {ref}`resources <content:references:w1>` |
+| 2 (01/15) | MLK Day | [Quiz 1](quizzes/1) | [CSS 2](assets/pdf/CSS-II.pdf) | {ref}`resources <content:references:w2>` |
+| 3 (01/22) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | Quiz 2 | Project 1 | {ref}`resources <content:references:w3>` |
 | 4 (01/29) | [Docker]() | [TypeScript 1]() | [TypeScript 2]() |  |
 | 5 (02/05) | Quiz 3 | [TypeScript 3]() | [TypeScript 4]() |  |
 | 6 (02/12) | Quiz 4 | [HTTP](), [JS Modules]() | Midterm Review |  |
