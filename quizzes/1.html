@@ -385,6 +385,7 @@ Answer: header+main+footer
 <span class="p">|</span>--<span class="w"> </span>footer
 </pre></div>
 </div>
+<p>Answer: <code class="docutils literal notranslate"><span class="pre">body&gt;(header&gt;h1{My</span> <span class="pre">Store}+nav)+main+footer</span></code></p>
 </li>
 <li><p>Construct a navigation menu consisting of several hyperlinks.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nav
@@ -403,6 +404,7 @@ Answer: header+main+footer
 <span class="w">            </span><span class="p">|</span>--<span class="w"> </span><span class="s2">&quot;Link 4&quot;</span>
 </pre></div>
 </div>
+<p>Answer: <code class="docutils literal notranslate"><span class="pre">nav&gt;ul&gt;li*4&gt;a[href=#]{Link</span> <span class="pre">$}</span></code></p>
 </li>
 <li><p>Enhanced Footer Section: Create a more complex footer section with copyright information, social media links, and a back-to-top button.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>footer
@@ -423,6 +425,7 @@ Answer: header+main+footer
 <span class="w">    </span><span class="p">|</span>--<span class="w"> </span><span class="s2">&quot;Top&quot;</span>
 </pre></div>
 </div>
+<p>Answer: <code class="docutils literal notranslate"><span class="pre">foot&gt;p{©</span> <span class="pre">2024</span> <span class="pre">My</span> <span class="pre">Online</span> <span class="pre">Store.</span> <span class="pre">All</span> <span class="pre">rights</span> <span class="pre">reserved.}+(nav&gt;ul&gt;li*3&gt;a[href=#]{Social</span> <span class="pre">Link</span> <span class="pre">$})+a[href=top]{Top}</span></code></p>
 </li>
 <li><p>Construct a main section containing a grid layout for a store, with several rows and columns representing different store items.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>main
@@ -462,11 +465,13 @@ Answer: header+main+footer
 <span class="w">            </span><span class="p">|</span>--<span class="w"> </span>div<span class="w"> </span>with<span class="w"> </span><span class="nv">class</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;store-item&quot;</span>
 </pre></div>
 </div>
+<p>Answer: <code class="docutils literal notranslate"><span class="pre">main&gt;div.container&gt;div.row*3&gt;div.col*5&gt;div.store-item</span></code></p>
 </li>
 <li><p>Think about a possible DOM tree for a store item container (such as a div with class = “store-item”), which includes elements like an image, name, product description, rating, price, and stock availability. Write the Emmet abbreviation to generate this HTML structure.</p></li>
 </ol>
 <p><img alt="storeItem" src="../_images/store_item.jpg" /></p>
 <p>For Further Thought: Can you use a single-line Emmet abbreviation to generate all the elements in the HTML document as depicted in the following image? <img alt="storeItem" src="../_images/quiz1-page-layout.jpg" /></p>
+<p>Answer: <code class="docutils literal notranslate"><span class="pre">div.store-item&gt;img[src=img-url]+p{name}+p{product</span> <span class="pre">desctiption}+span{4.5/5}+span{\$1200}+spanc(stock:5)</span></code></p>
 </section>
 
     <script type="text/x-thebe-config">

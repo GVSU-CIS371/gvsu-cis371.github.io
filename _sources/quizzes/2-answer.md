@@ -19,17 +19,11 @@ Given the following DOM tree, please write the CSS selectors using the shortest 
   <ol>
     <li>Nine</li>
     <li>Ten</li>
-    <li>
-      <ul>
-        <li>Eleven</li>
-        <li>Twelve</li>
-      </ul>
-    </li>
   </ol>
 </body>
 ```
 
-To verify your answer, use the following CSS code on the online platform CodePen at [https://codepen.io/Yong-Zhuang/pen/PoXRBWy](https://codepen.io/Yong-Zhuang/pen/PoXRBWy):
+You can verify your answer by using the following CSS code:
 
 ```css
 your-css-selector {
@@ -45,13 +39,13 @@ your-css-selector {
 
 ---
 
-1. **Only** Node "Two":
+1. **Only** Node "Two": `p.gv > b`
 
-2. **Only** Node "Three":
+2. **Only** Node "Three": `p.gv > span > b:first-child`
 
-3. **Only** Node "Eight":
-4. **Only** Node "Ten":
-5. **Only** Node "Twelve":
+3. **Only** Node "Eight": `p:nth-of-type(2) > b`
+4. **Only** Node "Ten": `body > ol:last-child > li:nth-child(2)`
+5. **Only** Node "Twelve": `body > ol:last-child > li:last-child > ul > li:last-child`
 
 6. You UI design team has decided on the following layout for the front page of your web app:
 
@@ -66,7 +60,7 @@ your-css-selector {
    :align: center
    ```
 
-   Using the HTML provided below, apply CSS and the CSS Grid layout to replicate the design shown in the image above. To verify your solution, use the online platform CodePen at [https://codepen.io/Yong-Zhuang/pen/XWoqgVK](https://codepen.io/Yong-Zhuang/pen/XWoqgVK).
+   Given the HTML below, use CSS and the CSS Grid layout to recreate the design depicted in the image above.
 
    ```html
    <body>
