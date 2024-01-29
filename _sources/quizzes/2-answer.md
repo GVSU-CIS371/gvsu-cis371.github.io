@@ -45,7 +45,7 @@ your-css-selector {
 
 3. **Only** Node "Eight": `p:nth-of-type(2) > b`
 4. **Only** Node "Ten": `body > ol:last-child > li:nth-child(2)`
-5. **Only** Node "Twelve": `body > ol:last-child > li:last-child > ul > li:last-child`
+5. **Only** Node "Twelve": `ul > li:last-child`
 
 6. You UI design team has decided on the following layout for the front page of your web app:
 
@@ -73,4 +73,56 @@ your-css-selector {
        <div class="notification"></div>
      </div>
    </body>
+   ```
+
+   ```css
+   <style>
+    body,
+    html {
+      /* height:100%; */
+
+      margin: 0px;
+    }
+    #container {
+      display: grid;
+      gap: 5px;
+      height: 100vh; /* Use viewport height to cover the entire screen height */
+      width: 100vw; /* Use viewport width to cover the entire screen width */
+
+      /* Set row sizes: top row is 40px, bottom row is 60px, and the middle row takes up the rest of the space */
+      grid-template-rows: 40px 1fr 60px;
+
+      /* Defined four equal-width columns */
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "nav nav nav nav"
+        "left main main right"
+        "app app notification notification";
+    }
+
+    .top-nav {
+      background-color: blue;
+      grid-area: nav;
+    }
+    .left-panel {
+      background-color: red;
+      grid-area: left;
+    }
+    .main-panel {
+      background-color: green;
+      grid-area: main;
+    }
+    .right-panel {
+      background-color: orange;
+      grid-area: right;
+    }
+    .notification {
+      background-color: yellow;
+      grid-area: notification;
+    }
+    .app-status {
+      background-color: purple;
+      grid-area: app;
+    }
+   </style>
    ```

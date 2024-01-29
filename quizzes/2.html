@@ -390,11 +390,17 @@ document.write(`
   <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nine<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Ten<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eleven<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Twelve<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-<p>You can verify your answer by using the following CSS code:</p>
+<p>To verify your answer, use the following CSS code on the online platform CodePen at <a class="reference external" href="https://codepen.io/Yong-Zhuang/pen/PoXRBWy">https://codepen.io/Yong-Zhuang/pen/PoXRBWy</a>:</p>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">your-css-selector</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
 <span class="p">}</span>
@@ -407,11 +413,11 @@ document.write(`
 </ul>
 <hr class="docutils" />
 <ol class="arabic">
-<li><p><strong>Only</strong> Node “Two”: <code class="docutils literal notranslate"><span class="pre">p.gv</span> <span class="pre">&gt;</span> <span class="pre">b</span></code></p></li>
-<li><p><strong>Only</strong> Node “Three”: <code class="docutils literal notranslate"><span class="pre">p.gv</span> <span class="pre">&gt;</span> <span class="pre">span</span> <span class="pre">&gt;</span> <span class="pre">b:first-child</span></code></p></li>
-<li><p><strong>Only</strong> Node “Eight”: <code class="docutils literal notranslate"><span class="pre">p:nth-of-type(2)</span> <span class="pre">&gt;</span> <span class="pre">b</span></code></p></li>
-<li><p><strong>Only</strong> Node “Ten”: <code class="docutils literal notranslate"><span class="pre">body</span> <span class="pre">&gt;</span> <span class="pre">ol:last-child</span> <span class="pre">&gt;</span> <span class="pre">li:nth-child(2)</span></code></p></li>
-<li><p><strong>Only</strong> Node “Twelve”: <code class="docutils literal notranslate"><span class="pre">ul</span> <span class="pre">&gt;</span> <span class="pre">li:last-child</span></code></p></li>
+<li><p><strong>Only</strong> Node “Two”:</p></li>
+<li><p><strong>Only</strong> Node “Three”:</p></li>
+<li><p><strong>Only</strong> Node “Eight”:</p></li>
+<li><p><strong>Only</strong> Node “Ten”:</p></li>
+<li><p><strong>Only</strong> Node “Twelve”:</p></li>
 <li><p>You UI design team has decided on the following layout for the front page of your web app:</p>
 <ul class="simple">
 <li><p>The height of the top navigation is 40px</p></li>
@@ -420,7 +426,7 @@ document.write(`
 <li><p>The app status and notification message panel takes 50% of the width each</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/layout.jpg"><img alt="dom" class="align-center" src="../_images/layout.jpg" style="width: 800px;" /></a>
-<p>Given the HTML below, use CSS and the CSS Grid layout to recreate the design depicted in the image above.</p>
+<p>Using the HTML provided below, apply CSS and the CSS Grid layout to replicate the design shown in the image above. To verify your solution, use the online platform CodePen at <a class="reference external" href="https://codepen.io/Yong-Zhuang/pen/XWoqgVK">https://codepen.io/Yong-Zhuang/pen/XWoqgVK</a>.</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;top-nav&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -431,57 +437,6 @@ document.write(`
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;notification&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</pre></div>
-</div>
-<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
-<span class="w"> </span><span class="nt">body</span><span class="o">,</span>
-<span class="w"> </span><span class="nt">html</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="c">/* height:100%; */</span>
-
-<span class="w">   </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
-<span class="w"> </span><span class="p">}</span>
-<span class="w"> </span><span class="p">#</span><span class="nn">container</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
-<span class="w">   </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">   </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">vh</span><span class="p">;</span><span class="w"> </span><span class="c">/* Use viewport height to cover the entire screen height */</span>
-<span class="w">   </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">vw</span><span class="p">;</span><span class="w"> </span><span class="c">/* Use viewport width to cover the entire screen width */</span>
-
-<span class="w">   </span><span class="c">/* Set row sizes: top row is 40px, bottom row is 60px, and the middle row takes up the rest of the space */</span>
-<span class="w">   </span><span class="k">grid-template-rows</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
-
-<span class="w">   </span><span class="c">/* Defined four equal-width columns */</span>
-<span class="w">   </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
-<span class="w">   </span><span class="k">grid-template-areas</span><span class="p">:</span>
-<span class="w">     </span><span class="s2">&quot;nav nav nav nav&quot;</span>
-<span class="w">     </span><span class="s2">&quot;left main main right&quot;</span>
-<span class="w">     </span><span class="s2">&quot;app app notification notification&quot;</span><span class="p">;</span>
-<span class="w"> </span><span class="p">}</span>
-
-<span class="w"> </span><span class="p">.</span><span class="nc">top-nav</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
-<span class="w">   </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">nav</span><span class="p">;</span>
-<span class="w"> </span><span class="p">}</span>
-<span class="w"> </span><span class="p">.</span><span class="nc">left-panel</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
-<span class="w">   </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="kc">left</span><span class="p">;</span>
-<span class="w"> </span><span class="p">}</span>
-<span class="w"> </span><span class="p">.</span><span class="nc">main-panel</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span>
-<span class="w">   </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">main</span><span class="p">;</span>
-<span class="w"> </span><span class="p">}</span>
-<span class="w"> </span><span class="p">.</span><span class="nc">right-panel</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">orange</span><span class="p">;</span>
-<span class="w">   </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="kc">right</span><span class="p">;</span>
-<span class="w"> </span><span class="p">}</span>
-<span class="w"> </span><span class="p">.</span><span class="nc">notification</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">yellow</span><span class="p">;</span>
-<span class="w">   </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">notification</span><span class="p">;</span>
-<span class="w"> </span><span class="p">}</span>
-<span class="w"> </span><span class="p">.</span><span class="nc">app-status</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">purple</span><span class="p">;</span>
-<span class="w">   </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">app</span><span class="p">;</span>
-<span class="w"> </span><span class="p">}</span>
-<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </li>
