@@ -33,7 +33,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 
 ## Tentative Schedule
 
-| Week | Monday | Wednesday | Thursday | Reading |
+| Week | Monday | Wednesday | Friday | Reading |
 | --- | --- | --- | --- | --- |
 | 1 (01/08) | [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pptx.pdf) | [CSS 1](assets/pdf/CSS-I.pdf) | {ref}`resources <content:references:w1>` |
 | 2 (01/15) | MLK Day | [Quiz 1](quizzes/1) | [CSS 2](assets/pdf/CSS-II.pdf) | {ref}`resources <content:references:w2>` |
