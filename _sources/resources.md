@@ -37,11 +37,23 @@
 ```{div} full-width
 - [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [docker.com](docker.com)
+- [docker.com](https://www.docker.com/)
 - [Docker installation documentation](https://docs.docker.com/get-docker/)
 - [Docker Hub](https://hub.docker.com)
 - [Microsoft official Docker images](https://github.com/devcontainers/images/tree/main/src)
 - [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 - [All Docker commands](https://docs.docker.com/engine/reference/commandline/docker/)
 - [Docker commands cheat-sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+```
+
+(content:references:w4)=
+
+## Week 4
+
+```{div} full-width
+- [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+- TypeScript: Online PlayGround
+  - [https://typescriptlang.org/play](https://typescriptlang.org/play)
+  - [https://replit.com/languages/typescript](https://replit.com/languages/typescript)
+
 ```
