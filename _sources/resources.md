@@ -51,6 +51,7 @@
 ## Week 4
 
 ```{div} full-width
+- [Visual Studio Code Extensions for Web Development](https://www.youtube.com/results?search_query=vscode+extensions+for+web+development)
 - [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - TypeScript: Online PlayGround
   - [https://typescriptlang.org/play](https://typescriptlang.org/play)
