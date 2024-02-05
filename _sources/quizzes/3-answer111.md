@@ -72,7 +72,6 @@ Test your solutions on [typescriptlang.org](https://www.typescriptlang.org/play?
          console.log(j+":"+temp[j]);
       }
     }
-
     ```
 
 5.  ```js
