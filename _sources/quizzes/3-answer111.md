@@ -75,8 +75,7 @@ Test your solutions on [typescriptlang.org](https://www.typescriptlang.org/play?
     ```
 
 5.  ```js
-    function splitIt(bookarr: Book[]): [Book[], Book[]] {
-      const [first, second, ...rest] = books;
+    function splitIt([first, second, ...rest]: Book[]): [Book[], Book[]] {
       return [[first, second], rest];
     }
     ```
