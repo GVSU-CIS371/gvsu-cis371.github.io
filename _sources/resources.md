@@ -58,3 +58,14 @@
   - [https://replit.com/languages/typescript](https://replit.com/languages/typescript)
 
 ```
+
+(content:references:w5)=
+
+## Week 5
+
+```{div} full-width
+- [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API)
+- [Window APIs](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+- [HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
+
+```
