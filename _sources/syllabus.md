@@ -39,15 +39,15 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 2 (01/15) | MLK Day | [Quiz 1](quizzes/1) | [CSS 2](assets/pdf/CSS-II.pdf) | {ref}`resources <content:references:w2>` |
 | 3 (01/22) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | [Quiz 2](quizzes/2) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
 | 4 (01/29) | [Project 1](projects/1) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | {ref}`resources <content:references:w4>` |
-| 5 (02/05) | [Quiz 3](quizzes/3) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4]() | {ref}`resources <content:references:w5>` |
-| 6 (02/12) | Quiz 4 | [HTTP](), [JS Modules]() | Midterm Review |  |
-| 7 (02/19) | Midterm | Midterm Answer | [Promises I]() |  |
-| 8 (02/26) | Quiz 5 | [Promises II]() | [Fetch & Axios]() |  |
+| 5 (02/05) | [Quiz 3](quizzes/3) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | {ref}`resources <content:references:w5>` |
+| 6 (02/12) | [TypeScript 5]() | Midterm Review | [Quiz 4]() |  |
+| 7 (02/19) | Midterm | Midterm Answer [Project 2]() | [HTTP](), [JS Modules]() |  |
+| 8 (02/26) | [Promises I]() | [Promises II]() | [Fetch & Axios]() |  |
 | 9 (03/04) | Spring | Break | No | Class |
-| 10 (03/11) | Quiz 6 | [Firestore 1]() | [Firestore 2]() |  |
-| 11 (03/18) | Quiz 7 | [Firebase Authentication]() | Project 2 |  |
+| 10 (03/11) | Quiz 5 | [Firestore 1]() | [Firestore 2]() |  |
+| 11 (03/18) | Quiz 6 | [Firebase Authentication]() | Project 2 |  |
 | 12 (03/25) | [Vue.js 1]() | [Vue.js 2]() | [Vue Router]() |  |
-| 13 (04/01) | Quiz 8 | [Vuetify 1]() | [Vuetify 2]() |  |
+| 13 (04/01) | Quiz 7 | [Vuetify 1]() | [Vuetify 2]() |  |
 | 14 (04/08) | [Pinia 1]() | [Pinia 2]() | Project 3 |  |
-| 15 (04/15) | Quiz 10 | Final Review | Project 3 |  |
+| 15 (04/15) | Quiz 8 | Final Review | Project 3 |  |
 | 16 (04/22) | Final | Final |  |  |
