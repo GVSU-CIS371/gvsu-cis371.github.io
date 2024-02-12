@@ -40,7 +40,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 3 (01/22) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | [Quiz 2](quizzes/2) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
 | 4 (01/29) | [Project 1](projects/1) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | {ref}`resources <content:references:w4>` |
 | 5 (02/05) | [Quiz 3](quizzes/3) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | {ref}`resources <content:references:w5>` |
-| 6 (02/12) | [TypeScript 5]() | Midterm Review | [Quiz 4]() |  |
+| 6 (02/12) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | Midterm Review | [Quiz 4]() |  |
 | 7 (02/19) | Midterm | Midterm Answer [Project 2]() | [HTTP](), [JS Modules]() |  |
 | 8 (02/26) | [Promises I]() | [Promises II]() | [Fetch & Axios]() |  |
 | 9 (03/04) | Spring | Break | No | Class |
