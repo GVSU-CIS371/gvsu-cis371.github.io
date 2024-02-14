@@ -4,13 +4,13 @@
 
 Our midterm exam is a closed-book exam. However, you are allowed to use a cheat-sheet, which should be an A4 size paper, written on both sides. You can write anything you want on this cheat-sheet. During the exam, the use of laptops or any computers is prohibited.
 
-- 2 coding questions (around 3 lines of code each)
-- 7 True/False questions
-- 6 multiple-choice questions
+- Multiple-choice questions
+- True/False questions
+- Coding questions
 
 Our Midterm Exam will cover the following topics:
 
-- HTML, DOM, Cascading Style Sheets (CSS), Typescript
+- HTML, DOM
 - Cascading Style Sheets (CSS)
   - 3 ways to apply CSS to HTML
   - CSS Selector

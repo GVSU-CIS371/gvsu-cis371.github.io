@@ -174,6 +174,10 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../projects/1.html">Project 1</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exam</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="midterm-exam-topics.html">Exam Content Guide</a></li>
+</ul>
 
     </div>
 </nav></div>
@@ -387,9 +391,23 @@ document.write(`
 </pre></div>
 </div>
 <ol class="arabic">
-<li><p>Write the Emmet abbreviation for generating this html.</p></li>
-<li><p>Set onclick event for the second <code class="docutils literal notranslate"><span class="pre">&lt;li&gt;</span></code> element using <code class="docutils literal notranslate"><span class="pre">addEventListener</span></code> or <code class="docutils literal notranslate"><span class="pre">onclick</span></code>, when click it, change its text content to “Updated Item 2”.</p>
+<li><p>Write the Emmet abbreviation used to generate this html.</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">addEventListener</span></code> or <code class="docutils literal notranslate"><span class="pre">onclick</span></code> to set an onclick event for the second <code class="docutils literal notranslate"><span class="pre">&lt;li&gt;</span></code> element, and when it is clicked, change its text content to “Updated Item 2”.</p>
 <p>To verify your answer, use the following CSS code on the online platform CodePen at <a class="reference external" href="https://codepen.io/Yong-Zhuang/pen/VwRqbLv">https://codepen.io/Yong-Zhuang/pen/VwRqbLv</a>:</p>
+</li>
+<li><div class="highlight-HTML notranslate"><div class="highlight"><pre><span></span>const students = [
+  { id: 1, name: &quot;Alice&quot; },
+  { id: 2, name: &quot;Bob&quot; },
+  { id: 3, name: &quot;Charlie&quot; },
+  { id: 4, name: &quot;Tom&quot; },
+  { id: 5, name: &quot;Jack&quot; },
+];
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Copy the last 3 objects from the array <code class="docutils literal notranslate"><span class="pre">students</span></code> using <code class="docutils literal notranslate"><span class="pre">slice()</span></code>.</p></li>
+<li><p>Split <code class="docutils literal notranslate"><span class="pre">students</span></code> into <code class="docutils literal notranslate"><span class="pre">first-student</span></code> and <code class="docutils literal notranslate"><span class="pre">rest</span></code> using the Spread Operator.</p></li>
+</ul>
 </li>
 <li><p>Write the <strong>Lambda/Fat Arrow Function</strong> version of the following <code class="docutils literal notranslate"><span class="pre">add</span></code> function.</p>
 <div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span><span class="w"> </span><span class="nx">add</span><span class="p">(</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">{</span>
@@ -408,6 +426,7 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
+<p>Test your solutions on <a class="reference external" href="https://www.typescriptlang.org/play?#code/Q">typescriptlang.org</a>:</p>
 </li>
 </ol>
 </section>
