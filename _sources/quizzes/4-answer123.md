@@ -84,9 +84,7 @@ const books: Book[] = [
 6. Use **Array.reduce()** to calculate the total number of books published before 1950.
 
    ```javacript
-   const totalBooksBefore1950 = books.reduce((count, book) => {
-     return book.year < 1950 ? count + 1 : count;
-   }, 0);
+   const totalBooksBefore1950 = books.reduce((count, book) => book.year < 1950 ? count + 1 : count, 0);
 
    ```
 

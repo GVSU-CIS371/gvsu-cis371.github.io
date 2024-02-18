@@ -56,7 +56,6 @@
 - TypeScript: Online PlayGround
   - [https://typescriptlang.org/play](https://typescriptlang.org/play)
   - [https://replit.com/languages/typescript](https://replit.com/languages/typescript)
-
 ```
 
 (content:references:w5)=
@@ -67,5 +66,19 @@
 - [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API)
 - [Window APIs](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 - [HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
+- [Java|Type scripte Array Operations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Higher-order Functions](https://www.freecodecamp.org/news/higher-order-functions-in-javascript-explained/)
+```
 
+(content:references:w6)=
+
+## Week 6
+
+```{div} full-width
+- [Type Aliases vs. Interfaces](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces)
+- Midterm Exam
+  - [Guide](exams/midterm-guide)
+  - [Review](assets/pdf/midterm-review.pdf)
+  - [Exercises](exams/midterm-exercises)
+  - [Quiz 4](quizzes/4)
 ```

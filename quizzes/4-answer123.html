@@ -455,9 +455,7 @@ document.write(`
 </div>
 </li>
 <li><p>Use <strong>Array.reduce()</strong> to calculate the total number of books published before 1950.</p>
-<div class="highlight-javacript notranslate"><div class="highlight"><pre><span></span>const totalBooksBefore1950 = books.reduce((count, book) =&gt; {
-  return book.year &lt; 1950 ? count + 1 : count;
-}, 0);
+<div class="highlight-javacript notranslate"><div class="highlight"><pre><span></span>const totalBooksBefore1950 = books.reduce((count, book) =&gt; book.year &lt; 1950 ? count + 1 : count, 0);
 
 </pre></div>
 </div>
