@@ -83,9 +83,9 @@ Given the following HTML,
    **Answer:**
 
    ```typescript
-   const add = (a: number, b: number): number {
+   const add = (a: number, b: number): number => {
      return a + b;
-   }
+   };
    ```
 
 5. Write the **Lambda/Fat Arrow Function with implicit return(typeless)** version of the following `isEven` function.
