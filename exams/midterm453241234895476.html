@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; GVSU CIS 371 - Web Application Programming</title>
+    <title>Midterm Exam Answer &#8212; GVSU CIS 371 - Web Application Programming</title>
   
   
   
@@ -351,9 +351,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -364,19 +362,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Midterm Exam Answer</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -386,23 +376,308 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="nx">ul</span><span class="o">:</span><span class="kt">nth</span><span class="o">-</span><span class="k">of</span><span class="o">-</span><span class="kr">type</span><span class="p">(</span><span class="mf">2</span><span class="p">)</span><span class="o">&gt;</span><span class="nx">li</span><span class="o">:</span><span class="kt">nth</span><span class="o">-</span><span class="nx">child</span><span class="p">(</span><span class="mf">2</span><span class="p">){</span>
-<span class="w">  </span><span class="nx">color</span><span class="o">:</span><span class="kt">red</span><span class="p">;</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="midterm-exam-answer">
+<h1>Midterm Exam Answer<a class="headerlink" href="#midterm-exam-answer" title="Permalink to this heading">#</a></h1>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Consider the <code class="docutils literal notranslate"><span class="pre">index.html</span></code> and <code class="docutils literal notranslate"><span class="pre">style.css</span></code> provided below. Due to the cascading nature of CSS, what color will “Hello World” be rendered as?</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> black</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> red</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> green</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> blue</p></li>
+</ul>
+<p><strong>style.css</strong></p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">#</span><span class="nn">sample</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
 <span class="p">}</span>
-
-<span class="kd">function</span><span class="w"> </span><span class="nx">clickme</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="s2">&quot;Updated Item 3&quot;</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nx">students</span><span class="p">.</span><span class="nx">sort</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)=&gt;</span><span class="nx">a</span><span class="p">.</span><span class="nx">grade</span><span class="o">-</span><span class="nx">b</span><span class="p">.</span><span class="nx">grade</span><span class="p">);</span>
-<span class="c1">// console.log(students);</span>
-
-<span class="kd">const</span><span class="w"> </span><span class="nx">strs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">students</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">s</span><span class="p">)=&gt;</span><span class="nx">s</span><span class="p">.</span><span class="nx">grade</span><span class="o">&gt;=</span><span class="mf">90</span><span class="p">).</span><span class="nx">map</span><span class="p">((</span><span class="nx">s</span><span class="p">)=&gt;</span><span class="sb">`The student </span><span class="si">${</span><span class="nx">s</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> has a grade of </span><span class="si">${</span><span class="nx">s</span><span class="p">.</span><span class="nx">grade</span><span class="si">}</span><span class="sb">.`</span><span class="p">);</span>
-<span class="c1">// console.log(strs);</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">students</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">s</span><span class="p">,</span><span class="nx">cur</span><span class="p">)=&gt;</span><span class="nx">s</span><span class="o">+</span><span class="nx">cur</span><span class="p">.</span><span class="nx">grade</span><span class="p">,</span><span class="mf">0</span><span class="p">));</span>
 </pre></div>
 </div>
+<p><strong>index.html</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="w">      </span><span class="p">#</span><span class="nn">sample</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;sample&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: blue&quot;</span><span class="p">&gt;</span>Hello World.<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Given the following DOM structure, which elements are directly targeted by the <code class="docutils literal notranslate"><span class="pre">div</span> <span class="pre">&gt;</span> <span class="pre">span</span></code>?</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> “one”</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> “one”, “two”, and “three”</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> “four”</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> “one” and “three”</p></li>
+</ul>
+<p><strong>DOM Structure:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">body</span>
+<span class="o">|--</span> <span class="n">div</span>
+<span class="o">|</span>   <span class="o">|--</span> <span class="n">span</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|--</span> <span class="s2">&quot;one&quot;</span>
+<span class="o">|</span>   <span class="o">|--</span> <span class="n">p</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|--</span> <span class="n">span</span>
+<span class="o">|</span>   <span class="o">|</span>       <span class="o">|--</span> <span class="s2">&quot;two&quot;</span>
+<span class="o">|</span>   <span class="o">|--</span> <span class="n">span</span>
+<span class="o">|</span>       <span class="o">|--</span> <span class="s2">&quot;three&quot;</span>
+<span class="o">|--</span> <span class="n">span</span>
+    <span class="o">|--</span> <span class="s2">&quot;four&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">:nth-child()</span></code> pseudo-class</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Targets a child based on its type</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Targets the nth child of a specific type</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Targets the nth last child a specific type</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Targets a child based on its order in the DOM</p></li>
+</ul>
+</li>
+<li><p>In TypeScript, the purpose of unions is to</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Join multiple arrays</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Allow a variable to be of multiple types</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Merge multiple objects</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Concatenate strings</p></li>
+</ul>
+</li>
+<li><p>Which of the following methods can be used to delete elements from an array in TypeScript?</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <code class="docutils literal notranslate"><span class="pre">.push()</span></code></p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <code class="docutils literal notranslate"><span class="pre">.pop()</span></code></p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <code class="docutils literal notranslate"><span class="pre">.slice()</span></code></p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> <code class="docutils literal notranslate"><span class="pre">.splice()</span></code></p></li>
+</ul>
+</li>
+<li><p>Given the object and array</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">obj1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="w"> </span><span class="p">};</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">obj2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">obj1</span><span class="p">,</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="p">};</span>
+</pre></div>
+</div>
+<p>The resulting obj2 will be</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">obj1:</span> <span class="pre">{name:</span> <span class="pre">&quot;John&quot;},</span> <span class="pre">arr:</span> <span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span> <span class="pre">}</span></code></p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">name:</span> <span class="pre">&quot;John&quot;,</span> <span class="pre">arr:</span> <span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span> <span class="pre">}</span></code></p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">name:</span> <span class="pre">&quot;John&quot;,</span> <span class="pre">0:</span> <span class="pre">1,</span> <span class="pre">1:</span> <span class="pre">2,</span> <span class="pre">2:</span> <span class="pre">3</span> <span class="pre">}</span></code></p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">obj1:</span> <span class="pre">{name:</span> <span class="pre">&quot;John&quot;},</span> <span class="pre">0:</span> <span class="pre">1,</span> <span class="pre">1:</span> <span class="pre">2,</span> <span class="pre">2:</span> <span class="pre">3</span> <span class="pre">}</span></code></p></li>
+</ul>
+</li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">:last-child</span></code> pseudo-class targets the last child of a parent element</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> True</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> False</p></li>
+</ul>
+</li>
+<li><p>In TypeScript, == checks both type and value whereas === only checks value</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> True</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> False</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.splice()</span></code> in arrays creates a new array and doesn’t modify the original one</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> True</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> False</p></li>
+</ul>
+</li>
+<li><p>Given the following DOM,</p>
+<p><strong>HTML</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Title<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Link 1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Link 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Link 3<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Link 4<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Item 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Item 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Item 3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>a. Write the Emmet abbreviation used to generate this DOM.</p>
+<div class="admonition-answer admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span>h2{Title}&gt;(ul&gt;li*4&gt;a[href=#]{Link $})+ul&gt;li*3{Ltem $}
+</pre></div>
+</div>
+</div>
+<p>b. Write the CSS selector to target the <code class="docutils literal notranslate"><span class="pre">&lt;li&gt;Item</span> <span class="pre">2&lt;/li&gt;</span></code>.</p>
+<div class="admonition-answer admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">ul</span><span class="o">:</span><span class="nx">nth</span><span class="o">-</span><span class="k">of</span><span class="o">-</span><span class="nx">type</span><span class="p">(</span><span class="mf">2</span><span class="p">)</span><span class="o">&gt;</span><span class="nx">li</span><span class="o">:</span><span class="nx">nth</span><span class="o">-</span><span class="nx">child</span><span class="p">(</span><span class="mf">2</span><span class="p">){</span>
+<span class="w">  </span><span class="nx">color</span><span class="o">:</span><span class="nx">red</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p>c. Suppose the list item <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">3</span></code> is bound to the function clickme as <code class="docutils literal notranslate"><span class="pre">&lt;li</span> <span class="pre">onclick=&quot;clickme(this)&quot;&gt;Item</span> <span class="pre">3&lt;/li&gt;</span></code>. Implement the clickme function so that upon clicking, the text content of <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">3</span></code> updates to “Updated Item 3”.</p>
+<div class="admonition-answer admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span><span class="w"> </span><span class="nx">clickme</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="s2">&quot;Updated Item 3&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</li>
+<li><p>In the provided TypeScript code, our goal is to calculate the student’s average grade. Your task is to implement logic to calculate the sum of their grades.</p>
+<p><strong>Main.ts</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">type</span><span class="w"> </span><span class="nx">Student</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">grade</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">students</span><span class="o">:</span><span class="w"> </span><span class="nx">Student</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">grade</span><span class="o">:</span><span class="w"> </span><span class="mf">85</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">grade</span><span class="o">:</span><span class="w"> </span><span class="mf">90</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Charlie&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">grade</span><span class="o">:</span><span class="w"> </span><span class="mf">78</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Dana&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">grade</span><span class="o">:</span><span class="w"> </span><span class="mf">88</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Eve&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">grade</span><span class="o">:</span><span class="w"> </span><span class="mf">92</span><span class="w"> </span><span class="p">},</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Your task is to implement the following functions using only high-order functions such as .sort(), .some(), .filter(), .flatMap(), .map(), and .reduce().</p></li>
+<li><p>Solutions utilizing traditional for-loops or .forEach() will not be accepted.</p></li>
+</ul>
+<p>a. Use <code class="docutils literal notranslate"><span class="pre">.sort()</span></code> to sort students according to their grades in ascending order (highest last).</p>
+<div class="admonition-answer admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">students</span><span class="p">.</span><span class="nx">sort</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)=&gt;</span><span class="nx">a</span><span class="p">.</span><span class="nx">grade</span><span class="o">-</span><span class="nx">b</span><span class="p">.</span><span class="nx">grade</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<p>b. Create a new array of strings for students whose grades are greater than or equal to 90. Each string should be formatted as follows: “The student {name} has a grade of {grade}.”</p>
+<div class="admonition-answer admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">strs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">students</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">s</span><span class="p">)=&gt;</span><span class="nx">s</span><span class="p">.</span><span class="nx">grade</span><span class="o">&gt;=</span><span class="mf">90</span><span class="p">).</span><span class="nx">map</span><span class="p">((</span><span class="nx">s</span><span class="p">)=&gt;</span><span class="sb">`The student </span><span class="si">${</span><span class="nx">s</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> has a grade of </span><span class="si">${</span><span class="nx">s</span><span class="p">.</span><span class="nx">grade</span><span class="si">}</span><span class="sb">.`</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<p>c. Use <code class="docutils literal notranslate"><span class="pre">.reduce()</span></code> to calculate the sum of students’ grades.</p>
+<div class="admonition-answer admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">students</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">s</span><span class="p">,</span><span class="nx">cur</span><span class="p">)=&gt;</span><span class="nx">s</span><span class="o">+</span><span class="nx">cur</span><span class="p">.</span><span class="nx">grade</span><span class="p">,</span><span class="mf">0</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+   <!-- 5. In TypeScript, what does the `??` operator do?
+
+      - [ ] Compares values.
+      - [ ] Acts as a logical AND operator.
+      - [x] Acts as a coalesce operator, returning the right-hand operand if the left-hand operand is null or undefined.
+      - [ ] Tells the compiler to trust that the preceding value is not null or undefined.
+
+   1. In Vue.js, the `v-model` directive is used for
+
+      - [x] Two-way data binding
+      - [ ] Event handling
+      - [ ] Conditional rendering
+      - [ ] Looping through arrays
+
+   2. Which of the following is NOT a Vue.js 3 lifecycle function?
+
+      - [ ] `onMounted()`
+      - [ ] `onUpdated()`
+      - [ ] `onBeforeMount()`
+      - [x] `onBeforeCreate()`
+
+   3. **(bonus)**Examine the provided DOM structure. Without any Event Modifier, the events originating from "one" propagate in the order: $span > p > div$. Now, if we add the `.capture` modifier to the `@click` event on the second paragraph, in which order will the events originating from "two” propagate
+
+      - [ ] $span > p > div$
+      - [x] $p > span > div$
+      - [ ] $span > p$
+      - [ ] $p > span$
+
+      **DOM Structure:**
+
+      ```
+      div
+      |-- p
+      |   |-- span
+      |       |-- "one"
+      |-- p @click.capture
+          |-- span
+              |-- "two"
+      ```
+
+   4. Web Client/Server Architecture only supports static read-only web apps
+
+      - [ ] True
+      - [x] False
+
+   5. The CSS property position: relative takes an element out of the normal document flow and positions it based on its closest positioned parent
+
+      - [ ] True
+      - [x] False-->
+   <!-- 1. Vue.js 3.x allows only one-way data binding
+
+      - [ ] True
+      - [x] False
+
+   6.  Examine the provided Vue component code in App.vue
+
+       **App.vue**
+
+       ```js
+       <template>
+         <h1>{{ who }} is {{ age }}</h1>
+         <p>Enter your name: <input id="name" type="text" v-bind:value="who" /></p>
+         <p>
+           Pick an age:
+           <input id="age" type="range" v-model.number="age" min="1" max="100" />
+         </p>
+       </template>
+       <script setup lang="ts">
+       import { ref } from "vue";
+       const who = "Alice";
+       const age = 21;
+       </script>
+       ```
+
+       a. How can you implement two-way binding for the text input element with the ID "name"?
+
+       ````{admonition} Answer
+       ```js
+       <input id="name" type="text" v-model="who" />
+       ```
+       ````
+
+       b. How can you apply Vue's Reactive Reference to the variables `who` and `age`?
+
+       ````{admonition} Answer
+       ```js
+       const who = ref("Alice");
+       const age = ref(21);
+       ```
+       ````
+
+       c.**(bonus)** The initial setup uses one-way binding for the text input element with the ID "name". What problems might arise in this situation?
+
+       ```{admonition} Answer
+       When we change the name in the textbox "name", the variable `who` won't change, so the displayed name in the `<h1>{{ who }} is {{ age }}</h1>` won't be updated.
+       ```
+
+       d.**(bonus)** What potential issues might arise if we don't utilize Vue's Reactive Reference for the variables `who` and `age`?
+
+       ```{admonition} Answer
+       When we change the name in the textbox "name" or the age using the input range. the variables `who` and `age` cannot be changed, because they are const.
+       Without using Vue's reactivity system (like ref or reactive), the variables `who` and `age` won't trigger updates in the DOM when their values change. This means the user interface won't reflect the current state of these variables, leading to a stale or misleading display. Additionally, when we change the name in the textbox "name" or the age in the input range, it attempts to reassign the const variables, which will result in a runtime error since const variables cannot be reassigned.
+       ``` -->
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -440,20 +715,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
