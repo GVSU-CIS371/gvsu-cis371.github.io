@@ -82,3 +82,11 @@
   - [Exercises](exams/midterm-exercises)
   - [Quiz 4](quizzes/4)
 ```
+
+(content:references:w7)=
+
+## Week 7
+
+```{div} full-width
+- [HTTPS](http://www.youtube.com/watch?v=iQsKdtjwtYI)
+```
