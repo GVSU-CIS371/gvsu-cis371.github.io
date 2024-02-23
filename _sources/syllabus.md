@@ -41,13 +41,13 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 4 (01/29) | [Project 1](projects/1) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | {ref}`resources <content:references:w4>` |
 | 5 (02/05) | [Quiz 3](quizzes/3) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | {ref}`resources <content:references:w5>` |
 | 6 (02/12) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | [Guide](exams/midterm-guide) / [Review](assets/pdf/midterm-review.pdf) / [Exercises](exams/midterm-exercises) | [Quiz 4](quizzes/4) | {ref}`resources <content:references:w6>` |
-| 7 (02/19) | Midterm | [Project 2](projects/2) | [HTTP](), [JS Modules]() |  |
-| 8 (02/26) | [Promises I]() | [Promises II]() | [Fetch & Axios]() |  |
+| 7 (02/19) | Midterm | [Project 2](projects/2) | [HTTP](assets/pdf/HTTP.pdf) |  |
+| 8 (02/26) | [Vue.js 1]() | [Vue.js 2]() | [Vue Router]() |  |
 | 9 (03/04) | Spring | Break | No | Class |
-| 10 (03/11) | Quiz 5 | [Firestore 1]() | [Firestore 2]() |  |
-| 11 (03/18) | Quiz 6 | [Firebase Authentication]() | Project 2 |  |
-| 12 (03/25) | [Vue.js 1]() | [Vue.js 2]() | [Vue Router]() |  |
-| 13 (04/01) | Quiz 7 | [Vuetify 1]() | [Vuetify 2]() |  |
-| 14 (04/08) | [Pinia 1]() | [Pinia 2]() | Project 3 |  |
-| 15 (04/15) | Quiz 8 | Final Review | Project 3 |  |
+| 10 (03/11) | Quiz 5 | [Vuetify 1]() | [Vuetify 2]() |  |
+| 11 (03/18) | [Pinia 1]() | [Pinia 2]() | Project 3 |  |
+| 12 (03/25) | [Promises I]() | [Promises II]() | [Fetch & Axios]() |  |
+| 13 (04/01) | Quiz 6 | [Firestore 1]() | [Firestore 2]() |  |
+| 14 (04/08) | Quiz 7 | [Firebase Authentication]() | Project 4 |  |
+| 15 (04/15) | Quiz 8 | Final Review | Project 4 |  |
 | 16 (04/22) | Final | Final |  |  |

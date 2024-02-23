@@ -1,4 +1,4 @@
-# Exam Content Guide
+# Midterm Exam Content Guide
 
 ---
 
