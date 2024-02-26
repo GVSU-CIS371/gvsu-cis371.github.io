@@ -156,7 +156,7 @@
     ```
     ````
 
-11. In the provided TypeScript code, our goal is to calculate the student's average grade. Your task is to implement logic to calculate the sum of their grades.
+11. Given the following Typescript Code,
 
     **Main.ts**
 
@@ -199,7 +199,7 @@
 
     ````{admonition} Answer
     ```js
-    console.log(students.reduce((s,cur)=>s+cur.grade,0));
+    console.log(students.reduce((total,cur)=>total+cur.grade,0));
     ```
     ````
 

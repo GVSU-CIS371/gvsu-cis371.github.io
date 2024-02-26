@@ -533,7 +533,7 @@ document.write(`
 </div>
 </div>
 </li>
-<li><p>In the provided TypeScript code, our goal is to calculate the student’s average grade. Your task is to implement logic to calculate the sum of their grades.</p>
+<li><p>Given the following Typescript Code,</p>
 <p><strong>Main.ts</strong></p>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">type</span><span class="w"> </span><span class="nx">Student</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="p">,</span>
@@ -571,7 +571,7 @@ document.write(`
 <p>c. Use <code class="docutils literal notranslate"><span class="pre">.reduce()</span></code> to calculate the sum of students’ grades.</p>
 <div class="admonition-answer admonition">
 <p class="admonition-title">Answer</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">students</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">s</span><span class="p">,</span><span class="nx">cur</span><span class="p">)=&gt;</span><span class="nx">s</span><span class="o">+</span><span class="nx">cur</span><span class="p">.</span><span class="nx">grade</span><span class="p">,</span><span class="mf">0</span><span class="p">));</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">students</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">total</span><span class="p">,</span><span class="nx">cur</span><span class="p">)=&gt;</span><span class="nx">total</span><span class="o">+</span><span class="nx">cur</span><span class="p">.</span><span class="nx">grade</span><span class="p">,</span><span class="mf">0</span><span class="p">));</span>
 </pre></div>
 </div>
 </div>

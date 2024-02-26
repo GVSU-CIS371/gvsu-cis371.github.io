@@ -427,13 +427,43 @@ document.write(`
 <li><p>Your task is to implement the following functions using only high-order functions such as <code class="docutils literal notranslate"><span class="pre">.sort()</span></code>, <code class="docutils literal notranslate"><span class="pre">.some()</span></code>, <code class="docutils literal notranslate"><span class="pre">.filter()</span></code>, <code class="docutils literal notranslate"><span class="pre">.flatMap()</span></code>, <code class="docutils literal notranslate"><span class="pre">.map()</span></code>, and <code class="docutils literal notranslate"><span class="pre">.reduce()</span></code>.</p></li>
 <li><p>Solutions utilizing traditional for-loops or <code class="docutils literal notranslate"><span class="pre">.forEach()</span></code> will not be accepted.</p></li>
 </ul>
-<ol class="arabic simple">
-<li><p><strong>Sort</strong> the books based on their publication year in descending order (newest first).</p></li>
-<li><p>Use <strong>Array.some()</strong> to check if any book has been published after the year 1950.</p></li>
-<li><p>Use <strong>Array.filter()</strong> and <strong>string.includes()</strong> to create a new array containing only the books that belong to the “Dystopia” genre.</p></li>
-<li><p>Use <strong>Array.flatMap()</strong> to create a flat list of all genres across all books.</p></li>
-<li><p><strong>Create a new array of strings</strong> for books that are of the genre “Dystopia” and were published after the year 1940. The strings should be in the format: “The book {title} by {author}, published in {year}, is a post-1940 work of Dystopia.”</p></li>
-<li><p>Use <strong>Array.reduce()</strong> to calculate the total number of books published before 1950.</p></li>
+<ol class="arabic">
+<li><p><strong>Sort</strong> the books based on their publication year in descending order (newest first).</p>
+<div class="highlight-javacript notranslate"><div class="highlight"><pre><span></span>const sortedBooks = books.sort((a, b) =&gt; b.year - a.year);
+</pre></div>
+</div>
+</li>
+<li><p>Use <strong>Array.some()</strong> to check if any book has been published after the year 1950.</p>
+<div class="highlight-javacript notranslate"><div class="highlight"><pre><span></span>const hasPost1950 = books.some(book =&gt; book.year &gt; 1950);
+</pre></div>
+</div>
+</li>
+<li><p>Use <strong>Array.filter()</strong> and <strong>string.includes()</strong> to create a new array containing only the books that belong to the “Dystopia” genre.</p>
+<div class="highlight-javacript notranslate"><div class="highlight"><pre><span></span>const dystopiaBooks = books.filter(book =&gt; book.genres.includes(&quot;Dystopia&quot;));
+</pre></div>
+</div>
+</li>
+<li><p>Use <strong>Array.flatMap()</strong> to create a flat list of all genres across all books.</p>
+<div class="highlight-javacript notranslate"><div class="highlight"><pre><span></span>const genres = books.flatMap((book) =&gt; book.genres);
+</pre></div>
+</div>
+</li>
+<li><p><strong>Create a new array of strings</strong> for books that are of the genre “Dystopia” and were published after the year 1940. The strings should be in the format: “The book {title} by {author}, published in {year}, is a post-1940 work of Dystopia.”</p>
+<div class="highlight-javacript notranslate"><div class="highlight"><pre><span></span>const post1940DystopiaDescriptions = books
+  .filter((book) =&gt; book.genres.includes(&quot;Dystopia&quot;) &amp;&amp; book.year &gt; 1940)
+  .map(
+    (book) =&gt;
+      `The book ${book.title} by ${book.author}, published in ${book.year}, is a post-1940 work of Dystopia.`
+  );
+</pre></div>
+</div>
+</li>
+<li><p>Use <strong>Array.reduce()</strong> to calculate the total number of books published before 1950.</p>
+<div class="highlight-javacript notranslate"><div class="highlight"><pre><span></span>const totalBooksBefore1950 = books.reduce((count, book) =&gt; book.year &lt; 1950 ? count + 1 : count, 0);
+
+</pre></div>
+</div>
+</li>
 </ol>
 <p>Test your solutions on <a class="reference external" href="https://www.typescriptlang.org/play?#code/C4TwDgpgBAQg9nA1lAvFA3gWAFBSsAS2ABsIAuKAZ2ACcCA7AcwBoc8BDAV2AAs4aK1Ok1a4oICOwFR6nALYAjCDVF5GEejQiVBtBowDaAXVEBfANw4AxnHrUoChIh2wnx1FANsM3vIRLkUABEAIwAnAAcACxBqnhQXLz8FEEA4hD86lAA8jQA7hDExLG+4pLS4VFhcWoaWi4GQQBiBFaEtrHBACIg1HBgBOxBJt6mcVhifkSkKQAqPNCpWuzAUKkrlAogJZMJ3HzSzQB0UADKNsCrLcAAXuo07MQAJjvxZVIU4QBMAKw1UOpNNoKI0Wm0CB1mMFZg91E9tiMxGNvBM3v4ZtC4FAANIEIoJKAAWTgVkQ+gUBBoL3+iQOKQAElJIDQoAAZCAQV7xCQfKDhABsAAZ-oD6iDmq12vROkEug85ENEXhkWJUfF0YEgjAHgA3aAAOQgeSgAHV+M8uRx9slggBBZ5wTiUKD0zgAD1I23+PIqYQAzF8RXVgZ4JeDId1esB+oNhnEVXg1VMAiliVsoF1WohLXskod6coFfQiYUdXjSDmfZ8Ij8QkGgQ0w1KZbannr6MBOFo46NREZzEA">typescriptlang.org</a>:</p>
 </section>
