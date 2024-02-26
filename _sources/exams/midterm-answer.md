@@ -132,7 +132,7 @@
 
     ````{admonition} Answer
     ```js
-    h2{Title}>(ul>li*4>a[href=#]{Link $})+ul>li*3{Ltem $}
+    h2{Title}+(ul>li*4>a[href=#]{Link $})+ul>li*3{Item $}
     ```
     ````
 
