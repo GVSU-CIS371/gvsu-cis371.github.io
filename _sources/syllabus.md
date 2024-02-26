@@ -40,7 +40,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 3 (01/22) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | [Quiz 2](quizzes/2) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
 | 4 (01/29) | [Project 1](projects/1) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | {ref}`resources <content:references:w4>` |
 | 5 (02/05) | [Quiz 3](quizzes/3) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | {ref}`resources <content:references:w5>` |
-| 6 (02/12) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | [Guide](exams/midterm-guide) / [Review](assets/pdf/midterm-review.pdf) / [Exercises](exams/midterm-exercises) | [Quiz 4](quizzes/4) | {ref}`resources <content:references:w6>` |
+| 6 (02/12) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | [Midterm Exam Guide](exams/midterm-guide) <br/> [Review](assets/pdf/midterm-review.pdf) / [Exercises](exams/midterm-exercises) | [Quiz 4](quizzes/4) | {ref}`resources <content:references:w6>` |
 | 7 (02/19) | Midterm | [Project 2](projects/2) | [HTTP](assets/pdf/HTTP.pdf) | {ref}`resources <content:references:w7>` |
 | 8 (02/26) | [Midterm Exam Feedback](exams/midterm-answer) <br/> [JS-Modules](assets/pdf/JS-Modules.pdf) | [Vue.js]() | [Vue Router]() |  |
 | 9 (03/04) | Spring | Break | No | Class |
