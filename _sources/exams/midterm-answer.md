@@ -201,6 +201,12 @@
     ```js
     console.log(students.reduce((total,cur)=>total+cur.grade,0));
     ```
+
+    or
+
+    ```js
+    console.log(students.reduce((total,{grade})=>total+grade,0));
+    ```
     ````
 
    <!-- 5. In TypeScript, what does the `??` operator do?
