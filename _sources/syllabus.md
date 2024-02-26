@@ -42,7 +42,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 5 (02/05) | [Quiz 3](quizzes/3) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | {ref}`resources <content:references:w5>` |
 | 6 (02/12) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | [Guide](exams/midterm-guide) / [Review](assets/pdf/midterm-review.pdf) / [Exercises](exams/midterm-exercises) | [Quiz 4](quizzes/4) | {ref}`resources <content:references:w6>` |
 | 7 (02/19) | Midterm | [Project 2](projects/2) | [HTTP](assets/pdf/HTTP.pdf) | {ref}`resources <content:references:w7>` |
-| 8 (02/26) | [Vue.js 1]() | [Vue.js 2]() | [Vue Router]() |  |
+| 8 (02/26) | [Midterm Exam Feedback](exams/midterm-answer) <br/> [JS-Modules](assets/pdf/JS-Modules.pdf) | [Vue.js]() | [Vue Router]() |  |
 | 9 (03/04) | Spring | Break | No | Class |
 | 10 (03/11) | Quiz 5 | [Vuetify 1]() | [Vuetify 2]() |  |
 | 11 (03/18) | [Pinia 1]() | [Pinia 2]() | Project 3 |  |
