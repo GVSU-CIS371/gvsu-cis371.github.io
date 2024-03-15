@@ -44,8 +44,8 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 7 (02/19) | Midterm | [Project 2](projects/2) | [HTTP](assets/pdf/HTTP.pdf) | {ref}`resources <content:references:w7>` |
 | 8 (02/26) | [Midterm Exam Feedback](exams/midterm-answer) <br/> [JS-Modules](assets/pdf/JS-Modules.pdf) | [Vue.js 1](assets/pdf/VueJS-3.x-I.pdf) | [Vue.js 2](assets/pdf/VueJS-3.x-II.pdf) | {ref}`resources <content:references:w8>` |
 | 9 (03/04) | Spring | Break | No | Class |
-| 10 (03/11) | [Vue.js 3](assets/pdf/VueJS-3.x-III.pdf) | [Project 3](projects/3) | [Vuetify]() | {ref}`resources <content:references:w10>` |
-| 11 (03/18) | [Pinia 1]() | [Pinia 2]() | Project 3 |  |
+| 10 (03/11) | [Vue.js 3](assets/pdf/VueJS-3.x-III.pdf) | [Project 3](projects/3) | [Pinia 1](assets/pdf/Pinia.pdf) | {ref}`resources <content:references:w10>` |
+| 11 (03/18) | [Pinia 2]() | [Vuetify]() | Project 3 |  |
 | 12 (03/25) | [Promises I]() | [Promises II]() | [Fetch & Axios]() |  |
 | 13 (04/01) | Quiz 6 | [Firestore 1]() | [Firestore 2]() |  |
 | 14 (04/08) | Quiz 7 | [Firebase Authentication]() | Project 4 |  |
