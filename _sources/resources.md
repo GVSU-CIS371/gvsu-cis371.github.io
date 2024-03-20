@@ -146,7 +146,7 @@
 
 (content:references:w11)=
 
-## Week 10
+## Week 11
 
 ```{div} full-width
 - [Promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
