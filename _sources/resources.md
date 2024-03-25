@@ -161,3 +161,12 @@
     - [Getters](https://pinia.vuejs.org/core-concepts/getters.html)
     - [Actions](https://pinia.vuejs.org/core-concepts/actions.html)
 ```
+
+(content:references:w12)=
+
+## Week 12
+
+- Vue Router
+  - Random User App
+    - [Demo](https://stackblitz.com/github/GVSU-CIS371/sample-code/tree/main/Vue.js/VueRouter/RandomUserApp)
+    - [Code](https://github.com/GVSU-CIS371/sample-code/tree/main/Vue.js/VueRouter/RandomUserApp)
