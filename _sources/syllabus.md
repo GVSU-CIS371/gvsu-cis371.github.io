@@ -46,8 +46,8 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 9 (03/04) | Spring | Break | No | Class |
 | 10 (03/11) | [Vue.js 3](assets/pdf/VueJS-3.x-III.pdf) | [Project 3](projects/3) | [Pinia 1](assets/pdf/Pinia.pdf) | {ref}`resources <content:references:w10>` |
 | 11 (03/18) | [Promise](assets/pdf/Promise.pdf) | [Pinia 2](assets/pdf/Pinia-II.pdf) | [Project 4](projects/4) | {ref}`resources <content:references:w11>` |
-| 12 (03/25) | [Vue Router](assets/pdf/Vue-Router4.x.pdf) | [Vuetify 1](assets/pdf/Vuetify-I.pdf) | [Vuetify 2]() | {ref}`resources <content:references:w12>` |
+| 12 (03/25) | [Vue Router](assets/pdf/Vue-Router4.x.pdf) | [Vuetify 1](assets/pdf/Vuetify-I.pdf) | [Vuetify 2](assets/pdf/Vuetify-II.pdf) | {ref}`resources <content:references:w12>` |
 | 13 (04/01) | Quiz 6 | [Firestore 1]() | [Firestore 2]() |  |
 | 14 (04/08) | Quiz 7 | [Firebase Authentication]() | Project 4 |  |
-| 15 (04/15) | Quiz 8 | Final Review | Project 4 |  |
+| 15 (04/15) | [Promise 2]() | [Fetch & Axios]() | Final Review |  |
 | 16 (04/22) | Final | Final |  |  |
