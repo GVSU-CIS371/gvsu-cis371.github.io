@@ -65,6 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'projects/5';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Midterm Exam Content Guide" href="../exams/midterm-guide.html" />
+    <link rel="prev" title="Project 4" href="4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -170,13 +172,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../quizzes/2.html">Quize 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quizzes/3.html">Quize 3 TypeScript Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quizzes/4.html">Quize 4 High-order Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quizzes/5.html">Quiz 5: Vuetify Dialog</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1.html">Project 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2.html">Project 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3.html">Project 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4.html">Project 4</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Project 5</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exam</span></p>
 <ul class="nav bd-sidenav">
@@ -381,6 +385,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation">Preparation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expected-display">Expected Display</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-rubrics">Grading Rubrics</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a></li>
 </ul>
@@ -396,19 +401,21 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="project-5">
 <h1>Project 5<a class="headerlink" href="#project-5" title="Permalink to this heading">#</a></h1>
-<p>Build a static online store showcasing your proficiency in fundamental CSS and HTML. In this project, you will leverage Vue.js to rebuild the online store app. The goal is utilize Vue.js component, Vuetify and Vue Router.</p>
+<p>Vue.js Online Store App</p>
+<p>In this project, you will rebuild an online store app using Vue.js, leveraging various tools and libraries such as Pinia, Vuetify, and Vue Router.</p>
 <section id="objectives">
 <h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Vue.js component.</p></li>
-<li><p>Vuetify.</p></li>
-<li><p>Vue Router.</p></li>
+<li><p>Utilize Vue.js to build components to create a dynamic and responsive user interface for the online store.</p></li>
+<li><p>Manage application state using Pinia, handling actions and state.</p></li>
+<li><p>Implement Vuetify to design and structure the UI without custom CSS.</p></li>
+<li><p>Navigate between different parts of the application using Vue Router.</p></li>
 </ul>
 </section>
 <section id="preparation">
 <h2>Preparation<a class="headerlink" href="#preparation" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
-<li><p>Accept your instructor’s <a class="reference external" href="https://classroom.github.com/a/LBCrcpys">GitHub classroom invitation</a> to set up your project repository.</p>
+<li><p>Accept your instructor’s <a class="reference external" href="https://classroom.github.com/a/SGiPqt5R">GitHub classroom invitation</a> to set up your project repository.</p>
 <ol class="arabic">
 <li><p><strong>Select Your Name:</strong> <img alt="select-name" src="../_images/project1-selectname.jpg" /></p></li>
 <li><p><strong>Team Setup:</strong></p>
@@ -441,32 +448,33 @@ npm<span class="w"> </span>install
 </section>
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
-<p>In this project, you will build the online store using Vue.js, Vuetify, and Vue Router. You need to complete the following tasks:</p>
+<p>Build an online store using Vue.js, Pinia, Vuetify, and Vue Router by completing the following tasks:</p>
+<ul class="simple">
+<li><p><strong>ProductStore:</strong></p>
 <ul>
-<li><p><strong>Layout</strong>: Implement a 3-row layout using CSS Grid: Header, Main, and Footer.</p>
-<ul class="simple">
-<li><p>Ensure there is no horizontal scroll.</p></li>
+<li><p>Implement <code class="docutils literal notranslate"><span class="pre">ProductStore.ts</span></code> with a <strong>products</strong> state, initially an empty array of ProductDoc (defined in types/product.ts).</p></li>
+<li><p>Define actions in <code class="docutils literal notranslate"><span class="pre">ProductStore.ts</span></code>:</p>
+<ul>
+<li><p>init(): Initializes the <strong>products</strong> with initProducts from <code class="docutils literal notranslate"><span class="pre">data-init.ts</span></code>.</p></li>
+<li><p>filterByCategory(category: string): Filters products by category.</p></li>
+<li><p>filterByRating(minRating: number): Filters products with ratings above minRating.</p></li>
 </ul>
 </li>
-<li><p><strong>Header:</strong> Position the store’s name at the top left and navigation links at the top right.</p></li>
-<li><p><strong>Footer:</strong> Contains copyrights.</p></li>
-<li><p><strong>Main:</strong> Display all store items.</p>
-<ul class="simple">
-<li><p>Maintain equal space between all items.</p></li>
-<li><p>Each row should display 4 items.</p></li>
-<li><p>Store items should automatically wrap to the next row after every 4 items.</p></li>
 </ul>
 </li>
-<li><p><strong>store-item</strong>: Style the item information.</p>
-<ul class="simple">
-<li><p>All store-items should have the same height and width.</p></li>
-<li><p>Ensure that the Rating, Price, and Stock information are displayed in the same row.</p></li>
+<li><p><strong>Vue Components:</strong> Create the following components with <strong>Vuetify</strong>, avoiding any custom CSS code.</p>
+<ul>
+<li><p>Create <code class="docutils literal notranslate"><span class="pre">StoreItem.vue</span></code> to present detailed information of a product.</p></li>
+<li><p>Create <code class="docutils literal notranslate"><span class="pre">Home.vue</span></code> to display all products in a grid layout.</p></li>
+<li><p>Create category-specific components (<code class="docutils literal notranslate"><span class="pre">Clothing.vue</span></code>, <code class="docutils literal notranslate"><span class="pre">Electronics.vue</span></code>, <code class="docutils literal notranslate"><span class="pre">Groceries.vue</span></code>) and <code class="docutils literal notranslate"><span class="pre">BestSeller.vue</span></code> to display products in those categories and best-sellers (rating above 4.5) respectively.</p></li>
 </ul>
 </li>
-<li><p><strong>Overall</strong> The layout should fill the browser’s width without causing horizontal scrolling.</p>
-<p><img alt="Layout" src="../_images/project1.jpg" /></p>
-</li>
+<li><p><strong>Vue Router:</strong> Set up routes for Clothing, Electronics, Groceries, and Best Sellers in <code class="docutils literal notranslate"><span class="pre">router.ts</span></code> using paths <code class="docutils literal notranslate"><span class="pre">/clothing</span></code>, <code class="docutils literal notranslate"><span class="pre">/electronics</span></code>, <code class="docutils literal notranslate"><span class="pre">/groceries</span></code>, and <code class="docutils literal notranslate"><span class="pre">/bestseller</span></code>.</p></li>
 </ul>
+</section>
+<section id="expected-display">
+<h2>Expected Display<a class="headerlink" href="#expected-display" title="Permalink to this heading">#</a></h2>
+<p>Your app should function similarly to the demo app available at <a class="reference external" href="https://gvsu-cis371.github.io/w24-project5">Demo App</a>. This is not the required final design; you are encouraged to develop your own style for the online store, while using Vue.js, Pinia, Vue Router, and Vuetify.</p>
 </section>
 <section id="grading-rubrics">
 <h2>Grading Rubrics<a class="headerlink" href="#grading-rubrics" title="Permalink to this heading">#</a></h2>
@@ -477,26 +485,14 @@ npm<span class="w"> </span>install
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>GitHub setup with SSH Key &amp; cloned repo</strong></p></td>
-<td class="text-right"><p>5</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Layout</strong></p></td>
-<td class="text-right"><p>10</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Header:</strong></p></td>
-<td class="text-right"><p>10</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Footer:</strong></p></td>
-<td class="text-right"><p>10</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Main:</strong></p></td>
-<td class="text-right"><p>25</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>store-item</strong></p></td>
+<tr class="row-even"><td><p><strong>ProductStore Implementation</strong></p></td>
 <td class="text-right"><p>20</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Visual Design and Aesthetics</strong></p></td>
-<td class="text-right"><p>10</p></td>
+<tr class="row-odd"><td><p><strong>Vue Components and Vuetify Usage</strong></p></td>
+<td class="text-right"><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Vue Router Configuration</strong></p></td>
+<td class="text-right"><p>20</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Commit all changes &amp; push to GitHub</strong></p></td>
 <td class="text-right"><p>5</p></td>
@@ -557,6 +553,24 @@ npm<span class="w"> </span>install
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Project 4</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../exams/midterm-guide.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Midterm Exam Content Guide</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -575,6 +589,7 @@ npm<span class="w"> </span>install
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation">Preparation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expected-display">Expected Display</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-rubrics">Grading Rubrics</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a></li>
 </ul>
