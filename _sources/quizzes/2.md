@@ -1,4 +1,4 @@
-# Quize 2
+# Quiz 2
 
 Given the following DOM tree, please write the CSS selectors using the shortest possible expressions to target the specified text nodes. You may appropriately use pseudo-classes such as `:first-child`, `:last-child`, `:nth-child`, `:first-of-type`, etc.
 

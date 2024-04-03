@@ -1,4 +1,4 @@
-# Quize 4 High-order Functions
+# Quiz 4 High-order Functions
 
 Given the following array,
 

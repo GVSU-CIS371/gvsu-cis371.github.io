@@ -1,4 +1,4 @@
-# Quize 3 TypeScript Basics
+# Quiz 3 TypeScript Basics
 
 Given the following array,
 
