@@ -215,5 +215,6 @@
 ```{div} full-width
 ## Week 14
 
-- [Firebase CRUD Operations and Listener](https://github.com/GVSU-CIS371/sample-code)
+- [Firebase CRUD Operations and Listener](https://github.com/GVSU-CIS371/sample-code/tree/main/Firebase/Firestore/CRUD)
+- [Firebase Authentication](https://github.com/GVSU-CIS371/sample-code/tree/main/Firebase/Authentication/SigninSignup)
 ```
