@@ -447,24 +447,25 @@ npm<span class="w"> </span>install
 <ol class="arabic simple">
 <li><p><strong>Initialization</strong>:</p>
 <ul class="simple">
-<li><p>Begin setting up your project by copying the necessary code from the src folder of Assignment 5 into the src folder of this repository. Make sure to include all files that are required for the basic functionality of your online store website.</p></li>
+<li><p>Begin setting up your project by copying the necessary code from the src folder of project 5 into the src folder of this repository. Make sure to include all files that are required for the basic functionality of your online store website.</p></li>
 </ul>
 </li>
-<li><p>Database Initialization Script</p>
+<li><p><strong>Database Initialization &amp; Load Data</strong></p>
 <ul class="simple">
 <li><p>Objective: Develop a TypeScript script to initialize the store items within your Firebase Cloud Firestore.</p></li>
 <li><p>Instructions:</p>
 <ul>
 <li><p>Consult the class slides for guidance on setting up a new WebApp and initializing Firestore.</p></li>
-<li><p>Implement a init() function in pinia that leverages Firestore’s creation functions to establish collections and documents.</p></li>
-<li><p>Incorporate a logical check for initialization: if the Firestore is empty, invoke data_init to populate data; otherwise, abstain from making the call.</p></li>
+<li><p>Update the <code class="docutils literal notranslate"><span class="pre">init()</span></code> action in pinia that leverages Firestore’s creation functions to establish collections and documents.</p></li>
+<li><p>Incorporate a logical check for initialization: if the Firestore is empty, Initializes the <strong>products</strong> collection in Firestore with initProducts from <code class="docutils literal notranslate"><span class="pre">data-init.ts</span></code>; otherwise, load the data from Firestore <strong>products</strong> collection.</p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>Create</p>
+<li><p><strong>Create</strong></p>
 <ul class="simple">
 <li><p>Implement a create button allowing users to add an item to Firestore.</p></li>
+<li><p>Confirm this opration with a prompt to the user for confirmation before adding the item.</p></li>
 </ul>
 </li>
 <li><p><strong>Delete Feature</strong>:</p>
