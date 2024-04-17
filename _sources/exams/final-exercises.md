@@ -1,4 +1,4 @@
-# Exam Review Exercises
+# Final Exam Review Exercises
 
 ---
 
@@ -271,11 +271,6 @@ const questions = [
 
 <!-- prettier-ignore -->
 ```ts
-
-function goToNextQuestion() {
-// Add your code implementation here
-
-}
 
 function checkAnswerAndGoNext() {
 // Add your code implementation here
