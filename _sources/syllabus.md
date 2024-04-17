@@ -49,5 +49,5 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 12 (03/25) | [Vue Router](assets/pdf/Vue-Router4.x.pdf) | [Vuetify 1](assets/pdf/Vuetify-I.pdf) | [Vuetify 2](assets/pdf/Vuetify-II.pdf) | {ref}`resources <content:references:w12>` |
 | 13 (04/01) | [Quiz 5](quizzes/5) | [Project 5](projects/5) | [Firestore 1](assets/pdf/Firestore.pdf) | {ref}`resources <content:references:w13>` |
 | 14 (04/08) | [Firestore 2](assets/pdf/Firestore-II.pdf) | [Firebase Authentication](assets/pdf/FirebaseUserAuthentication.pdf) | [Project 6](projects/6) | {ref}`resources <content:references:w14>` |
-| 15 (04/15) | [Fetch & Axios](assets/pdf/Fetch-Axios.pdf) | [Fetch & Axios]() | Final Review |  |
+| 15 (04/15) | [Fetch & Axios](assets/pdf/Fetch-Axios.pdf) | [Final Exam Exercises](exams/final-exercises) | Final Review |  |
 | 16 (04/22) | Final | Final |  |  |
