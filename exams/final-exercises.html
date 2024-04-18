@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Final Exam Review Exercises &#8212; GVSU CIS 371 - Web Application Programming</title>
+    <title>Exam Review Exercises &#8212; GVSU CIS 371 - Web Application Programming</title>
   
   
   
@@ -179,6 +179,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../projects/3.html">Project 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projects/4.html">Project 4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projects/5.html">Project 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/6.html">Project 6</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exam</span></p>
 <ul class="nav bd-sidenav">
@@ -370,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Final Exam Review Exercises</h1>
+    <h1>Exam Review Exercises</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -394,8 +395,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="final-exam-review-exercises">
-<h1>Final Exam Review Exercises<a class="headerlink" href="#final-exam-review-exercises" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="exam-review-exercises">
+<h1>Exam Review Exercises<a class="headerlink" href="#exam-review-exercises" title="Permalink to this heading">#</a></h1>
 <hr class="docutils" />
 <p>You are not require to include any import statements of the libraries used, but you are required to include the type of every variable used in lambda expressions (i.e. “fat arrow functions”).</p>
 <section id="question-1">
@@ -440,6 +441,21 @@ doc-update.ts</div>
 <span class="p">}</span>
 </pre></div>
 </div>
+<div class="dropdown admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">app</span><span class="o">:</span><span class="w"> </span><span class="nx">FirebaseApp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">initializeApp</span><span class="p">(</span><span class="nx">firebaseConfig</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">db</span><span class="o">:</span><span class="w"> </span><span class="nx">Firestore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getFirestore</span><span class="p">(</span><span class="nx">app</span><span class="p">);</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">addThumbsUp</span><span class="p">(</span><span class="nx">movieId</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Implement the logic to increment the thumbsUpCount</span>
+<span class="w">  </span><span class="c1">// for a movie with the given id</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">movieRef</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">doc</span><span class="p">(</span><span class="nx">db</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;movies&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">movieId</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">updateDoc</span><span class="p">(</span><span class="nx">movieRef</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nx">thumbsUpCount</span><span class="o">:</span><span class="w"> </span><span class="nx">increment</span><span class="p">(</span><span class="mf">1</span><span class="p">),</span>
+<span class="w">   </span><span class="p">});</span>
+<span class="w"> </span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -471,6 +487,26 @@ doc-update.ts</div>
 <span class="p">}</span>
 </pre></div>
 </div>
+<div class="dropdown admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span><span class="w"> </span><span class="nx">listen_item</span><span class="p">(</span><span class="nx">movieId</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span>
+<span class="nx">callback</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">m</span><span class="o">:</span><span class="w"> </span><span class="kt">Movie</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="ow">void</span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Implement the logic to listen to changes on a movie with the given id</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">movie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">doc</span><span class="p">(</span><span class="nx">db</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;movies&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">movieId</span><span class="p">);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">onSnapshot</span><span class="p">(</span><span class="nx">movie</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">ds</span><span class="o">:</span><span class="w"> </span><span class="kt">DocumentSnapshot</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">ds</span><span class="p">.</span><span class="nx">exists</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Movie has been updated.&quot;</span><span class="p">);</span>
+<span class="w">     </span><span class="nx">callback</span><span class="p">(</span><span class="nx">ds</span><span class="p">.</span><span class="nx">data</span><span class="p">()</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">Movie</span><span class="p">);</span>
+<span class="w">   </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Movie document does not exist.&quot;</span><span class="p">);</span>
+<span class="w">     </span><span class="nx">callback</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -500,6 +536,34 @@ Movie.vue</div>
 
 <span class="w">  </span>
 </pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span>&lt;script lang=&quot;ts&quot; setup&gt;
+import { ref, Ref, onMounted, onUnmounted } from &quot;vue&quot;;
+import { Movie } from &quot;../data-types&quot;;
+import { listen_item } from &quot;../doc-update&quot;;
+
+const { movie } = defineProps&lt;{ movie: Movie }&gt;();
+const m_movie: Ref&lt;Movie&gt; = ref(movie);
+
+let unsubscribe: () =&gt; void;
+onMounted(() =&gt; {
+  unsubscribe = listen_item(movie.id, (m: Movie | null) =&gt; {
+    if (m) {
+      m_movie.value = m;
+    }
+  });
+});
+
+onUnmounted(() =&gt; {
+  if (unsubscribe) {
+    unsubscribe();
+  }
+});
+&lt;/script&gt;
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -555,8 +619,23 @@ JSON</div>
 <span class="w">  </span>
 </pre></div>
 </div>
+<div class="dropdown admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><span class="kr">type</span><span class="w"> </span><span class="nx">Image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kr">type</span><span class="w"> </span><span class="nx">Pet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">pet</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">images</span><span class="o">:</span><span class="w"> </span><span class="kt">Image</span><span class="p">[];</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</div>
 <hr class="docutils" />
-<p><strong>(b)</strong> Demonstrate your knowledge of using <strong>axios</strong> and <strong>Promise <code class="docutils literal notranslate"><span class="pre">then()</span></code></strong> function to fetch dog images and then store the <strong>URLs</strong> in an array of strings. Be sure all your variables are properly typed. Include error handling for the request.</p>
+<p><strong>(b)</strong> Demonstrate your knowledge of using <strong>axios</strong> and <strong>Promise</strong> <code class="docutils literal notranslate"><span class="pre">then()</span></code> function to fetch dog images and then store the <strong>URLs</strong> in an array of strings. Be sure all your variables are properly typed. Include error handling for the request.</p>
 <!-- prettier-ignore -->
 <div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><span class="c1">// Add your code implementation here</span>
 
@@ -569,8 +648,31 @@ JSON</div>
 <span class="w">  </span>
 </pre></div>
 </div>
+<div class="dropdown admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="nx">axios</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;axios&quot;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">fetchDogImages</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">[]</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">axios</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">get</span><span class="o">&lt;</span><span class="nx">Pet</span><span class="p">[]</span><span class="o">&gt;</span><span class="p">(</span><span class="s2">&quot;http://petpics.io/search?pet=dog&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">AxiosResponse</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;No dog images found&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">flatMap</span><span class="p">((</span><span class="nx">pet</span><span class="o">:</span><span class="w"> </span><span class="kt">Pet</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
+<span class="w">        </span><span class="nx">pet</span><span class="p">.</span><span class="nx">images</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">image</span><span class="o">:</span><span class="w"> </span><span class="kt">Image</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">image</span><span class="p">.</span><span class="nx">url</span><span class="p">)</span>
+<span class="w">      </span><span class="p">);</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Error fetching dog images:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
 <hr class="docutils" />
-<p><strong>(c)</strong> Repeat the above task (2), but this time use <strong>async-await</strong> syntax. Pay attention to proper error handling.</p>
+<p><strong>(c)</strong> Repeat the above task (2), but this time use async-await syntax. Pay attention to proper error handling.</p>
 <!-- prettier-ignore -->
 <div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><span class="c1">// Add your code implementation here</span>
 
@@ -582,6 +684,28 @@ JSON</div>
 
 <span class="w">  </span>
 </pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Answer</p>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="nx">axios</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;axios&quot;</span><span class="p">;</span>
+<span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">fetchDogImagesAsync</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">[]</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">AxiosResponse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="o">&lt;</span><span class="nx">Pet</span><span class="p">[]</span><span class="o">&gt;</span><span class="p">(</span>
+<span class="w">      </span><span class="s2">&quot;http://petpics.io/search?pet=dog&quot;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;No dog images found&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">flatMap</span><span class="p">((</span><span class="nx">pet</span><span class="o">:</span><span class="w"> </span><span class="kt">Pet</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
+<span class="w">      </span><span class="nx">pet</span><span class="p">.</span><span class="nx">images</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">image</span><span class="o">:</span><span class="w"> </span><span class="kt">Image</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">image</span><span class="p">.</span><span class="nx">url</span><span class="p">)</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Error fetching dog images:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </section>
 <section id="question-3">
@@ -647,10 +771,9 @@ JSON</div>
 <span class="c1">// Add your code implementation here</span>
 
 <span class="p">}</span>
-
-<span class="w">  </span>
 </pre></div>
 </div>
+<p><a class="reference external" href="https://play.vuetifyjs.com/#eNqNVmtv2zYU/SsXwoAkTWTZ+7ABjp0tHdCh27J1SR8oIgNlKNoiTJEqSTlxDf/3XpJ6OZXR5oNF3cfhuYeXV7nfRUbT5LosR5uKRdNoZllRCmLZVSoBZpuYEp0BFcSYeRoVTzGprEojKMhT/Mgzm6P11/E4jXx8mxGb6sFyKwKMd5iSyOYF4Or/ihnLlZzCbge00ppJ29hey4w9wTlMYL9P0P25tpuRYHJlczS3sInDPdzlCu6o0swjG7fC+MPAWTJMs2EfbP2d74coLkaNH3doMQcB2ZPtSG5iTTKu4pVWVQmbuFAZEyikYYJRy7JraR6ZbjXt53QWwMSl0ph2qkrH4QK4I3WGj+/yDhkmjfp40zXbIpxHeeYR5MEzDHnPnBsiKjbovHKieN5d8Y0lVN/ZS9T7c8W/3DJTCev0bJydsp2KjbCE+kL62j5YCb9TwekaOdGc0XXQ81pmf6p/EQKFdQ8Hi7HPN+kjNkZ8mSW9m4GvhmpeWjDM4hEKIle4mUVBfR4vSqUt7ECzJexhqVUBJ3jBTlwqAEV8250RzOE+kNg1ZTS+KaTRh5xY4AZszoCSklsigHK7BbWEV5pIyn5Lo4smsz7ZKUJGL5kWHA/kAlH+UTJzh+PWb4jmSNUtb0imeZZGixaAeLHcxk1Y8Ozr5xGOnOaA8kjmua6lepRAAulblsEb7zpG9Iboms9fFRboet+93BFb6ZrzeyYrjBniWWf/ME2qKmn1FnJl8LJ5ij+PJ7/AXVUUTMN/YluUnJpjZP/IuSSB1EtNvnAR1u8kEs/gby5XmSqC7bYyhmPsEOs295B38gIKN7K67sgZvr5InHtx2bXP4Mycu447HZ9dQpLAW03oOhyBv9OuYXwThcx2iw7zcADVaGkUT9IoQN5Z5DYA2STW9V1CPIHHnEmQqja5rmiiehv68XyMNfbTlukTTHRh/ZvTjImWIhIMd2tZSX+BYaXe+tveCHR61vQEX8LpkHojP8hg9u33JoZJm40kjuaen/sDcn+HUtbQczx3J6YvFCvAy4IjHCTSPDgNbAdgwrB+Fzclt1CfPqoKllxyk9dd7IJG8ArbUwTJpvDTzi9C0v5TTc9/PvHnQLChUXko2nBN8/l3PjchcDEKjdATskcNzucwGXtdXkuqWeEaNHSHUwgXGreue6lXBAycs0e5URsGVn2rLabh/wJ+euOsxlsX7S9kJYT/WXwFWSn6KQ=="><strong>Answer</strong></a></p>
 </section>
 </section>
 

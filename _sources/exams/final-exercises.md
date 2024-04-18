@@ -1,4 +1,4 @@
-# Final Exam Review Exercises
+# Exam Review Exercises
 
 ---
 
@@ -49,6 +49,22 @@ function addThumbsUp(movieId: string) {
 }
 ```
 
+````{admonition} Answer
+:class: dropdown
+```javascript
+const app: FirebaseApp = initializeApp(firebaseConfig);
+const db: Firestore = getFirestore(app);
+function addThumbsUp(movieId: string) {
+  // Implement the logic to increment the thumbsUpCount
+  // for a movie with the given id
+  const movieRef = doc(db, "movies", movieId);
+  updateDoc(movieRef, {
+     thumbsUpCount: increment(1),
+   });
+ }
+```
+````
+
 :::
 
 ::::
@@ -80,6 +96,27 @@ callback: (m: Movie | null) => void
 }
 ```
 
+````{admonition} Answer
+:class: dropdown
+```ts
+function listen_item(movieId: string,
+callback: (m: Movie | null) => void
+) {
+  // Implement the logic to listen to changes on a movie with the given id
+  const movie = doc(db, "movies", movieId);
+  return onSnapshot(movie, (ds: DocumentSnapshot) => {
+   if (ds.exists()) {
+     console.log("Movie has been updated.");
+     callback(ds.data() as Movie);
+   } else {
+     console.log("Movie document does not exist.");
+     callback(null);
+   }
+  });
+}
+```
+````
+
 :::
 
 :::{grid-item-card} Movie.vue
@@ -107,6 +144,35 @@ let unsubscribe: () => void;
   
 
 ```
+
+````{admonition} Answer
+:class: dropdown
+```ts
+<script lang="ts" setup>
+import { ref, Ref, onMounted, onUnmounted } from "vue";
+import { Movie } from "../data-types";
+import { listen_item } from "../doc-update";
+
+const { movie } = defineProps<{ movie: Movie }>();
+const m_movie: Ref<Movie> = ref(movie);
+
+let unsubscribe: () => void;
+onMounted(() => {
+  unsubscribe = listen_item(movie.id, (m: Movie | null) => {
+    if (m) {
+      m_movie.value = m;
+    }
+  });
+});
+
+onUnmounted(() => {
+  if (unsubscribe) {
+    unsubscribe();
+  }
+});
+</script>
+```
+````
 
 :::
 
@@ -163,9 +229,25 @@ Demonstrate your knowledge of using the axios library to fetch data from the abo
 
 ```
 
+````{admonition} Answer
+:class: dropdown
+```ts
+type Image = {
+  url: string;
+  width: number;
+  height: number;
+};
+
+type Pet = {
+  pet: string;
+  images: Image[];
+};
+```
+````
+
 ---
 
-**(b)** Demonstrate your knowledge of using **axios** and **Promise `then()`** function to fetch dog images and then store the **URLs** in an array of strings. Be sure all your variables are properly typed. Include error handling for the request.
+**(b)** Demonstrate your knowledge of using **axios** and **Promise** `then()` function to fetch dog images and then store the **URLs** in an array of strings. Be sure all your variables are properly typed. Include error handling for the request.
 
 <!-- prettier-ignore -->
 ```ts
@@ -181,9 +263,33 @@ Demonstrate your knowledge of using the axios library to fetch data from the abo
 
 ```
 
+````{admonition} Answer
+:class: dropdown
+```ts
+import axios from "axios";
+
+function fetchDogImages(): Promise<string[]> {
+  return axios
+    .get<Pet[]>("http://petpics.io/search?pet=dog")
+    .then((response: AxiosResponse) => {
+      if (!response.data) {
+        throw new Error("No dog images found");
+      }
+      return response.data.flatMap((pet: Pet) =>
+        pet.images.map((image: Image) => image.url)
+      );
+    })
+    .catch((error) => {
+      console.error("Error fetching dog images:", error);
+      return [];
+    });
+}
+```
+````
+
 ---
 
-**(c)** Repeat the above task (2), but this time use **async-await** syntax. Pay attention to proper error handling.
+**(c)** Repeat the above task (2), but this time use async-await syntax. Pay attention to proper error handling.
 
 <!-- prettier-ignore -->
 ```ts
@@ -198,6 +304,29 @@ Demonstrate your knowledge of using the axios library to fetch data from the abo
   
 
 ```
+
+````{admonition} Answer
+:class: dropdown
+```ts
+import axios from "axios";
+async function fetchDogImagesAsync(): Promise<string[]> {
+  try {
+    const response: AxiosResponse = await axios.get<Pet[]>(
+      "http://petpics.io/search?pet=dog"
+    );
+    if (!response.data) {
+      throw new Error("No dog images found");
+    }
+    return response.data.flatMap((pet: Pet) =>
+      pet.images.map((image: Image) => image.url)
+    );
+  } catch (error) {
+    console.error("Error fetching dog images:", error);
+    return [];
+  }
+}
+```
+````
 
 ## Question 3
 
@@ -272,11 +401,13 @@ const questions = [
 <!-- prettier-ignore -->
 ```ts
 
+
 function checkAnswerAndGoNext() {
 // Add your code implementation here
 
 }
 
-  
 
 ```
+
+[**Answer**](https://play.vuetifyjs.com/#eNqNVmtv2zYU/SsXwoAkTWTZ+7ABjp0tHdCh27J1SR8oIgNlKNoiTJEqSTlxDf/3XpJ6OZXR5oNF3cfhuYeXV7nfRUbT5LosR5uKRdNoZllRCmLZVSoBZpuYEp0BFcSYeRoVTzGprEojKMhT/Mgzm6P11/E4jXx8mxGb6sFyKwKMd5iSyOYF4Or/ihnLlZzCbge00ppJ29hey4w9wTlMYL9P0P25tpuRYHJlczS3sInDPdzlCu6o0swjG7fC+MPAWTJMs2EfbP2d74coLkaNH3doMQcB2ZPtSG5iTTKu4pVWVQmbuFAZEyikYYJRy7JraR6ZbjXt53QWwMSl0ph2qkrH4QK4I3WGj+/yDhkmjfp40zXbIpxHeeYR5MEzDHnPnBsiKjbovHKieN5d8Y0lVN/ZS9T7c8W/3DJTCev0bJydsp2KjbCE+kL62j5YCb9TwekaOdGc0XXQ81pmf6p/EQKFdQ8Hi7HPN+kjNkZ8mSW9m4GvhmpeWjDM4hEKIle4mUVBfR4vSqUt7ECzJexhqVUBJ3jBTlwqAEV8250RzOE+kNg1ZTS+KaTRh5xY4AZszoCSklsigHK7BbWEV5pIyn5Lo4smsz7ZKUJGL5kWHA/kAlH+UTJzh+PWb4jmSNUtb0imeZZGixaAeLHcxk1Y8Ozr5xGOnOaA8kjmua6lepRAAulblsEb7zpG9Iboms9fFRboet+93BFb6ZrzeyYrjBniWWf/ME2qKmn1FnJl8LJ5ij+PJ7/AXVUUTMN/YluUnJpjZP/IuSSB1EtNvnAR1u8kEs/gby5XmSqC7bYyhmPsEOs295B38gIKN7K67sgZvr5InHtx2bXP4Mycu447HZ9dQpLAW03oOhyBv9OuYXwThcx2iw7zcADVaGkUT9IoQN5Z5DYA2STW9V1CPIHHnEmQqja5rmiiehv68XyMNfbTlukTTHRh/ZvTjImWIhIMd2tZSX+BYaXe+tveCHR61vQEX8LpkHojP8hg9u33JoZJm40kjuaen/sDcn+HUtbQczx3J6YvFCvAy4IjHCTSPDgNbAdgwrB+Fzclt1CfPqoKllxyk9dd7IJG8ArbUwTJpvDTzi9C0v5TTc9/PvHnQLChUXko2nBN8/l3PjchcDEKjdATskcNzucwGXtdXkuqWeEaNHSHUwgXGreue6lXBAycs0e5URsGVn2rLabh/wJ+euOsxlsX7S9kJYT/WXwFWSn6KQ==)
