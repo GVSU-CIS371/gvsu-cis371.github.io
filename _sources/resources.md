@@ -218,3 +218,17 @@
 - [Firebase CRUD Operations and Listener](https://github.com/GVSU-CIS371/sample-code/tree/main/Firebase/Firestore/CRUD)
 - [Firebase Authentication](https://github.com/GVSU-CIS371/sample-code/tree/main/Firebase/Authentication/SigninSignup)
 ```
+
+(content:references:w15)=
+
+```{div} full-width
+## Week 15
+
+- Random Users Web Service
+  - [Documentation](https://randomuser.me/documentation)
+  - Service Endpoint: https://randomuser.me/api
+- Random Quotes
+  - [Documentation](https://github.com/lukePeavey/quotable)
+  - Service Endpoint: https://api.quotables.io
+- [A gazillion more Web Services](https://github.com/public-apis/public-apis)
+```
