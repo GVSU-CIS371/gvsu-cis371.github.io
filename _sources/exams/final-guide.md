@@ -1,4 +1,4 @@
-# Exam Content Guide
+# Final Exam Content Guide
 
 ---
 
