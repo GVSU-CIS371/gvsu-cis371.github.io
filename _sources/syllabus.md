@@ -33,13 +33,13 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 4 (09/16) | ... | ... | ... | resources |
 | 5 (09/23) | ... | ... | ... | resources |
 | 6 (09/30) | ... | ... | ... | resources |
-| 7 (10/07) | ... | ... | ... | resources |
+| 7 (10/07) | Midterm Exam | ... | ... | resources |
 | 8 (10/14) | ... | ... | ... | resources |
-| 9 (10/21) | ... | ... | ... | resources |
+| 9 (10/21) | Fall Break (No Class) | ... | ... | resources |
 | 10 (10/28) | ... | ... | ... | resources |
 | 11 (11/04) | ... | ... | ... | resources |
 | 12 (11/11) | ... | ... | ... | resources |
 | 13 (11/18) | ... | ... | ... | resources |
-| 14 (11/25) | ... | ... | ... | resources |
+| 14 (11/25) | ... | Thanksgiving Break | (No Class) | resources |
 | 15 (12/02) | ... | ... | ... | resources |
-| 16 (12/09) | ... | ... | ... | resources |
+| 16 (12/09) |  | Final Exam |  |  |
