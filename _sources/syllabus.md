@@ -28,8 +28,8 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | Week | Monday | Wednesday | Friday | Reading |
 | --- | --- | --- | --- | --- |
 | 1 (08/26) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pdf) | CSS 1 | {ref}`resources <content:references:w1>` |
-| 2 (09/02) | Labor Day (No Class) | ... | ... | resources |
-| 3 (09/09) | ... | ... | ... | resources |
+| 2 (09/02) | Labor Day (No Class) | Quiz 1 | CSS 2 | resources |
+| 3 (09/09) | CSS Grid & Flexbox | Quiz 2 | ... | resources |
 | 4 (09/16) | ... | ... | ... | resources |
 | 5 (09/23) | ... | ... | ... | resources |
 | 6 (09/30) | ... | ... | ... | resources |
