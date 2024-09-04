@@ -14,3 +14,18 @@
 - [csszengarden](https://www.csszengarden.com/)
 - [HTML Color Names](https://www.w3schools.com/colors/colors_names.asp)
 ```
+
+(content:references:w2)=
+
+## Week 2
+
+```{div} full-width
+- [Awesome Icons Reference](https://www.w3schools.com/icons/icons_reference.asp)
+- [CSS cheat-sheet](https://htmlcheatsheet.com/css/)
+- [CSS cheat-sheet 2](https://devhints.io/css)
+- [CSS Combinators](https://www.w3schools.com/css/css_combinators.asp)
+- [Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/:link)
+- [Pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp) vs. [pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
+- [CSS selector examples](https://www.w3schools.com/cssref/trysel.php?)
+- [Media Query](https://www.w3schools.com/cssref/css3_pr_mediaquery.php)
+```
