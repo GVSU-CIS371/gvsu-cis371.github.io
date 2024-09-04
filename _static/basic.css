@@ -23,8 +23,12 @@ div.section::after {
 
 /* -- extra table styling ----------------------------------------------------------- */
 
-.row-even {
+html[data-theme="dark"] .row-even {
     background-color: #212830;
+}
+
+html[data-theme="light"] .row-even {
+    background-color: #f3f3f3;
 }
 
 .table thead th {
