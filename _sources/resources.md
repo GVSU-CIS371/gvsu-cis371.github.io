@@ -29,3 +29,19 @@
 - [CSS selector examples](https://www.w3schools.com/cssref/trysel.php?)
 - [Media Query](https://www.w3schools.com/cssref/css3_pr_mediaquery.php)
 ```
+
+(content:references:w3)=
+
+## Week 3
+
+```{div} full-width
+- [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [docker.com](https://www.docker.com/)
+- [Docker installation documentation](https://docs.docker.com/get-docker/)
+- [Docker Hub](https://hub.docker.com)
+- [Microsoft official Docker images](https://github.com/devcontainers/images/tree/main/src)
+- [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [All Docker commands](https://docs.docker.com/engine/reference/commandline/docker/)
+- [Docker commands cheat-sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+```
