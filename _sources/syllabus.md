@@ -29,7 +29,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | --- | --- | --- | --- | --- |
 | 1 (08/26) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pdf) | [CSS 1](assets/pdf/CSS-I.pdf) | {ref}`resources <content:references:w1>` |
 | 2 (09/02) | Labor Day (No Class) | [Quiz 1](quizzes/1.md) | [CSS 2](assets/pdf/CSS-II.pdf) | {ref}`resources <content:references:w2>` |
-| 3 (09/09) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | [Quiz 2](quizzes/2.md) | Docker | {ref}`resources <content:references:w3>` |
+| 3 (09/09) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | [Quiz 2](quizzes/2.md) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
 | 4 (09/16) | ... | ... | ... | resources |
 | 5 (09/23) | ... | ... | ... | resources |
 | 6 (09/30) | ... | ... | ... | resources |
