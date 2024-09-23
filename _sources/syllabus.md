@@ -31,7 +31,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 2 (09/02) | Labor Day (No Class) | [Quiz 1](quizzes/1.md) | [CSS 2](assets/pdf/CSS-II.pdf) | {ref}`resources <content:references:w2>` |
 | 3 (09/09) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | [Quiz 2](quizzes/2.md) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
 | 4 (09/16) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | resources |
-| 5 (09/23) | [TypeScript 3] | [TypeScript 4] | [Quiz 4] | resources |
+| 5 (09/23) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4] | [Quiz 4] | resources |
 | 6 (09/30) | ... | [Midterm Exam Guide] | ... | resources |
 | 7 (10/07) | Midterm Exam | ... | ... | resources |
 | 8 (10/14) | ... | ... | ... | resources |
