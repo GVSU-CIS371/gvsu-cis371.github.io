@@ -30,9 +30,9 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 1 (08/26) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pdf) | [CSS 1](assets/pdf/CSS-I.pdf) | {ref}`resources <content:references:w1>` |
 | 2 (09/02) | Labor Day (No Class) | [Quiz 1](quizzes/1.md) | [CSS 2](assets/pdf/CSS-II.pdf) | {ref}`resources <content:references:w2>` |
 | 3 (09/09) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | [Quiz 2](quizzes/2.md) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
-| 4 (09/16) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | resources |
-| 5 (09/23) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4] | [Quiz 4] | resources |
-| 6 (09/30) | ... | [Midterm Exam Guide] | ... | resources |
+| 4 (09/16) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
+| 5 (09/23) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | [TypeScript 5] | {ref}`resources <content:references:w5>` |
+| 6 (09/30) | [Quiz 4] | [Midterm Exam Guide] | [TypeScript 6] | resources |
 | 7 (10/07) | Midterm Exam | ... | ... | resources |
 | 8 (10/14) | ... | ... | ... | resources |
 | 9 (10/21) | Fall Break (No Class) | ... | ... | resources |

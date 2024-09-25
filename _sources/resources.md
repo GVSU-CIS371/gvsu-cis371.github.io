@@ -45,3 +45,27 @@
 - [All Docker commands](https://docs.docker.com/engine/reference/commandline/docker/)
 - [Docker commands cheat-sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
 ```
+
+(content:references:w4)=
+
+## Week 4
+
+```{div} full-width
+- [Visual Studio Code Extensions for Web Development](https://www.youtube.com/results?search_query=vscode+extensions+for+web+development)
+- [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+- TypeScript: Online PlayGround
+  - [https://typescriptlang.org/play](https://typescriptlang.org/play)
+  - [https://replit.com/languages/typescript](https://replit.com/languages/typescript)
+```
+
+(content:references:w5)=
+
+## Week 5
+
+```{div} full-width
+- [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API)
+- [Window APIs](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+- [HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
+- [Java|Type scripte Array Operations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Higher-order Functions](https://www.freecodecamp.org/news/higher-order-functions-in-javascript-explained/)
+```
