@@ -32,7 +32,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 3 (09/09) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | [Quiz 2](quizzes/2.md) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
 | 4 (09/16) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
 | 5 (09/23) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | {ref}`resources <content:references:w5>` |
-| 6 (09/30) | [Quiz 4] | [Midterm Exam Guide] | [TypeScript 6] | resources |
+| 6 (09/30) | [Quiz 4](quizzes/4.md) | [Midterm Exam Guide] | [TypeScript 6] | resources |
 | 7 (10/07) | Midterm Exam | ... | ... | resources |
 | 8 (10/14) | ... | ... | ... | resources |
 | 9 (10/21) | Fall Break (No Class) | ... | ... | resources |
