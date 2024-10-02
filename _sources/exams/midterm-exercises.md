@@ -16,6 +16,8 @@ Given the following HTML,
 </body>
 ```
 
+**Your Answer:**
+
 1. Write the Emmet abbreviation used to generate this html.
 
    ```HTML
@@ -38,8 +40,6 @@ Given the following HTML,
        </footer>
      </body>
    ```
-
-   **Your Answer:**
 
 2. Write a CSS selector that specifically targets and selects only the paragraph containing the text "This is a sample paragraph in the content section.
 
