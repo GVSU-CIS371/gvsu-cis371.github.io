@@ -16,30 +16,30 @@ Given the following HTML,
 </body>
 ```
 
-**Your Answer:**
-
 1. Write the Emmet abbreviation used to generate this html.
 
-   ```HTML
-     <body>
-       <header id="header">
-         <h1>Welcome to My Site</h1>
-       </header>
-       <nav>
-         <ul>
-           <li class="menu-item">Home</li>
-           <li class="menu-item">About</li>
-           <li class="menu-item">Contact</li>
-         </ul>
-       </nav>
-       <div class="content">
-         <p>This is a sample paragraph in the content section.</p>
-       </div>
-       <footer>
-         <p>Thank you for visiting!</p>
-       </footer>
-     </body>
-   ```
+**Your Answer:**
+
+```HTML
+  <body>
+    <header id="header">
+      <h1>Welcome to My Site</h1>
+    </header>
+    <nav>
+      <ul>
+        <li class="menu-item">Home</li>
+        <li class="menu-item">About</li>
+        <li class="menu-item">Contact</li>
+      </ul>
+    </nav>
+    <div class="content">
+      <p>This is a sample paragraph in the content section.</p>
+    </div>
+    <footer>
+      <p>Thank you for visiting!</p>
+    </footer>
+  </body>
+```
 
 2. Write a CSS selector that specifically targets and selects only the paragraph containing the text "This is a sample paragraph in the content section.
 
