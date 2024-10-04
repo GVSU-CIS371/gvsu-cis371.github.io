@@ -70,6 +70,8 @@
 - [Higher-order Functions](https://www.freecodecamp.org/news/higher-order-functions-in-javascript-explained/)
 ```
 
+(content:references:w6)=
+
 ## Week 6
 
 ```{div} full-width
