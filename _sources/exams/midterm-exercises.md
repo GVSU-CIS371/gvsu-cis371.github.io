@@ -90,7 +90,7 @@ Given the following HTML,
      lastName?: string | null
    ): string {
      if (firstName && lastName) {
-       return `${firstName} ${lastName}`;
+       return `${firstName}${lastName}`;
      } else if (firstName) {
        return firstName;
      } else if (lastName) {
