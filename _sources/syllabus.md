@@ -33,13 +33,13 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 4 (09/16) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
 | 5 (09/23) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | {ref}`resources <content:references:w5>` |
 | 6 (09/30) | [Quiz 4](quizzes/4.md) | [Midterm Exam Guide](exams/midterm-guide.md) \| [Exercises](exams/midterm-exercises.md) | [TypeScript 6](assets/pdf/TypeScript-VI.pdf) | {ref}`resources <content:references:w6>` |
-| 7 (10/07) | [Midterm Exam](exams/midterm-exam.md) | ... | ... | resources |
-| 8 (10/14) | ... | ... | ... | resources |
-| 9 (10/21) | Fall Break (No Class) | ... | ... | resources |
-| 10 (10/28) | ... | ... | ... | resources |
-| 11 (11/04) | ... | ... | ... | resources |
-| 12 (11/11) | ... | ... | ... | resources |
-| 13 (11/18) | ... | ... | ... | resources |
-| 14 (11/25) | ... | Thanksgiving Break | (No Class) | resources |
-| 15 (12/02) | ... | ... | ... | resources |
+| 7 (10/07) | [Midterm Exam](exams/midterm-exam.md) | [HTTP](assets/pdf/HTTP.pdf) | [JS-Modules](assets/pdf/JS-Modules.pdf) | resources |
+| 8 (10/14) | [Vue.js 1](assets/pdf/VueJS-3.x-I.pdf) | [Vue.js 2](assets/pdf/VueJS-3.x-II.pdf) | ... | resources |
+| 9 (10/21) | Fall Break (No Class) | [Vue.js 3] | [Pinia 1] | resources |
+| 10 (10/28) | [Promise] | [Pinia 2] | ... | resources |
+| 11 (11/04) | [Vue Router] | [Vuetify 1] | ... | resources |
+| 12 (11/11) | [Vuetify 2] | [Firestore 1] | ... | resources |
+| 13 (11/18) | [Firestore 2] | [Firebase Authentication] | ... | resources |
+| 14 (11/25) | [Fetch & Axios] | Thanksgiving Break | (No Class) | resources |
+| 15 (12/02) | ... | [Final Exam Guide] | ... | resources |
 | 16 (12/09) |  | Final Exam |  |  |
