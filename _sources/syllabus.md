@@ -34,7 +34,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 5 (09/23) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | {ref}`resources <content:references:w5>` |
 | 6 (09/30) | [Quiz 4](quizzes/4.md) | [Midterm Exam Guide](exams/midterm-guide.md) \| [Exercises](exams/midterm-exercises.md) | [TypeScript 6](assets/pdf/TypeScript-VI.pdf) | {ref}`resources <content:references:w6>` |
 | 7 (10/07) | [Midterm Exam](exams/midterm-exam.md) | [HTTP](assets/pdf/HTTP.pdf) \| [JS-Modules](assets/pdf/JS-Modules.pdf) | [Vue.js 1](assets/pdf/VueJS-3.x-I.pdf) | {ref}`resources <content:references:w7>` |
-| 8 (10/14) | [Vue.js 2](assets/pdf/VueJS-3.x-II.pdf) | Vue.js 3 | Vue.js 4 | {ref}`resources <content:references:w8>` |
+| 8 (10/14) | [Vue.js 2](assets/pdf/VueJS-3.x-II.pdf) | [Vue.js 3](assets/pdf/VueJS-3.x-III.pdf) | Vue.js 4 | {ref}`resources <content:references:w8>` |
 | 9 (10/21) | Fall Break (No Class) | Quiz 5 | [Pinia 1] | resources |
 | 10 (10/28) | [Promise] | [Pinia 2] | ... | resources |
 | 11 (11/04) | [Vue Router] | [Vuetify 1] | ... | resources |
