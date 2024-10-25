@@ -123,3 +123,11 @@
   - [Lifecycle Functions](https://play.vuejs.org/#eNqVVEtu2zAQvcqAaAEHSKSk3qmKi+azaIF80CY7LSJblMxEIgl+HKeGjtBFT9Ar9ggdkpIit06RrjyeefPmzYfakI9SRitLSUJSvVBMGtDUWAl1zqvjjBidkVnGWSOFMrABRUtooVSigYxgXkbeD9GbpW3m+lb24SjuPa6CRy4E1wYWwnIDx45sMt0buZGHU25OR/EjF0/joA2V4B9DG1nnhuI/gHR5NDvtE+GMNiKN0eVDtva/aNVsdiUpB7OkWIZrUVMw+RxECU/CKjhR4lFThfkruBGi1lEaY84oe47hFSYhQUHntqoYr0BYI60ZoGncVfR9o3xJ867bxMcZRziYJ0lxtAonjFOBpGEc/x55M1878xDt1UEjClpHHKmoQq/nwUAcas1VZ116gGtlGKD+r3LT3dXGy+jKetZhzUlocCRtdVAKl/wAjP+xTjyjdLgHpErj0RrJPhmfijvG7SUXbNUtY7MBqYTUUTfdtsWduNQP3bK0zPm2kDEeZfz6+eM7HhTCuqUF8i1Br3oLgl+4zmixj+atLDA1mLwJ/r9fittFuI5rFIUnvnESgrQEwvAR1g5vwmtHXEFLxqlL0mEBzpxN3OPI+CBkMtmD41kg7c48qkU1ycjzE2EaenlGwNnVRUYcS9tTDepfSVZQky+WyOZb3cEXBvMS290WmQ1geLMZL629GxhHX4JUm6faLctv3BOXgpsDzb7RBN4dHr51ST6lA+KZGY3FS1ZF91pwvDOfFq6d1VRdScNQXEaSQOhieV2Lx8/eZ5Sl+70fm1487PDf67XzZeRaUf/RyMgQM7mqKB6hC59/vaRrtIcgvkBbI/ofwS8UB2edxgA7sbxA2SOcV/vJnyh+oW70+dpQrvumnFCHbD3e36Wb/0utP8udRlOfhxMl7W/v6h3+)
 
 ```
+
+(content:references:w9)=
+
+## Week 9
+
+```{div} full-width
+- [Computed Properties](https://stackblitz.com/edit/vitejs-vite-oie6sd?file=src%2FApp.vue)
+```

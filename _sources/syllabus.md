@@ -35,11 +35,11 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 6 (09/30) | [Quiz 4](quizzes/4.md) | [Midterm Exam Guide](exams/midterm-guide.md) \| [Exercises](exams/midterm-exercises.md) | [TypeScript 6](assets/pdf/TypeScript-VI.pdf) | {ref}`resources <content:references:w6>` |
 | 7 (10/07) | [Midterm Exam](exams/midterm-exam.md) | [HTTP](assets/pdf/HTTP.pdf) \| [JS-Modules](assets/pdf/JS-Modules.pdf) | [Vue.js 1](assets/pdf/VueJS-3.x-I.pdf) | {ref}`resources <content:references:w7>` |
 | 8 (10/14) | [Vue.js 2](assets/pdf/VueJS-3.x-II.pdf) | [Vue.js 3](assets/pdf/VueJS-3.x-III.pdf) | [Vue.js 4](assets/pdf/VueJS-3.x-IV.pdf) | {ref}`resources <content:references:w8>` |
-| 9 (10/21) | Fall Break (No Class) | [Quiz 5](quizzes/5.md) | [Pinia 1] | resources |
-| 10 (10/28) | [Promise] | [Pinia 2] | ... | resources |
-| 11 (11/04) | [Vue Router] | [Vuetify 1] | ... | resources |
-| 12 (11/11) | [Vuetify 2] | [Firestore 1] | ... | resources |
-| 13 (11/18) | [Firestore 2] | [Firebase Authentication] | ... | resources |
-| 14 (11/25) | [Fetch & Axios] | Thanksgiving Break | (No Class) | resources |
+| 9 (10/21) | Fall Break (No Class) | [Quiz 5](quizzes/5.md) | [Pinia 1](assets/pdf/Pinia.pdf) | {ref}`resources <content:references:w9>` |
+| 10 (10/28) | [Promise] | [Pinia 2] | ... | {ref}`resources <content:references:w10>` |
+| 11 (11/04) | [Vue Router] | [Vuetify 1] | ... | {ref}`resources <content:references:w11>` |
+| 12 (11/11) | [Vuetify 2] | [Firestore 1] | ... | {ref}`resources <content:references:w12>` |
+| 13 (11/18) | [Firestore 2] | [Firebase Authentication] | ... | {ref}`resources <content:references:w13>` |
+| 14 (11/25) | [Fetch & Axios] | Thanksgiving Break | (No Class) | {ref}`resources <content:references:w14>` |
 | 15 (12/02) | ... | [Final Exam Guide] | ... | resources |
 | 16 (12/09) |  | Final Exam |  |  |
