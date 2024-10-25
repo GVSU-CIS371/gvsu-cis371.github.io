@@ -79,7 +79,7 @@
 - Midterm Exam
   - [Guide](exams/midterm-guide)
   - [Exercises](exams/midterm-exercises)
-  - [<script> async vs defer attributes]([quizzes/4](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html))
+  - [script async vs defer attributes](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 ```
 
 (content:references:w7)=
@@ -129,5 +129,5 @@
 ## Week 9
 
 ```{div} full-width
-- [Computed Properties](https://stackblitz.com/edit/vitejs-vite-oie6sd?file=src%2FApp.vue)
+- [Computed Properties](https://vuejs.org/guide/essentials/computed.html)
 ```
