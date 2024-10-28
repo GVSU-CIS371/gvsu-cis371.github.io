@@ -131,3 +131,22 @@
 ```{div} full-width
 - [Computed Properties](https://vuejs.org/guide/essentials/computed.html)
 ```
+
+(content:references:w10)=
+
+## Week 10
+
+```{div} full-width
+- [Slots](https://play.vuejs.org/#eNqFVE2P0zAQ/Ssj76GXbcMKVKEQKu2ilQAhQMAxFzeZJN51bMt2SpdV/ztjJ2mTgrqXKJ733ny8cfLMbo1Z7TpkKctcYYXx4NB3ZpMr0RptPdxxh1/4k+48VFa3sFglp1CQLnKVJb2WVHTw2BrJPdIJIDuR45kiIw67pZPapw3yEu2AEt7cbD6iRWhF3XjYInAwvEbwwkvMEoKHRMmk0hAym1siW15bbhqotAXfUCYuFBRaeVR+lSVhupGtSuBKE8mCVjiA541eVVr7aYsmdrhw4HSLMTMvPAhV6Un2aXvhOHNigrJrNnc0LGOuLcUOCsmde5+zWE0otDkbK507GGwFxVskeo8Rl5ZE4WNzM00WHJrrz/kTRnZux7Rej/1bb6LJEppn7kG8OM4/yX7gngzPvXjLi8fa6k6Vy0JLbVOQ4WpsZYfvBoa2NMzSa5PCjdnTWqQo4aooioEw6K7W6/UQqcjGpRN/MIVXq7fYxvAhPOJtuVy6tojqpOi9fEFTaMvlICFv4qy0eu9ooZWoVw9OK9p8TBK23Boh0X4zXmjlcpaO6XPGpdS/P8eYtx1ej/GiweLxP/EHtw+xnH236NDuMGdHzHNbo+/h+59fcU/vR7DVZSeJfQH8geR1F3rsaXc0NrU94cVuP8WfiVD1L3e/p8/QjUOFRqMpkZ8zuv4fLox+avf16s1g5oEd/gJzcpCg)
+- London Fog
+  - [Demo](https://stackblitz.com/github/GVSU-CIS371/sample-code/tree/main/Vue.js/Components/LondonFog)
+  - [Code](https://github.com/GVSU-CIS371/london-fog)
+- Pinia State
+  - [Two-way Binding](https://stackblitz.com/edit/vitejs-vite-xp2qjr?file=src%2Fstores%2FItemStore.ts)
+  - [v-for](https://stackblitz.com/edit/vitejs-vite-reponi?file=src%2Fstores%2FItemStore.ts)
+- Pinia Actions
+  - [Two-way Binding](https://stackblitz.com/edit/vitejs-vite-xp2qjr?file=src%2Fstores%2FItemStore.ts)
+  - [De-structure](https://stackblitz.com/edit/vitejs-vite-tjghxg?file=src%2FApp.vue,src%2Fstores%2FUserStore.ts)
+- Pinia Getters
+  - [Getters](https://stackblitz.com/edit/vitejs-vite-2h63ty?file=src%2FApp.vue)
+```

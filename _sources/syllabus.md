@@ -36,7 +36,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 7 (10/07) | [Midterm Exam](exams/midterm-exam.md) | [HTTP](assets/pdf/HTTP.pdf) \| [JS-Modules](assets/pdf/JS-Modules.pdf) | [Vue.js 1](assets/pdf/VueJS-3.x-I.pdf) | {ref}`resources <content:references:w7>` |
 | 8 (10/14) | [Vue.js 2](assets/pdf/VueJS-3.x-II.pdf) | [Vue.js 3](assets/pdf/VueJS-3.x-III.pdf) | [Vue.js 4](assets/pdf/VueJS-3.x-IV.pdf) | {ref}`resources <content:references:w8>` |
 | 9 (10/21) | Fall Break (No Class) | [Quiz 5](quizzes/5.md) | [Pinia 1](assets/pdf/Pinia.pdf) | {ref}`resources <content:references:w9>` |
-| 10 (10/28) | [Promise] | [Pinia 2] | ... | {ref}`resources <content:references:w10>` |
+| 10 (10/28) | [Promise](assets/pdf/Promise.pdf) | [Promise 2]() | [Pinia 2] | {ref}`resources <content:references:w10>` |
 | 11 (11/04) | [Vue Router] | [Vuetify 1] | ... | {ref}`resources <content:references:w11>` |
 | 12 (11/11) | [Vuetify 2] | [Firestore 1] | ... | {ref}`resources <content:references:w12>` |
 | 13 (11/18) | [Firestore 2] | [Firebase Authentication] | ... | {ref}`resources <content:references:w13>` |
