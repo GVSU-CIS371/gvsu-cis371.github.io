@@ -150,3 +150,21 @@
 - Pinia Getters
   - [Getters](https://stackblitz.com/edit/vitejs-vite-2h63ty?file=src%2FApp.vue)
 ```
+
+(content:references:w11)=
+
+## Week 11
+
+```{div} full-width
+- [Promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
+- Pinia
+  - [Subscribe to actions](https://stackblitz.com/edit/vitejs-vite-71yy8b?file=src%2FApp.vue)
+  - [Subscribe to the state](https://stackblitz.com/edit/vitejs-vite-rkusk7?file=src%2FApp.vue)
+  - [Patch](https://stackblitz.com/edit/vitejs-vite-v9dz2p?file=src%2FApp.vue)
+  - [Shopping Cart Example](https://stackblitz.com/github/GVSU-CIS371/sample-code/tree/main/Vue.js/Pinia/ShoppingCart)
+  - [Refresh-proof your Pinia Stores](https://www.vuemastery.com/blog/refresh-proof-your-pinia-stores/)
+  - Online Doc
+    - [State](https://pinia.vuejs.org/core-concepts/state.html)
+    - [Getters](https://pinia.vuejs.org/core-concepts/getters.html)
+    - [Actions](https://pinia.vuejs.org/core-concepts/actions.html)
+```
