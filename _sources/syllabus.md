@@ -39,7 +39,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 10 (10/28) | [Promise](assets/pdf/Promise.pdf) | [Pinia 2](assets/pdf/Pinia-II.pdf) | [Quiz 6](quizzes/6.md) | {ref}`resources <content:references:w10>` |
 | 11 (11/04) | [Vue Router](assets/pdf/Vue-Router4.x.pdf) | [Vuetify 1](assets/pdf/Vuetify.pdf) | [Vuetify 2](assets/pdf/Vuetify-II.pdf) | {ref}`resources <content:references:w11>` |
 | 12 (11/11) | [Quiz 7](quizzes/7.md) | [Firestore 1](assets/pdf/Firestore.pdf) | [Project 3 review](https://stackblitz.com/github/GVSU-CIS371/w24-project3/tree/main?file=src%2Fstores%2Fbeverage.ts) <br> Project 4 | {ref}`resources <content:references:w12>` |
-| 13 (11/18) | [Firestore 2] | [Firebase Authentication] | Project 4 review <br> Project 5 | {ref}`resources <content:references:w13>` |
+| 13 (11/18) | [Firestore 2](assets/pdf/Firestore-II.pdf) | [Firebase Authentication] | Project 4 review <br> Project 5 | {ref}`resources <content:references:w13>` |
 | 14 (11/25) | [Fetch & Axios] | Thanksgiving Break | (No Class) | {ref}`resources <content:references:w14>` |
 | 15 (12/02) | ... | [Final Exam Guide] | Project 5 review | resources |
 | 16 (12/09) |  | Final Exam |  |  |
