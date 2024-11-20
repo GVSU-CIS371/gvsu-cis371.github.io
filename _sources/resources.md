@@ -206,3 +206,22 @@
   - [v-data-table](https://play.vuetifyjs.com/#eNqFkltrwkAQhf/KkBdfvNTWFpUoCMWUXqjUvqkPk2SIW9fdsDuxWPG/N+ZiIyn4kmRP5pzvLMzi4FgTdCZx3N4l5Awdl2kbS2QaLxWAu2thHGef2SHQilEoMoWUiSEythh9STAUqd2Olo6v9cYunbHbqf4vg1LxMumk5CC3UymQHm1gRMxgiZO8R2q0DFk+jGCRJx7KOixY0hAan2sCzxAyeMjW3zea5QQmvNYmHZm2YR5oZpgK/onIoAz/piJSJssxGFFYse8JU3N3cHtfSMfiXa+g4UVICQhvOtgIFfnCVAjnHk9oYjLwSlTHz3U6RUaBp3ktgnqNh5trNbqDfu8fqkfaRATv5pukrIMf95Z1LFDVkb3BNeTMiJAAVQgzQ19JKILK1c4NnlERTBLLVIGU/A+9RVW1FfR+9+6CvjptTL4j6XY4x6ZKpMweq191FduV)
 
 ```
+
+(content:references:w13)=
+
+```{div} full-width
+## Week 13
+
+- [Firebase Console](https://console.firebase.google.com/)
+- [Firestore offical Documentation](https://firebase.google.com/docs/firestore)
+- [await vs. .then()](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAllApgWwjAvDA2gb3gEwC4YBGAGhn0QBsBDAT2ICYAGNmAXwrziJiYpU6jUmxacAugG4AsACh5AekUwAynGQBXOknwwADgCcQyOBEQwAZprDAoccPOu374A8eCIIEAJJJkABQIKIS0YPQAlDA48jAwhohQmoZgMGCIAO4wAArGpuYBAQkQINQAbohR6AB80bFxMOZQACoaiCCaUIVVtTFyDQ2gkKWIAHTUIADmAQAGuSCe3oh6ACQ4wcijvBwzEbL9A-FepRVB-lv4e-VxXPDnQgxXBxxPHPJKKqqIAI6aiGD2WjUdwLLwQOBgSYwDIIAAWMFoEHotkUtAytAQ8kRyOAVhsdgcqSMoO8X1+-0B1Go9ACUT6cSGJWoYwm0wARGS-gC4EDqTAAjCoPC0RioBFCGynnFLCBDPzGbANjAQJY7igIHTrgj0QgQYtfP4zigpYdGSNxlNZgERQgogAxCFmWHLPVgiFQtYbC47E1vOR+j4wADC4GAyQSANd3nd0LhMFGQv+tKc+NcRI8YJDtnDFOptLqBzNzIt7KzYcMEagfIFcYTzrAtPFkv2cQ2EFGMsMAFFaMBYYUNj0CwNifq-CgjcgInWk-masPTeAmSzLTMAjOGxF7Y6IM69KO3ZCYJ7zttdi2Gi8L1f5AG5AfST8uZS89PEw25716g+IGWcwDX32G85CAA)
+```
+
+(content:references:w14)=
+
+```{div} full-width
+## Week 14
+
+- [Firebase CRUD Operations and Listener](https://github.com/GVSU-CIS371/sample-code/tree/main/Firebase/Firestore/CRUD)
+- [Firebase Authentication](https://github.com/GVSU-CIS371/sample-code/tree/main/Firebase/Authentication/SigninSignup)
+```
