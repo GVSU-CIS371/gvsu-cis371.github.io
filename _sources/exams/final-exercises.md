@@ -49,6 +49,22 @@ function addThumbsUp(movieId: string) {
 }
 ```
 
+````{admonition} Answer
+:class: dropdown
+```javascript
+const app: FirebaseApp = initializeApp(firebaseConfig);
+const db: Firestore = getFirestore(app);
+function addThumbsUp(movieId: string) {
+  // Implement the logic to increment the thumbsUpCount
+  // for a movie with the given id
+  const movieRef = doc(db, "movies", movieId);
+  updateDoc(movieRef, {
+     thumbsUpCount: increment(1),
+   });
+ }
+```
+````
+
 :::
 
 ::::
@@ -82,6 +98,27 @@ callback: (m: Movie | null) => void
 }
 ```
 
+````{admonition} Answer
+:class: dropdown
+```ts
+function listen_item(movieId: string,
+callback: (m: Movie | null) => void
+) {
+  // Implement the logic to listen to changes on a movie with the given id
+  const movie = doc(db, "movies", movieId);
+  return onSnapshot(movie, (ds: DocumentSnapshot) => {
+   if (ds.exists()) {
+     console.log("Movie has been updated.");
+     callback(ds.data() as Movie);
+   } else {
+     console.log("Movie document does not exist.");
+     callback(null);
+   }
+  });
+}
+```
+````
+
 :::
 
 :::{grid-item-card} Movie.vue
@@ -109,6 +146,35 @@ let unsubscribe: () => void;
   
 
 ```
+
+````{admonition} Answer
+:class: dropdown
+```ts
+<script lang="ts" setup>
+import { ref, Ref, onMounted, onUnmounted } from "vue";
+import { Movie } from "../data-types";
+import { listen_item } from "../doc-update";
+
+const { movie } = defineProps<{ movie: Movie }>();
+const m_movie: Ref<Movie> = ref(movie);
+
+let unsubscribe: () => void;
+onMounted(() => {
+  unsubscribe = listen_item(movie.id, (m: Movie | null) => {
+    if (m) {
+      m_movie.value = m;
+    }
+  });
+});
+
+onUnmounted(() => {
+  if (unsubscribe) {
+    unsubscribe();
+  }
+});
+</script>
+```
+````
 
 :::
 
@@ -167,6 +233,22 @@ Demonstrate your knowledge of using the axios library to fetch data from the abo
 
 ```
 
+````{admonition} Answer
+:class: dropdown
+```ts
+type Image = {
+  url: string;
+  width: number;
+  height: number;
+};
+
+type Pet = {
+  pet: string;
+  images: Image[];
+};
+```
+````
+
 ---
 
 **(b)** Demonstrate your knowledge of using **axios** and **Promise** `then()` function to fetch dog images and then store the **URLs** in an array of strings. Be sure all your variables are properly typed. Include error handling for the request.
@@ -184,6 +266,30 @@ Demonstrate your knowledge of using the axios library to fetch data from the abo
   
 
 ```
+
+````{admonition} Answer
+:class: dropdown
+```ts
+import axios from "axios";
+
+function fetchDogImages(): Promise<string[]> {
+  return axios
+    .get<Pet[]>("http://petpics.io/search?pet=dog")
+    .then((response: AxiosResponse) => {
+      if (!response.data) {
+        throw new Error("No dog images found");
+      }
+      return response.data.flatMap((pet: Pet) =>
+        pet.images.map((image: Image) => image.url)
+      );
+    })
+    .catch((error) => {
+      console.error("Error fetching dog images:", error);
+      return [];
+    });
+}
+```
+````
 
 ---
 
@@ -204,6 +310,29 @@ Demonstrate your knowledge of using the axios library to fetch data from the abo
 ```
 
 **Your Answer**: [Online Playground](https://www.typescriptlang.org/play/?#code/PTAEEkFsAcBsFNLwHYBdSoBb1ARQK7wDOAlgPbKgBMoAhgLABQTLzbrH7jIEMCSaDNjyFSFaqABGnGV1k8ocRCnRYcBYuUo0AxrP2MgA)
+
+````{admonition} Answer
+:class: dropdown
+```ts
+import axios from "axios";
+async function fetchDogImagesAsync(): Promise<string[]> {
+  try {
+    const response: AxiosResponse = await axios.get<Pet[]>(
+      "http://petpics.io/search?pet=dog"
+    );
+    if (!response.data) {
+      throw new Error("No dog images found");
+    }
+    return response.data.flatMap((pet: Pet) =>
+      pet.images.map((image: Image) => image.url)
+    );
+  } catch (error) {
+    console.error("Error fetching dog images:", error);
+    return [];
+  }
+}
+```
+````
 
 ## Question 3
 
