@@ -43,5 +43,3 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 | 14 (04/07) | Firebase Authentication \| Demo | Project 4 Review \| Project 5 | Fetch & Axios | Resources |
 | 15 (04/14) | ExpressJS | Final Exam Guide \| Exercises | Project 5 Review | Resources |
 | 16 (04/21) |  | Final Exam 2:00 pm - 3:50 pm |  |  |
-
-Let me know if any further updates are needed!
