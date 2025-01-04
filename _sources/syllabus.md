@@ -20,26 +20,28 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 
 - **Class Time:** MWF 2:00 pm - 2:50 pm
 - **Room:** MAK D-1-117
-- **Midterm:** October 7 (Monday), 2:00 pm - 2:50 pm
-- **Final Exam:** December 11 (Wednesday), 2:00 pm - 3:50 pm
+- **Midterm:** February 17 (Monday), 2:00 pm - 2:50 pm
+- **Final Exam:** April 23 (Wednesday), 2:00 pm - 3:50 pm
 
 ## Tentative Schedule
 
 | Week | Monday | Wednesday | Friday | Reading |
 | --- | --- | --- | --- | --- |
-| 1 (08/26) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pdf) | [CSS 1](assets/pdf/CSS-I.pdf) | {ref}`resources <content:references:w1>` |
-| 2 (09/02) | Labor Day (No Class) | [Quiz 1](quizzes/1.md) | [CSS 2](assets/pdf/CSS-II.pdf) | {ref}`resources <content:references:w2>` |
-| 3 (09/09) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | [Quiz 2](quizzes/2.md) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
-| 4 (09/16) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
-| 5 (09/23) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | {ref}`resources <content:references:w5>` |
-| 6 (09/30) | [Quiz 4](quizzes/4.md) | [Midterm Exam Guide](exams/midterm-guide.md) \| [Exercises](exams/midterm-exercises.md) | [TypeScript 6](assets/pdf/TypeScript-VI.pdf) | {ref}`resources <content:references:w6>` |
-| 7 (10/07) | [Midterm Exam](exams/midterm-exam.md) | [HTTP](assets/pdf/HTTP.pdf) \| [JS-Modules](assets/pdf/JS-Modules.pdf) | [Vue.js 1](assets/pdf/VueJS-3.x-I.pdf) | {ref}`resources <content:references:w7>` |
-| 8 (10/14) | [Vue.js 2](assets/pdf/VueJS-3.x-II.pdf) | [Vue.js 3](assets/pdf/VueJS-3.x-III.pdf) | [Vue.js 4](assets/pdf/VueJS-3.x-IV.pdf) | {ref}`resources <content:references:w8>` |
-| 9 (10/21) | Fall Break (No Class) | [Quiz 5](quizzes/5.md) | [Pinia 1](assets/pdf/Pinia.pdf) | {ref}`resources <content:references:w9>` |
-| 10 (10/28) | [Promise](assets/pdf/Promise.pdf) | [Pinia 2](assets/pdf/Pinia-II.pdf) | [Quiz 6](quizzes/6.md) | {ref}`resources <content:references:w10>` |
-| 11 (11/04) | [Vue Router](assets/pdf/Vue-Router4.x.pdf) | [Vuetify 1](assets/pdf/Vuetify.pdf) | [Vuetify 2](assets/pdf/Vuetify-II.pdf) | {ref}`resources <content:references:w11>` |
-| 12 (11/11) | [Quiz 7](quizzes/7.md) | [Firestore 1](assets/pdf/Firestore.pdf) | [Project 3 review](https://stackblitz.com/github/GVSU-CIS371/w24-project3/tree/main?file=src%2Fstores%2Fbeverage.ts) <br> Project 4 | {ref}`resources <content:references:w12>` |
-| 13 (11/18) | [Firestore 2](assets/pdf/Firestore-II.pdf) | [Firebase Authentication](assets/pdf/FirebaseUserAuthentication.pdf)<br> [Demo](https://stackblitz.com/github/GVSU-CIS371/sample-code/tree/main/Firebase/Authentication/SigninSignup?file=README.md) | [Project 4 review](https://stackblitz.com/github/GVSU-CIS371/w24-project5/tree/main?file=src%2Fstores%2Fbeverage.ts) <br> Project 5 | {ref}`resources <content:references:w13>` |
-| 14 (11/25) | [Fetch & Axios](assets/pdf/Fetch-Axios.pdf) | Thanksgiving Break | (No Class) | {ref}`resources <content:references:w14>` |
-| 15 (12/02) | [ExpressJS](assets/pdf/ExpressJS.pdf) | [Final Exam Guide](exams/final-guide.md) \| [Exercises](exams/final-exercises.md) | [Project 5 review](https://stackblitz.com/github/GVSU-CIS371/w24-project6/tree/main?file=src%2Fstores%2FProductStore.ts) | {ref}`resources <content:references:w15>` |
-| 16 (12/09) |  | Final Exam 2:00 pm - 3:50 pm |  |  |
+| 1 (01/06) | Syllabus \| Introduction | HTML | CSS 1 | Resources Week 1 |
+| 2 (01/13) | Quiz 1 | CSS 2 | CSS Grid & Flexbox | Resources Week 2 |
+| 3 (01/20) | MLK Day (No Class) | Quiz 2 | Docker | Resources Week 3 |
+| 4 (01/27) | TypeScript 1 | TypeScript 2 | Quiz 3 | Resources Week 4 |
+| 5 (02/03) | TypeScript 3 | TypeScript 4 | TypeScript 5 | Resources Week 5 |
+| 6 (02/10) | Quiz 4 | Midterm Exam Guide \| Exercises | TypeScript 6 | Resources Week 6 |
+| 7 (02/17) | Midterm Exam | HTTP \| JS-Modules | Vue.js 1 | Resources Week 7 |
+| 8 (02/24) | Vue.js 2 | Vue.js 3 | Vue.js 4 | Resources Week 8 |
+| 9 (03/03) | Spring Break (No Class) | (No Class) | (No Class) | Resources Week 9 |
+| 10 (03/10) | Quiz 5 | Pinia 1 | Promise | Resources Week 10 |
+| 11 (03/17) | Pinia 2 | Quiz 6 | Vue Router | Resources Week 11 |
+| 12 (03/24) | Vuetify 1 | Vuetify 2 | Quiz 7 | Resources Week 12 |
+| 13 (03/31) | Firestore 1 | Project 3 Review \| Project 4 | Firestore 2 | Resources Week 13 |
+| 14 (04/07) | Firebase Authentication \| Demo | Project 4 Review \| Project 5 | Fetch & Axios | Resources Week 14 |
+| 15 (04/14) | ExpressJS | Final Exam Guide \| Exercises | Project 5 Review | Resources Week 15 |
+| 16 (04/21) |  | Final Exam 2:00 pm - 3:50 pm |  |  |
+
+Let me know if any further updates are needed!
