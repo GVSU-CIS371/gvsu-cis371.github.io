@@ -27,7 +27,7 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 
 | Week | Monday | Wednesday | Friday | Reading |
 | --- | --- | --- | --- | --- |
-| 1 (01/06) | Syllabus \| Introduction | HTML | CSS 1 | Resources |
+| 1 (01/06) | [Syllabus](assets/pdf/syllabus.pdf) \| Introduction | HTML | CSS 1 | Resources |
 | 2 (01/13) | Quiz 1 | CSS 2 | CSS Grid & Flexbox | Resources |
 | 3 (01/20) | MLK Day (No Class) | Quiz 2 | Docker | Resources |
 | 4 (01/27) | TypeScript 1 | TypeScript 2 | Quiz 3 | Resources |
