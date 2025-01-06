@@ -1,6 +1,6 @@
 # Welcome
 
-to Web Application Programming. This course offers an in-depth exploration of how websites and applications are crafted and function. We'll examine prevalent methods and tools in web development and study key programming and markup languages. Additionally, we'll learn about integrating databases, adhering to standard guidelines, and understanding the rationale behind various techniques. We'll explore HTML, CSS, Java/TypeScript, cloud databases, Ajax, and Vue.js, a leading framework in today's digital landscape.
+to our Web Application Programming. This course offers an in-depth exploration of how websites and applications are crafted and function. We'll examine prevalent methods and tools in web development and study key programming and markup languages. Additionally, we'll learn about integrating databases, adhering to standard guidelines, and understanding the rationale behind various techniques. We'll explore HTML, CSS, Java/TypeScript, cloud databases, Ajax, and Vue.js, a leading framework in today's digital landscape.
 
 ## Course Information
 
@@ -27,19 +27,19 @@ to Web Application Programming. This course offers an in-depth exploration of ho
 
 | Week | Monday | Wednesday | Friday | Reading |
 | --- | --- | --- | --- | --- |
-| 1 (01/06) | [Syllabus](assets/pdf/syllabus.pdf) \| Introduction | HTML | CSS 1 | Resources |
-| 2 (01/13) | Quiz 1 | CSS 2 | CSS Grid & Flexbox | Resources |
-| 3 (01/20) | MLK Day (No Class) | Quiz 2 | Docker | Resources |
-| 4 (01/27) | TypeScript 1 | TypeScript 2 | Quiz 3 | Resources |
-| 5 (02/03) | TypeScript 3 | TypeScript 4 | TypeScript 5 | Resources |
-| 6 (02/10) | Quiz 4 | Midterm Exam Guide \| Exercises | TypeScript 6 | Resources |
-| 7 (02/17) | Midterm Exam | HTTP \| JS-Modules | Vue.js 1 | Resources |
-| 8 (02/24) | Vue.js 2 | Vue.js 3 | Vue.js 4 | Resources |
-| 9 (03/03) | Spring Break (No Class) | (No Class) | (No Class) | Resources |
-| 10 (03/10) | Quiz 5 | Pinia 1 | Promise | Resources |
-| 11 (03/17) | Pinia 2 | Quiz 6 | Vue Router | Resources |
-| 12 (03/24) | Vuetify 1 | Vuetify 2 | Quiz 7 | Resources |
-| 13 (03/31) | Firestore 1 | Project 3 Review \| Project 4 | Firestore 2 | Resources |
-| 14 (04/07) | Firebase Authentication \| Demo | Project 4 Review \| Project 5 | Fetch & Axios | Resources |
-| 15 (04/14) | ExpressJS | Final Exam Guide \| Exercises | Project 5 Review | Resources |
+| 1 (01/06) | [Syllabus](assets/pdf/syllabus.pdf) \| [Introduction](assets/pdf/Syllabus-Intro.pdf) | HTML | CSS 1 | {ref}`resources <content:references:w1>` |
+| 2 (01/13) | Quiz 1 | CSS 2 | CSS Grid & Flexbox | resources |
+| 3 (01/20) | MLK Day (No Class) | Quiz 2 | Docker | resources |
+| 4 (01/27) | TypeScript 1 | TypeScript 2 | Quiz 3 | resources |
+| 5 (02/03) | TypeScript 3 | TypeScript 4 | TypeScript 5 | resources |
+| 6 (02/10) | Quiz 4 | Midterm Exam Guide \| Exercises | TypeScript 6 | resources |
+| 7 (02/17) | Midterm Exam | HTTP \| JS-Modules | Vue.js 1 | resources |
+| 8 (02/24) | Vue.js 2 | Vue.js 3 | Vue.js 4 | resources |
+| 9 (03/03) | Spring Break (No Class) | (No Class) | (No Class) | resources |
+| 10 (03/10) | Quiz 5 | Pinia 1 | Promise | resources |
+| 11 (03/17) | Pinia 2 | Quiz 6 | Vue Router | resources |
+| 12 (03/24) | Vuetify 1 | Vuetify 2 | Quiz 7 | resources |
+| 13 (03/31) | Firestore 1 | Project 3 Review \| Project 4 | Firestore 2 | resources |
+| 14 (04/07) | Firebase Authentication \| Demo | Project 4 Review \| Project 5 | Fetch & Axios | resources |
+| 15 (04/14) | ExpressJS | Final Exam Guide \| Exercises | Project 5 Review | resources |
 | 16 (04/21) |  | Final Exam 2:00 pm - 3:50 pm |  |  |
