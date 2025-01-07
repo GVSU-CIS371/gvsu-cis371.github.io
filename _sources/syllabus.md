@@ -8,9 +8,9 @@ to our Web Application Programming. This course offers an in-depth exploration o
 
 - <i class="fa fa-envelope"></i> **E-mail:** [yong.zhuang@gvsu.edu](mailto:yong.zhuang@gvsu.edu)
 - <i class="fa fa-building"></i> **Office:** MAK D-2-234
-- <i class="fa fa-chalkboard-teacher"></i> **Course Delivery:** In person
-- <i class="fa fa-book-reader"></i> **Syllabus:** [View the syllabus here](assets/pdf/syllabus.pdf)
+- <i class="fa fa-building"></i> **Office Hours:** Monday, Wednesday, 12:00 pm - 1:00 pm
 - <i class="fa fa-book"></i> **Course Page:** [Blackboard](https://lms.gvsu.edu/)
+- <i class="fa fa-book-reader"></i> **Syllabus:** [View the syllabus here](assets/pdf/syllabus.pdf)
 - <i class="fa fa-video"></i> **Zoom:** Meeting ID: 396 668 6420, Password: 587684
 - <i class="fa fa-calendar"></i> [**Schedule a One-on-One Meeting with Me**](https://outlook.office.com/bookwithme/user/8e0ad8c680e644aab3c32cd9c13b690b@gvsu.edu/meetingtype/9w4hDtDIaEmhON9SMd9_4Q2?anonymous&ep=mLinkFromTile)
 
