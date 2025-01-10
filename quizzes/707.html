@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Quiz 5 Vue 3 Fundamentals &#8212; GVSU CIS 371 - Web Application Programming</title>
+    <title>Quiz 7: Vuetify Dialog &#8212; GVSU CIS 371 - Web Application Programming</title>
   
   
   
@@ -60,7 +60,7 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'quizzes/5';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'quizzes/707';</script>
     <link rel="icon" href="https://www.gvsu.edu/cms4/asset/94807988-C47A-2A7B-05628C365AC3C2FA/gvsu_avatar_3[1678817053].jpg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -243,7 +243,7 @@
       
       
       
-      <li><a href="https://github.com/GVSU-CIS371/gvsu-cis371.github.io/issues/new?title=Issue%20on%20page%20%2Fquizzes/5.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/GVSU-CIS371/gvsu-cis371.github.io/issues/new?title=Issue%20on%20page%20%2Fquizzes/707.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -273,7 +273,7 @@
       
       
       
-      <li><a href="../_sources/quizzes/5.md" target="_blank"
+      <li><a href="../_sources/quizzes/707.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -336,7 +336,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -347,11 +349,22 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Quiz 5 Vue 3 Fundamentals</h1>
+    <h1>Quiz 7: Vuetify Dialog</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task">Task</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expected-display">Expected Display</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -361,75 +374,34 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="quiz-5-vue-3-fundamentals">
-<h1>Quiz 5 Vue 3 Fundamentals<a class="headerlink" href="#quiz-5-vue-3-fundamentals" title="Link to this heading">#</a></h1>
-<p>Please complete the following tasks in a Vue 3 application to build a functional <strong>Book Manager</strong> component.</p>
-<hr class="docutils" />
-<p>Given the following book array,</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1984&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;George Orwell&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1949</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Dystopia&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b2&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;F. Scott Fitzgerald&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1925</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Tragedy&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b3&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Sapiens: A Brief History of Humankind&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Yuval Noah Harari&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">2011</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;History&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b4&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Educated&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Tara Westover&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">2018</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Memoir&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b5&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Moby Dick&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Herman Melville&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1851</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Adventure&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b6&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Brave New World&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Aldous Huxley&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1932</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Dystopia&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="p">];</span>
-</pre></div>
-</div>
-<ol class="arabic">
-<li><p>Create a <code class="docutils literal notranslate"><span class="pre">Book.vue</span></code> component that receives the following properties:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="quiz-7-vuetify-dialog">
+<h1>Quiz 7: Vuetify Dialog<a class="headerlink" href="#quiz-7-vuetify-dialog" title="Link to this heading">#</a></h1>
+<section id="task">
+<h2>Task<a class="headerlink" href="#task" title="Link to this heading">#</a></h2>
+<p>In the provided <a class="reference external" href="https://stackblitz.com/github/GVSU-CIS371/sample-code/tree/main/Vue.js/Vuetify/RandomUserApp">Random User App</a>, enhance the functionality by adding a detail view action. This action should trigger a dialog that displays comprehensive information about the user when their identity icon in the data table is clicked. The details to be displayed should include:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code> (string)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">author</span></code> (string)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">year</span></code> (number)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">genres</span></code> (array of strings)</p></li>
-<li><p>The component should display the title, author, year, and genres.</p></li>
+<li><p>Title of the Card: Display the user’s full name.</p></li>
+<li><p>Subtitle: Show the user’s email address.</p></li>
+<li><p>Card Text Content: Present other relevant information of the user. Including a single picture (large size) of the user will suffice.</p></li>
+<li><p>Close Action: Incorporate a close (X) icon button within the dialog; clicking this button should close the dialog.</p></li>
 </ul>
-</li>
-<li><p>Display Books Using <code class="docutils literal notranslate"><span class="pre">v-for</span></code> in <code class="docutils literal notranslate"><span class="pre">App.vue</span></code></p>
-<p>In <code class="docutils literal notranslate"><span class="pre">App.vue</span></code>, define a list of books using the provided array. Use the <code class="docutils literal notranslate"><span class="pre">Book.vue</span></code> component created in <strong>Q1</strong> to display each book using <strong>v-for</strong>.</p>
-</li>
-<li><p>Filter Fiction Books</p>
-<p>In <code class="docutils literal notranslate"><span class="pre">App.vue</span></code>, add a checkbox that allows users to toggle between showing only <strong>Fiction books</strong> and <strong>all books</strong>. You can choose any method or approach to implement this functionality. The goal is to ensure that the list of books updates dynamically based on whether the “Show Fiction Only” option is selected.</p>
-</li>
-</ol>
-<p>Test your solutions on <a class="reference external" href="https://play.vuejs.org/#eNp9kD0PgjAQhv8Kudmw6MSmhkEHNerYhZQTi6Vt+oEkhP9uWwI6GLbL+7yXPHc9bJVKW4eQAazAGirFg1VpbaTwUU9EkhCgslGMoz4ry6QwBLIkksAKzuX7GDOrHa6mnD6Rvv7ktelCRuCi0aBukcDMbKErtCPObyfs/DzDRpaO+/YCvKKR3AXHsbZzovTaP71oe2iU1JaJ6m7yzqIw01FBNDSH2Cfg/7JfOP2ru043cY+IAYYPKNBtWQ==">play.vuejs.org</a>:</p>
+</section>
+<section id="expected-display">
+<h2>Expected Display<a class="headerlink" href="#expected-display" title="Link to this heading">#</a></h2>
+<p>A sample implementation might resemble the layout and style shown in the reference image below:</p>
+<a class="reference internal image-reference" href="../_images/randomUser.jpg" id="user-info-dialog"><img alt="../_images/randomUser.jpg" id="user-info-dialog" src="../_images/randomUser.jpg" style="width: 500px;" /></a>
+</section>
+<section id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>For instructions on creating a card component in Vuetify, consult the <a class="reference external" href="https://vuetifyjs.com/en/components/cards/#basics">Vuetify Cards documentation</a>. This resource provides examples and explanations on how to build and customize card components effectively.</p></li>
+<li><p>To access and utilize various icons, including the email and close icon for the dialog, refer to <a class="reference external" href="https://pictogrammers.com/library/mdi/">Material Design Icons</a>. This library offers a wide range of icons suitable for enhancing the user interface of your application.</p></li>
+</ul>
+</section>
+<section id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Link to this heading">#</a></h2>
+<p>Test your solution in the provided <a class="reference external" href="https://stackblitz.com/github/GVSU-CIS371/sample-code/tree/main/Vue.js/Vuetify/RandomUserApp">Random User App</a> and verify that the dialog behaves as expected.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -468,6 +440,25 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task">Task</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expected-display">Expected Display</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
