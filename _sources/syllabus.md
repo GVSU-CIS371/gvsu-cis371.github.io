@@ -28,7 +28,7 @@ to our Web Application Programming. This course offers an in-depth exploration o
 | Week | Monday | Wednesday | Friday | Reading |
 | --- | --- | --- | --- | --- |
 | 1 (01/06) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pdf) | [Quiz 1](quizzes/1.md) | {ref}`resources <content:references:w1>` |
-| 2 (01/13) | CSS 1 | CSS 2 | CSS Grid & Flexbox | resources |
+| 2 (01/13) | [CSS 1](assets/pdf/CSS-I.pdf) | CSS 2 | CSS Grid & Flexbox | resources |
 | 3 (01/20) | MLK Day (No Class) | Quiz 2 | Docker | resources |
 | 4 (01/27) | TypeScript 1 | TypeScript 2 | Quiz 3 | resources |
 | 5 (02/03) | TypeScript 3 | TypeScript 4 | TypeScript 5 | resources |
