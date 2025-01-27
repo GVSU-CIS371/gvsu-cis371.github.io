@@ -30,7 +30,7 @@ to our Web Application Programming. This course offers an in-depth exploration o
 | 1 (01/06) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pdf) | [Quiz 1](quizzes/1.md) | {ref}`resources <content:references:w1>` |
 | 2 (01/13) | [CSS 1](assets/pdf/CSS-I.pdf) | [CSS 2](assets/pdf/CSS-II.pdf) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | {ref}`resources <content:references:w2>` |
 | 3 (01/20) | MLK Day (No Class) | [Quiz 2](quizzes/2.md) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
-| 4 (01/27) | TypeScript 1 | TypeScript 2 | Quiz 3 | {ref}`resources <content:references:w4>` |
+| 4 (01/27) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | TypeScript 2 | Quiz 3 | {ref}`resources <content:references:w4>` |
 | 5 (02/03) | TypeScript 3 | TypeScript 4 | TypeScript 5 | resources |
 | 6 (02/10) | Quiz 4 | Midterm Exam Guide \| Exercises | TypeScript 6 | resources |
 | 7 (02/17) | Midterm Exam | HTTP \| JS-Modules | Vue.js 1 | resources |
