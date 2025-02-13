@@ -28,18 +28,18 @@ to our Web Application Programming. This course offers an in-depth exploration o
 | Week | Monday | Wednesday | Friday | Reading |
 | --- | --- | --- | --- | --- |
 | 1 (01/06) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pdf) | [Quiz 1](quizzes/1.md) | {ref}`resources <content:references:w1>` |
-| 2 (01/13) | [CSS 1](assets/pdf/CSS-I.pdf) | [CSS 2](assets/pdf/CSS-II.pdf) | [CSS Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | {ref}`resources <content:references:w2>` |
+| 2 (01/13) | [CSS 1](assets/pdf/CSS-I.pdf) | [CSS 2](assets/pdf/CSS-II.pdf) | [Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | {ref}`resources <content:references:w2>` |
 | 3 (01/20) | MLK Day (No Class) | [Quiz 2](quizzes/2.md) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
 | 4 (01/27) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
 | 5 (02/03) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [Project 1](projects/1.md) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | {ref}`resources <content:references:w5>` |
 | 6 (02/10) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | [Midterm Exam Guide](exams/midterm-guide.md) | [Quiz 4](quizzes/4.md) | {ref}`resources <content:references:w6>` |
 | 7 (02/17) | TypeScript 6 | Midterm Exam | HTTP \| JS-Modules | {ref}`resources <content:references:w7>` |
-| 8 (02/24) | Vue.js 1 | Vue.js 2 | Vue.js 3 | resources |
+| 8 (02/24) | Vue.js 1 | Vue.js 2 | Vue.js 3 </br> Proposal Deadline | resources |
 | 9 (03/03) | Spring Break (No Class) | (No Class) | (No Class) | resources |
 | 10 (03/10) | Quiz 5 | Pinia 1 | Promise | resources |
 | 11 (03/17) | Pinia 2 | Quiz 6 | Vue Router | resources |
 | 12 (03/24) | Vuetify 1 | Vuetify 2 | Quiz 7 | resources |
 | 13 (03/31) | Firestore 1 | Project 3 Review \| Project 4 | Firestore 2 | resources |
 | 14 (04/07) | Firebase Authentication \| Demo | Project 4 Review \| Project 5 | Fetch & Axios | resources |
-| 15 (04/14) | ExpressJS | Final Exam Guide \| Exercises | Project 5 Review | resources |
+| 15 (04/14) | ExpressJS | Final Exam Guide \| Exercises | Project Presentation | resources |
 | 16 (04/21) |  | Final Exam 2:00 pm - 3:50 pm |  |  |
