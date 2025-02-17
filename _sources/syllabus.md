@@ -33,7 +33,7 @@ to our Web Application Programming. This course offers an in-depth exploration o
 | 4 (01/27) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
 | 5 (02/03) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [Project 1](projects/1.md) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | {ref}`resources <content:references:w5>` |
 | 6 (02/10) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | [Midterm Exam Guide](exams/midterm-guide.md) | [Quiz 4](quizzes/4.md) | {ref}`resources <content:references:w6>` |
-| 7 (02/17) | TypeScript 6 | Midterm Exam | HTTP \| JS-Modules | {ref}`resources <content:references:w7>` |
+| 7 (02/17) | [TypeScript 6](assets/pdf/TypeScript-VI.pdf) | Midterm Exam | HTTP \| JS-Modules | {ref}`resources <content:references:w7>` |
 | 8 (02/24) | Vue.js 1 | Vue.js 2 | Vue.js 3 </br> Proposal Deadline | resources |
 | 9 (03/03) | Spring Break (No Class) | (No Class) | (No Class) | resources |
 | 10 (03/10) | Quiz 5 | Pinia 1 | Promise | resources |
