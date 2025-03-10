@@ -33,11 +33,11 @@ to our Web Application Programming. This course offers an in-depth exploration o
 | 4 (01/27) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
 | 5 (02/03) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [Project 1](projects/1.md) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | {ref}`resources <content:references:w5>` |
 | 6 (02/10) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | [Midterm Exam Guide](exams/midterm-guide.md) | [Quiz 4](quizzes/4.md) | {ref}`resources <content:references:w6>` |
-| 7 (02/17) | [TypeScript 6](assets/pdf/TypeScript-VI.pdf) | Midterm Exam | [HTTP](assets/pdf/HTTP.pdf) \| [JS-Modules](assets/pdf/JS-Modules.pdf) | {ref}`resources <content:references:w7>` |
+| 7 (02/17) | [TypeScript 6](assets/pdf/TypeScript-VI.pdf) | Midterm Exam | [HTTP](assets/pdf/HTTP.pdf) </br> [JS-Modules](assets/pdf/JS-Modules.pdf) | {ref}`resources <content:references:w7>` |
 | 8 (02/24) | [Vue.js 1](assets/pdf/VueJS-3.x-I.pdf) | [Vue.js 2](assets/pdf/VueJS%203.x-II.pdf) | [Vue.js 3](assets/pdf/VueJS-3.x-III.pdf) </br> Proposal Deadline | resources |
 | 9 (03/03) | Spring Break (No Class) | (No Class) | (No Class) | resources |
-| 10 (03/10) | Quiz 5 | Pinia 1 | Promise | resources |
-| 11 (03/17) | Pinia 2 | Quiz 6 | Vue Router | resources |
+| 10 (03/10) | [Vue Router](assets/pdf/Vue-Router4.x.pdf)</br>[Homework 1](projects/cdm.md) | Quiz 5 | Homework 1 Lab | resources |
+| 11 (03/17) | Promise | Pinia | Quiz 6 | resources |
 | 12 (03/24) | Vuetify 1 | Vuetify 2 | Quiz 7 | resources |
 | 13 (03/31) | Firestore 1 | Project 3 Review \| Project 4 | Firestore 2 | resources |
 | 14 (04/07) | Firebase Authentication \| Demo | Project 4 Review \| Project 5 | Fetch & Axios | resources |
