@@ -14,17 +14,14 @@ In this homework, you will leverage Vue.js to create a dynamic and interactive b
 1. Accept your instructor's [GitHub classroom invitation](https://classroom.github.com/a/E9FFIy0L) to set up your project repository.
 
    1. **Select Your Name:** ![select-name](../assets/img/project1-selectname.jpg)
-   2. **Team Setup:**
-      1. If your team does not exist yet, create a new team.
-      2. If it already exists, join your existing team. !
-   3. **Initialize Your Project Repository:**
-   4. **Clone the Repository:** You're now ready to clone the repository. In your `terminal`, use the following command with your SSH repository link to download the repository to your local machine:
+   2. **Initialize Your Project Repository:**
+   3. **Clone the Repository:** You're now ready to clone the repository. In your `terminal`, use the following command with your SSH repository link to download the repository to your local machine:
 
       ```bash
       git clone [YOUR_SSH_REPO_LINK]
       ```
 
-   5. **Install Required Packages:** Execute the following command to install the necessary packages for your project:
+   4. **Install Required Packages:** Execute the following command to install the necessary packages for your project:
 
       ```bash
       cd [YOUR_REPO]
