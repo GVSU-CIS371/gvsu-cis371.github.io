@@ -37,9 +37,9 @@ to our Web Application Programming. This course offers an in-depth exploration o
 | 8 (02/24) | [Vue.js 1](assets/pdf/VueJS-3.x-I.pdf) | [Vue.js 2](assets/pdf/VueJS%203.x-II.pdf) | [Vue.js 3](assets/pdf/VueJS-3.x-III.pdf) </br> Proposal Deadline | {ref}`resources <content:references:w8>` |
 | 9 (03/03) | Spring Break (No Class) | (No Class) | (No Class) | {ref}`resources <content:references:w9>` |
 | 10 (03/10) | [Vue Router](assets/pdf/Vue-Router4.x.pdf)</br>[Homework 1](projects/cdm.md) | [Quiz 5](quizzes/5.md) | [Homework 1 Lab](https://stackblitz.com/github/GVSU-CIS371/CustomDrinkMaker?file=README.md) | {ref}`resources <content:references:w10>` |
-| 11 (03/17) | Promise | Pinia | Quiz 6 | {ref}`resources <content:references:w11>` |
+| 11 (03/17) | [Pinia 1](assets/pdf/Pinia.pdf) | Pinia 2 | Quiz 6 | {ref}`resources <content:references:w11>` |
 | 12 (03/24) | Vuetify 1 | Vuetify 2 | Quiz 7 | {ref}`resources <content:references:w12>` |
-| 13 (03/31) | Firestore 1 | Project 3 Review \| Project 4 | Firestore 2 | resources |
+| 13 (03/31) | Promise \| Firestore 1 | Project 3 Review \| Project 4 | Firestore 2 | resources |
 | 14 (04/07) | Firebase Authentication \| Demo | Project 4 Review \| Project 5 | Fetch & Axios | resources |
 | 15 (04/14) | ExpressJS | Final Exam Guide \| Exercises | Project Presentation | resources |
 | 16 (04/21) |  | Final Exam 2:00 pm - 3:50 pm |  |  |
