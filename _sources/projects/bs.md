@@ -37,7 +37,7 @@ Accept your instructor’s [GitHub Classroom invitation](https://classroom.githu
 
 Focus on implementing the functionalities; the aesthetic design of the radio button list, text box, and button is secondary.
 
-- [Expected Outcome Demo](https://gvsu-cis371.github.io/w24-project4/)
+- [Expected Outcome Demo](https://gvsu-cis371.github.io/BrewSave/)
 
 ## Grading Rubrics
 
