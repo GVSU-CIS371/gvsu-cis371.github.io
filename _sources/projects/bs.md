@@ -41,14 +41,13 @@ Focus on implementing the functionalities; the aesthetic design of the radio but
 
 ## Grading Rubrics
 
-| Grading Item                                        | Points |
-| --------------------------------------------------- | -----: |
-| Task 1: Project Initialization                      |     10 |
-| Task 2: Implementation of Pinia Store               |     25 |
-| Task 3: User Interface and Interaction Enhancement  |     25 |
-| Task 4: Display and Interaction with Stored Recipes |     30 |
-| Commit all changes & push to GitHub                 |      5 |
-| GitHub Page Deployment                              |      5 |
+| Grading Item                                         | Points |
+| ---------------------------------------------------- | -----: |
+| Task 1: Project Initialization                       |     10 |
+| Task 2: Implementation of Pinia Store                |     25 |
+| Task 3: User Interface and Interaction Enhancement   |     25 |
+| Task 4: Display and Interaction with Stored Recipes  |     30 |
+| GitHub Clone, Commit, Push, & Deploy to GitHub Pages |     10 |
 
 ## Deliverables
 
