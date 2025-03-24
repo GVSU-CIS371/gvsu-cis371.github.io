@@ -43,7 +43,7 @@ Focus on implementing the functionalities; the aesthetic design of the radio but
 
 | Grading Item                                        | Points |
 | --------------------------------------------------- | -----: |
-| Task 1:                                             |     10 |
+| Task 1: Project Initialization                      |     10 |
 | Task 2: Implementation of Pinia Store               |     25 |
 | Task 3: User Interface and Interaction Enhancement  |     25 |
 | Task 4: Display and Interaction with Stored Recipes |     30 |
