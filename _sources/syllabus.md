@@ -39,7 +39,7 @@ to our Web Application Programming. This course offers an in-depth exploration o
 | 10 (03/10) | [Vue Router](assets/pdf/Vue-Router4.x.pdf)</br>[Homework 1](projects/cdm.md) | [Quiz 5](quizzes/5.md) | [Homework 1 Lab](https://stackblitz.com/github/GVSU-CIS371/CustomDrinkMaker?file=README.md) | {ref}`resources <content:references:w10>` |
 | 11 (03/17) | [Pinia 1](assets/pdf/Pinia.pdf) | [Pinia 2](assets/pdf/Pinia-II.pdf) | [Quiz 6](quizzes/6.md) | {ref}`resources <content:references:w11>` |
 | 12 (03/24) | [Promise](assets/pdf/Promise.pdf) </br>[Homework 2](projects/bs.md) | [Firestore 1](assets/pdf/Firestore.pdf) | [Homework 2 Lab](https://stackblitz.com/github/GVSU-CIS371/BrewSave) | {ref}`resources <content:references:w12>` |
-| 13 (03/31) | Firestore 2 | Firebase Authentication \| Homework 3 | Vuetify 1 | {ref}`resources <content:references:w13>` |
+| 13 (03/31) | [Firestore 2](assets/pdf/Firestore-II.pdf) | Firebase Authentication \| Homework 3 | Vuetify 1 | {ref}`resources <content:references:w13>` |
 | 14 (04/07) | Homework 3 Lab | Vuetify 2 | Fetch & Axios | {ref}`resources <content:references:w14>` |
 | 15 (04/14) | Final Exam Guide \| Exercises | Project Presentation | Project Presentation | {ref}`resources <content:references:w15>` |
 | 16 (04/21) |  | Final Exam 2:00 pm - 3:50 pm |  |  |
