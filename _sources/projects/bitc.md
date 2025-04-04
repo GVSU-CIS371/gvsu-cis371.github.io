@@ -92,6 +92,12 @@ You may copy all necessary code from your previous project **"Custom Drink Maker
 
 ---
 
+## Sample Code
+
+- [Firebase Console](https://console.firebase.google.com/)
+- [Firestore offical Documentation](https://firebase.google.com/docs/firestore)
+- [Firebase CRUD Operations and Listener](https://github.com/GVSU-CIS371/sample-code/tree/main/Firebase/Firestore/CRUD)
+
 ## Deliverables
 
 - Deploy your web application using the following commands in your `terminal`:
