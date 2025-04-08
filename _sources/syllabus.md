@@ -41,5 +41,5 @@ to our Web Application Programming. This course offers an in-depth exploration o
 | 12 (03/24) | [Promise](assets/pdf/Promise.pdf) </br>[Homework 2](projects/bs.md) | [Firestore 1](assets/pdf/Firestore.pdf) | [Homework 2 Lab](https://stackblitz.com/github/GVSU-CIS371/BrewSave) | {ref}`resources <content:references:w12>` |
 | 13 (03/31) | [Firestore 2](assets/pdf/Firestore-II.pdf) | [Firebase Authentication](assets/pdf/FirebaseUserAuthentication.pdf)</br> [Homework 3](projects/bitc.md) | [Vuetify 1](assets/pdf/Vuetify.pdf) | {ref}`resources <content:references:w13>` |
 | 14 (04/07) | [Vuetify 2](assets/pdf/Vuetify-II.pdf) | Homework 3 Lab | Fetch & Axios | {ref}`resources <content:references:w14>` |
-| 15 (04/14) | Final Exam Guide \| Exercises | Project Presentation | Project Presentation | {ref}`resources <content:references:w15>` |
-| 16 (04/21) |  | Final Exam 2:00 pm - 3:50 pm |  |  |
+| 15 (04/14) | Project Lab | Project Lab | Project Lab | {ref}`resources <content:references:w15>` |
+| 16 (04/21) |  | Project Presentation</br> 2:00 pm - 3:50 pm |  |  |
