@@ -37,6 +37,6 @@ to our Web Application Programming. This course offers an in-depth exploration o
 | 11 (11/03) | Assignment 3 Review \| Assignment 4 | Vuetify 1 | Vuetify 2 | {ref}`resources <content:references:w11>` |
 | 12 (11/10) | Quiz 7 | Firestore 1 | Assignment 4 Review \| Assignment 5 | {ref}`resources <content:references:w12>` |
 | 13 (11/17) | Firestore 2 | Firebase Authentication \| Demo | Fetch & Axios | {ref}`resources <content:references:w13>` |
-| 14 (11/24) | **Thanksgiving Break** | **(No Class)** | ExpressJS | {ref}`resources <content:references:w14>` |
+| 14 (11/24) | ExpressJS | **Thanksgiving Break** | **(No Class)** | {ref}`resources <content:references:w14>` |
 | 15 (12/01) | Assignment 5 Review | Project Lab | Project Lab | {ref}`resources <content:references:w15>` |
 | 16 (12/08) |  | **Project Presentation** |  |  |
