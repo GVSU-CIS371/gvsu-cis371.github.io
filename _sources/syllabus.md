@@ -16,30 +16,27 @@ to our Web Application Programming. This course offers an in-depth exploration o
 
 ## Class Schedule
 
-### Section 01
-
 - **Class Time:** MWF 2:00 pm - 2:50 pm
-- **Room:** MAK D-1-117
-- **Midterm:** February 17 (Monday), 2:00 pm - 2:50 pm
-- **Final Exam:** April 23 (Wednesday), 2:00 pm - 3:50 pm
+- **Room:** MAK B-1-126
+- **Final Presentation:** December 10 (Wednesday), 2:00 pm - 3:50 pm
 
 ## Tentative Schedule
 
-| Week | Monday | Wednesday | Friday | Reading |
+| Week | Monday (Lecture 1) | Wednesday (Lecture 2) | Friday (Lecture 3) | Resources |
 | --- | --- | --- | --- | --- |
-| 1 (01/06) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | [HTML](assets/pdf/HTML.pdf) | [Quiz 1](quizzes/1.md) | {ref}`resources <content:references:w1>` |
-| 2 (01/13) | [CSS 1](assets/pdf/CSS-I.pdf) | [CSS 2](assets/pdf/CSS-II.pdf) | [Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) | {ref}`resources <content:references:w2>` |
-| 3 (01/20) | MLK Day (No Class) | [Quiz 2](quizzes/2.md) | [Docker](assets/pdf/Docker.pdf) | {ref}`resources <content:references:w3>` |
-| 4 (01/27) | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
-| 5 (02/03) | [TypeScript 3](assets/pdf/TypeScript-III.pdf) | [Project 1](projects/1.md) | [TypeScript 4](assets/pdf/TypeScript-IV.pdf) | {ref}`resources <content:references:w5>` |
-| 6 (02/10) | [TypeScript 5](assets/pdf/TypeScript-V.pdf) | [Midterm Exam Guide](exams/midterm-guide.md) | [Quiz 4](quizzes/4.md) | {ref}`resources <content:references:w6>` |
-| 7 (02/17) | [TypeScript 6](assets/pdf/TypeScript-VI.pdf) | Midterm Exam | [HTTP](assets/pdf/HTTP.pdf) </br> [JS-Modules](assets/pdf/JS-Modules.pdf) | {ref}`resources <content:references:w7>` |
-| 8 (02/24) | [Vue.js 1](assets/pdf/VueJS-3.x-I.pdf) | [Vue.js 2](assets/pdf/VueJS%203.x-II.pdf) | [Vue.js 3](assets/pdf/VueJS-3.x-III.pdf) </br> Proposal Deadline | {ref}`resources <content:references:w8>` |
-| 9 (03/03) | Spring Break (No Class) | (No Class) | (No Class) | {ref}`resources <content:references:w9>` |
-| 10 (03/10) | [Vue Router](assets/pdf/Vue-Router4.x.pdf)</br>[Homework 1](projects/cdm.md) | [Quiz 5](quizzes/5.md) | [Homework 1 Lab](https://stackblitz.com/github/GVSU-CIS371/CustomDrinkMaker?file=README.md) | {ref}`resources <content:references:w10>` |
-| 11 (03/17) | [Pinia 1](assets/pdf/Pinia.pdf) | [Pinia 2](assets/pdf/Pinia-II.pdf) | [Quiz 6](quizzes/6.md) | {ref}`resources <content:references:w11>` |
-| 12 (03/24) | [Promise](assets/pdf/Promise.pdf) </br>[Homework 2](projects/bs.md) | [Firestore 1](assets/pdf/Firestore.pdf) | [Homework 2 Lab](https://stackblitz.com/github/GVSU-CIS371/BrewSave) | {ref}`resources <content:references:w12>` |
-| 13 (03/31) | [Firestore 2](assets/pdf/Firestore-II.pdf) | [Firebase Authentication](assets/pdf/FirebaseUserAuthentication.pdf)</br> [Homework 3](projects/bitc.md) | [Vuetify 1](assets/pdf/Vuetify.pdf) | {ref}`resources <content:references:w13>` |
-| 14 (04/07) | [Vuetify 2](assets/pdf/Vuetify-II.pdf) | Homework 3 Lab | Homework 3 Lab 2 | {ref}`resources <content:references:w14>` |
-| 15 (04/14) | [Fetch & Axios](assets/pdf/Fetch-Axios.pdf) | Project Lab | Project Lab | {ref}`resources <content:references:w15>` |
-| 16 (04/21) |  | Project Presentation</br> 2:00 pm - 3:50 pm |  |  |
+| 1 (08/25) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | Docker | HTML | {ref}`resources <content:references:w1>` |
+| 2 (09/01) | **Labor Day (No Class)** | Quiz 1 | CSS 1 | {ref}`resources <content:references:w2>` |
+| 3 (09/08) | CSS 2 | CSS Grid & Flexbox \| Assignment 1 | Quiz 2 | {ref}`resources <content:references:w3>` |
+| 4 (09/15) | TypeScript 1 | TypeScript 2 | Quiz 3 | {ref}`resources <content:references:w4>` |
+| 5 (09/22) | Assignment 1 Review | TypeScript 3 | TypeScript 4 | {ref}`resources <content:references:w5>` |
+| 6 (09/29) | TypeScript 5 | TypeScript 6 | Quiz 4 | {ref}`resources <content:references:w6>` |
+| 7 (10/06) | HTTP \| JS Modules | Vue.js 1 | Vue.js 2 \| Assignment 2 | {ref}`resources <content:references:w7>` |
+| 8 (10/13) | Vue.js 3 | Quiz 5 | Promise | {ref}`resources <content:references:w8>` |
+| 9 (10/20) | **Fall Break (No Class)** | Assignment 2 Review \| Assignment 3 | Pinia 1 | {ref}`resources <content:references:w9>` |
+| 10 (10/27) | Pinia 2 | Quiz 6 | Vue Router | {ref}`resources <content:references:w10>` |
+| 11 (11/03) | Assignment 3 Review \| Assignment 4 | Vuetify 1 | Vuetify 2 | {ref}`resources <content:references:w11>` |
+| 12 (11/10) | Quiz 7 | Firestore 1 | Assignment 4 Review \| Assignment 5 | {ref}`resources <content:references:w12>` |
+| 13 (11/17) | Firestore 2 | Firebase Authentication \| Demo | Fetch & Axios | {ref}`resources <content:references:w13>` |
+| 14 (11/24) | **Thanksgiving Break** | **(No Class)** | ExpressJS | {ref}`resources <content:references:w14>` |
+| 15 (12/01) | Assignment 5 Review | Project Lab | Project Lab | {ref}`resources <content:references:w15>` |
+| 16 (12/08) |  | **Project Presentation** |  |  |
