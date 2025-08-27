@@ -24,7 +24,7 @@ to our Web Application Programming. This course offers an in-depth exploration o
 
 | Week | Monday (Lecture 1) | Wednesday (Lecture 2) | Friday (Lecture 3) | Resources |
 | --- | --- | --- | --- | --- |
-| 1 (08/25) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | Docker | HTML | {ref}`resources <content:references:w1>` |
+| 1 (08/25) | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) | [Docker](assets/pdf/Docker.pdf) | HTML | {ref}`resources <content:references:w1>` |
 | 2 (09/01) | **Labor Day (No Class)** | Quiz 1 | CSS 1 | {ref}`resources <content:references:w2>` |
 | 3 (09/08) | CSS 2 | CSS Grid & Flexbox \| Assignment 1 | Quiz 2 | {ref}`resources <content:references:w3>` |
 | 4 (09/15) | TypeScript 1 | TypeScript 2 | Quiz 3 | {ref}`resources <content:references:w4>` |
