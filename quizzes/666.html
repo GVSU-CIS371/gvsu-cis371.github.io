@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Quiz 4 High-order Functions &#8212; GVSU CIS 371 - Web Application Programming</title>
+    <title>Quiz 6 Vue 3 and Pinia Basics &#8212; GVSU CIS 371 - Web Application Programming</title>
   
   
   
@@ -60,7 +60,7 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'quizzes/4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'quizzes/666';</script>
     <link rel="icon" href="https://www.gvsu.edu/cms4/asset/94807988-C47A-2A7B-05628C365AC3C2FA/gvsu_avatar_3[1678817053].jpg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -243,7 +243,7 @@
       
       
       
-      <li><a href="https://github.com/GVSU-CIS371/gvsu-cis371.github.io/issues/new?title=Issue%20on%20page%20%2Fquizzes/4.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/GVSU-CIS371/gvsu-cis371.github.io/issues/new?title=Issue%20on%20page%20%2Fquizzes/666.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -273,7 +273,7 @@
       
       
       
-      <li><a href="../_sources/quizzes/4.md" target="_blank"
+      <li><a href="../_sources/quizzes/666.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -347,7 +347,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Quiz 4 High-order Functions</h1>
+    <h1>Quiz 6 Vue 3 and Pinia Basics</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -361,62 +361,30 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="quiz-4-high-order-functions">
-<h1>Quiz 4 High-order Functions<a class="headerlink" href="#quiz-4-high-order-functions" title="Link to this heading">#</a></h1>
-<p>Given the following array,</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">type</span><span class="w"> </span><span class="nx">Book</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">[],</span>
-<span class="p">};</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">books</span><span class="o">:</span><span class="w"> </span><span class="nx">Book</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1984&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;George Orwell&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1949</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Dystopia&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;F. Scott Fitzgerald&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1925</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Tragedy&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;To Kill a Mockingbird&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Harper Lee&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1960</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Drama&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Brave New World&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Aldous Huxley&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1932</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Dystopia&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Moby Dick&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Herman Melville&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1851</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Adventure&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="p">];</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Your task is to implement the following functions using only high-order functions such as <code class="docutils literal notranslate"><span class="pre">.sort()</span></code>, <code class="docutils literal notranslate"><span class="pre">.some()</span></code>, <code class="docutils literal notranslate"><span class="pre">.filter()</span></code>, <code class="docutils literal notranslate"><span class="pre">.flatMap()</span></code>, <code class="docutils literal notranslate"><span class="pre">.map()</span></code>, and <code class="docutils literal notranslate"><span class="pre">.reduce()</span></code>.</p></li>
-<li><p>Solutions utilizing traditional for-loops or <code class="docutils literal notranslate"><span class="pre">.forEach()</span></code> will not be accepted.</p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="quiz-6-vue-3-and-pinia-basics">
+<h1>Quiz 6 Vue 3 and Pinia Basics<a class="headerlink" href="#quiz-6-vue-3-and-pinia-basics" title="Link to this heading">#</a></h1>
+<p>In this quiz, you will build on your understanding of Vue 3 and Pinia by adding functionality to a <strong>User Management</strong> project.</p>
+<hr class="docutils" />
+<p>Given a starter project with a basic UserStore and a list of random users <a class="reference external" href="https://stackblitz.com/edit/vitejs-vite-rrzxb2?file=src%2FApp.vue,src%2Fstores%2FUserStore.ts">here</a>.</p>
 <ol class="arabic simple">
-<li><p><strong>Sort the books</strong> by their publication year in descending order (newest first), and log the result using <code class="docutils literal notranslate"><span class="pre">console.log</span></code>.</p></li>
-<li><p>Use <strong>Array.some()</strong> to check if any book was published after the year 1950, and log the result using <code class="docutils literal notranslate"><span class="pre">console.log</span></code>.</p></li>
-<li><p>Create a new array containing only the books that belong to the “Dystopia” genre, and log the result using <code class="docutils literal notranslate"><span class="pre">console.log</span></code>.</p></li>
-<li><p>Create a flattened list of all genres from the books, and log the result using <code class="docutils literal notranslate"><span class="pre">console.log</span></code>.</p></li>
-<li><p><strong>Create a new array of strings</strong> for books that are classified as “Dystopia” and were published after the year 1940. Each string should be in the format: <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">book</span> <span class="pre">{title},</span> <span class="pre">published</span> <span class="pre">in</span> <span class="pre">{year}.&quot;</span></code>, and log the result using <code class="docutils literal notranslate"><span class="pre">console.log</span></code>.</p></li>
-<li><p>Calculate the total number of books that were published before the year 1950, and log the result using <code class="docutils literal notranslate"><span class="pre">console.log</span></code>.</p></li>
+<li><p>Delete User</p>
+<ul class="simple">
+<li><p>Add a delete button next to each user in App.vue. When clicked, this button should remove the user from the UserStore. You can implement this using either $patch or an action in UserStore.</p></li>
+</ul>
+</li>
+<li><p>Automatic Refill When Empty</p>
+<ul class="simple">
+<li><p>Use $subscribe on the UserStore to monitor the users state.</p></li>
+<li><p>If the users list becomes empty, automatically call the fill action to fetch and refill random users from the Random User API.</p></li>
+</ul>
+</li>
+<li><p>(extro credit) Add Sorting by First Name</p>
+<ul class="simple">
+<li><p>In the UserStore, add a getter that returns users sorted by first name.</p></li>
+<li><p>In App.vue, create radio buttons or checkboxes to enable users to toggle sorting on or off by first name.</p></li>
+</ul>
+</li>
 </ol>
-<p>Test your solutions on <a class="reference external" href="https://www.typescriptlang.org/play?#code/C4TwDgpgBAQg9nA1lAvFA3gWAFBSsAS2ABsIAuKAZ2ACcCA7AcwBoc8BDAV2AAs4aK1Ok1a4oICOwFR6nALYAjCDVF5GEejQiVBtBowDaAXVEBfANw4AxnHrUoChIh2wnx1FANsM3vIRLkUABEAIwAnAAcACxBqnhQXLz8FEEA4hD86lAA8jQA7hDExLG+4pLS4VFhcWoaWi4GQQBiBFaEtrHBACIg1HBgBOxBJt6mcVhifkSkKQAqPNCpWuzAUKkrlAogJZMJ3HzSzQB0UADKNsCrLcAAXuo07MQAJjvxZVIU4QBMAKw1UOpNNoKI0Wm0CB1mMFZg91E9tiMxGNvBM3v4ZtC4FAANIEIoJKAAWTgVkQ+gUBBoL3+iQOKQAElJIDQoAAZCAQV7xCQfKDhABsAAZ-oD6iDmq12vROkEug85ENEXhkWJUfF0YEgjAHgA3aAAOQgeSgAHV+M8uRx9slggBBZ5wTiUKD0zgAD1I23+PIqYQAzF8RXVgZ4JeDId1esB+oNhnEVXg1VMAiliVsoF1WohLXskod6coFfQiYUdXjSDmfZ8Ij8QkGgQ0w1KZbannr6MBOFo46NREZzEA">typescriptlang.org</a>:</p>
 </section>
 
     <script type="text/x-thebe-config">
