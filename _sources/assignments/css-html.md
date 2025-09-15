@@ -55,9 +55,9 @@ Build a static online store showcasing your proficiency in fundamental CSS and H
 
   3. Accept your instructor's [GitHub classroom invitation](https://classroom.github.com/a/OwHBFWk8) to set up your project repository.
 
-     1. **Select Your Name:** ![select-name](../assets/img/project1-selectname.jpg)
-     2. **Initialize Your Assignment Repository:** ![init-repo](../assets/img/project1-initrepo.jpg)
-     3. **Clone the Repository:** ![clone](../assets/img/project1-sshclone.jpg): You're now ready to clone the repository. In your `terminal`, use the following command with your SSH repository link to download the repository to your local machine:
+     1. **Select Your Name:** ![select-name](../assets/img/github-classroom-selectname.png)
+     2. **Initialize Your Assignment Repository:** ![init-repo](../assets/img/github-classroom-initrepo.png)
+     3. **Clone the Repository:** ![clone](../assets/img/github-classroom-sshclone.png): You're now ready to clone the repository. In your `terminal`, use the following command with your SSH repository link to download the repository to your local machine:
 
         ```bash
         git clone [YOUR_SSH_REPO_LINK]
