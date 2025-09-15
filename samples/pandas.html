@@ -1,0 +1,940 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Pandas &#8212; GVSU CIS 635 - KDD</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'samples/pandas';</script>
+    <link rel="shortcut icon" href="https://www.gvsu.edu/cms4/asset/94807988-C47A-2A7B-05628C365AC3C2FA/gvsu_avatar_3[1678817053].jpg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../syllabus.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../syllabus.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../free-resources.html">Free Books and Articles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../weekly-readings.html">Weekly Resources</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample Code</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="python.html">Introduction to Python</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/GVSU-CIS635/gvsu-cis635.github.io/blob/main/book/samples/pandas.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/samples/pandas.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction to Pandas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-pandas">What is Pandas?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#series">Series</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-following-examples-cover-various-aspects-of-series-in-pandas-including-handling-of-nan-values-boolean-filtering-scalar-operations-application-of-numpy-functions-and-counting-discrete-values-in-a-series">The following examples cover various aspects of Series in Pandas, including handling of NaN values, boolean filtering, scalar operations, application of numpy functions, and counting discrete values in a Series.</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe">DataFrame</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-operations">Arithmetic Operations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-series-and-dataframe">Plotting Series and DataFrame</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-pandas">
+<h1>Introduction to Pandas<a class="headerlink" href="#introduction-to-pandas" title="Permalink to this heading">#</a></h1>
+<p><strong>Objective</strong>: Develop proficiency in data manipulation and analysis using Pandas, a fundamental Python library renowned for its effectiveness in data science.</p>
+<p>This tutorial comprises hands-on examples that guide you through Pandas’ critical features and data handling capabilities. Each example is crafted to illustrate practical approaches to data processing and analysis, enhancing your skill set in real-world applications. To interact with the examples and explore Pandas’ functionalities, select a code cell and press SHIFT-ENTER to execute it.</p>
+<div class="section" id="what-is-pandas">
+<h2>What is Pandas?<a class="headerlink" href="#what-is-pandas" title="Permalink to this heading">#</a></h2>
+<p>Pandas is an essential library in Python, renowned for its robust data manipulation and analysis capabilities. Designed primarily for working with structured data, it simplifies handling large datasets and provides intuitive operations for data filtering, aggregation, and visualization. Central to Pandas are its DataFrame and Series data structures, which support a vast array of functions for efficient data manipulation. Whether you’re cleaning, transforming, or analyzing data, Pandas offers the tools needed to make data work more effective and insightful.</p>
+<div class="section" id="series">
+<h3>Series<a class="headerlink" href="#series" title="Permalink to this heading">#</a></h3>
+<p>A Series in Pandas is a versatile, one-dimensional array-like structure, capable of holding data of various types. It aligns values and their associated indices, allowing for efficient data retrieval and manipulation. Series objects can be constructed from diverse sources including lists, numpy arrays, or Python dictionaries. The flexibility of a Series extends to its compatibility with numerous numpy functions, thus enabling a broad range of mathematical and statistical operations while maintaining the convenience of index-based data handling inherent to Pandas.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="n">Series</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Creating a Series from a Python list with custom index</span>
+<span class="n">temps</span> <span class="o">=</span> <span class="n">Series</span><span class="p">([</span><span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">25</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Mon&#39;</span><span class="p">,</span> <span class="s1">&#39;Tue&#39;</span><span class="p">,</span> <span class="s1">&#39;Wed&#39;</span><span class="p">,</span> <span class="s1">&#39;Thu&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Temperatures Series:</span><span class="se">\n</span><span class="si">{</span><span class="n">temps</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Accessing Series attributes</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Values: </span><span class="si">{</span><span class="n">temps</span><span class="o">.</span><span class="n">values</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Indices: </span><span class="si">{</span><span class="n">temps</span><span class="o">.</span><span class="n">index</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Data type: </span><span class="si">{</span><span class="n">temps</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Accessing Series elements</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Value at &#39;Tue&#39;: temps[&#39;Tue&#39;] = </span><span class="si">{</span><span class="n">temps</span><span class="p">[</span><span class="s1">&#39;Tue&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Slice from &#39;Tue&#39; to &#39;Thu&#39;:temps[&#39;Tue&#39;:&#39;Thu&#39;] = </span><span class="se">\n</span><span class="si">{</span><span class="n">temps</span><span class="p">[</span><span class="s1">&#39;Tue&#39;</span><span class="p">:</span><span class="s1">&#39;Thu&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Element at position 2 using iloc: temps.iloc[2] = </span><span class="si">{</span><span class="n">temps</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Creating a Series from a numpy array</span>
+<span class="n">rand_nums</span> <span class="o">=</span> <span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Random Numbers Series:</span><span class="se">\n</span><span class="si">{</span><span class="n">rand_nums</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Creating a Series from a dictionary</span>
+<span class="n">fruits_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;apple&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">:</span> <span class="mi">15</span><span class="p">}</span>
+<span class="n">fruits_series</span> <span class="o">=</span> <span class="n">Series</span><span class="p">(</span><span class="n">fruits_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Fruits Series:</span><span class="se">\n</span><span class="si">{</span><span class="n">fruits_series</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Temperatures Series:
+Mon    22
+Tue    23
+Wed    19
+Thu    25
+dtype: int64
+
+Values: [22 23 19 25]
+Indices: Index([&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;], dtype=&#39;object&#39;)
+Data type: int64
+
+Value at &#39;Tue&#39;: temps[&#39;Tue&#39;] = 23
+Slice from &#39;Tue&#39; to &#39;Thu&#39;:temps[&#39;Tue&#39;:&#39;Thu&#39;] = 
+Tue    23
+Wed    19
+Thu    25
+dtype: int64
+Element at position 2 using iloc: temps.iloc[2] = 19
+
+Random Numbers Series:
+0    0.795029
+1    0.915863
+2    0.595528
+3    0.280553
+dtype: float64
+
+
+Fruits Series:
+apple     10
+banana    20
+orange    15
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="the-following-examples-cover-various-aspects-of-series-in-pandas-including-handling-of-nan-values-boolean-filtering-scalar-operations-application-of-numpy-functions-and-counting-discrete-values-in-a-series">
+<h4>The following examples cover various aspects of Series in Pandas, including handling of NaN values, boolean filtering, scalar operations, application of numpy functions, and counting discrete values in a Series.<a class="headerlink" href="#the-following-examples-cover-various-aspects-of-series-in-pandas-including-handling-of-nan-values-boolean-filtering-scalar-operations-application-of-numpy-functions-and-counting-discrete-values-in-a-series" title="Permalink to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">weather</span> <span class="o">=</span> <span class="n">Series</span><span class="p">([</span><span class="mi">22</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Mon&#39;</span><span class="p">,</span> <span class="s1">&#39;Tue&#39;</span><span class="p">,</span> <span class="s1">&#39;Wed&#39;</span><span class="p">,</span> <span class="s1">&#39;Thu&#39;</span><span class="p">,</span> <span class="s1">&#39;Fri&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Weather Series:</span><span class="se">\n</span><span class="si">{</span><span class="n">weather</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Series attributes</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Shape of weather: </span><span class="si">{</span><span class="n">weather</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Size of weather: </span><span class="si">{</span><span class="n">weather</span><span class="o">.</span><span class="n">size</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Count of non-null elements in weather: </span><span class="si">{</span><span class="n">weather</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Boolean filtering</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Days with temperature above 22:</span><span class="se">\n</span><span class="si">{</span><span class="n">weather</span><span class="p">[</span><span class="n">weather</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">22</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Scalar operations</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Incrementing temperature by 2:</span><span class="se">\n</span><span class="si">{</span><span class="n">weather</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dividing temperature by 2:</span><span class="se">\n</span><span class="si">{</span><span class="n">weather</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Applying numpy functions</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Log of temperature (adjusted by +1 to handle nan):</span><span class="se">\n</span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">weather</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exponential of temperature:</span><span class="se">\n</span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">weather</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Counting discrete values</span>
+<span class="n">moods</span> <span class="o">=</span> <span class="n">Series</span><span class="p">([</span><span class="s2">&quot;happy&quot;</span><span class="p">,</span> <span class="s2">&quot;sad&quot;</span><span class="p">,</span> <span class="s2">&quot;neutral&quot;</span><span class="p">,</span> <span class="s2">&quot;happy&quot;</span><span class="p">,</span> <span class="s2">&quot;sad&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Moods Series:</span><span class="se">\n</span><span class="si">{</span><span class="n">moods</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Count of each mood:</span><span class="se">\n</span><span class="si">{</span><span class="n">moods</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Weather Series:
+Mon    22.0
+Tue    24.0
+Wed    21.0
+Thu    25.0
+Fri     NaN
+dtype: float64
+
+Shape of weather: (5,)
+Size of weather: 5
+Count of non-null elements in weather: 4
+
+Days with temperature above 22:
+Tue    24.0
+Thu    25.0
+dtype: float64
+
+Incrementing temperature by 2:
+Mon    24.0
+Tue    26.0
+Wed    23.0
+Thu    27.0
+Fri     NaN
+dtype: float64
+Dividing temperature by 2:
+Mon    11.0
+Tue    12.0
+Wed    10.5
+Thu    12.5
+Fri     NaN
+dtype: float64
+
+Log of temperature (adjusted by +1 to handle nan):
+Mon    3.135494
+Tue    3.218876
+Wed    3.091042
+Thu    3.258097
+Fri         NaN
+dtype: float64
+Exponential of temperature:
+Mon      7.389056
+Tue     54.598150
+Wed      2.718282
+Thu    148.413159
+Fri           NaN
+dtype: float64
+
+Moods Series:
+0      happy
+1        sad
+2    neutral
+3      happy
+4        sad
+5        NaN
+dtype: object
+
+Count of each mood:
+happy      2
+sad        2
+neutral    1
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="dataframe">
+<h3>DataFrame<a class="headerlink" href="#dataframe" title="Permalink to this heading">#</a></h3>
+<p>A DataFrame in Pandas is a tabular, spreadsheet-like data structure where each column can hold data of varying types, including numbers, strings, and booleans. It is more complex than a Series, featuring distinct indices for both rows and columns. DataFrames can be created through various methods, such as from dictionaries, lists of tuples, or arrays from numpy, making them highly versatile for organizing and manipulating different data sets in a table-like format.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating a DataFrame from a dictionary</span>
+<span class="n">vehicle_info</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;brand&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Chevrolet&quot;</span><span class="p">,</span> <span class="s2">&quot;BMW&quot;</span><span class="p">,</span> <span class="s2">&quot;Audi&quot;</span><span class="p">,</span> <span class="s2">&quot;Mercedes&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Camaro&quot;</span><span class="p">,</span> <span class="s2">&quot;3 Series&quot;</span><span class="p">,</span> <span class="s2">&quot;A4&quot;</span><span class="p">,</span> <span class="s2">&quot;C-Class&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">35000</span><span class="p">,</span> <span class="mi">45000</span><span class="p">,</span> <span class="mi">37000</span><span class="p">,</span> <span class="mi">50000</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="n">vehicle_df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">vehicle_info</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Vehicle Data:</span><span class="se">\n</span><span class="si">{</span><span class="n">vehicle_df</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Adding new columns to DataFrame</span>
+<span class="n">vehicle_df</span><span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2020</span>
+<span class="n">vehicle_df</span><span class="p">[</span><span class="s2">&quot;dealership&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Speed Motors&quot;</span><span class="p">,</span> <span class="s2">&quot;Luxury Drives&quot;</span><span class="p">,</span> <span class="s2">&quot;Premium Auto&quot;</span><span class="p">,</span> <span class="s2">&quot;Elite Cars&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Updated Vehicle Data:</span><span class="se">\n</span><span class="si">{</span><span class="n">vehicle_df</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Creating DataFrame from a list of tuples</span>
+<span class="n">sales_data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span> <span class="mi">165</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">170</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="n">sales_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="s2">&quot;Sedan Sales&quot;</span><span class="p">,</span> <span class="s2">&quot;SUV Sales&quot;</span><span class="p">]</span>
+<span class="n">sales_df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">sales_data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">sales_columns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sales Data:</span><span class="se">\n</span><span class="si">{</span><span class="n">sales_df</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Creating DataFrame from a numpy ndarray</span>
+<span class="n">numpy_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># create a 4x2 random matrix</span>
+<span class="n">numpy_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Val1&quot;</span><span class="p">,</span> <span class="s2">&quot;Val2&quot;</span><span class="p">]</span>
+<span class="n">numpy_df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">numpy_data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">numpy_columns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Numpy DataFrame:</span><span class="se">\n</span><span class="si">{</span><span class="n">numpy_df</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Accessing DataFrame elements</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Second column of numpy_df:</span><span class="se">\n</span><span class="si">{</span><span class="n">numpy_df</span><span class="p">[</span><span class="s1">&#39;Val2&#39;</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Type of the second column: </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">numpy_df</span><span class="p">[</span><span class="s1">&#39;Val2&#39;</span><span class="p">])</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Accessing a specific DataFrame row</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Third row of sales data:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sales_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Type of the third row: </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">sales_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Accessing a specific element</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Specific element (2nd row, &#39;model&#39; column) in vehicle_df: </span><span class="si">{</span><span class="n">vehicle_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;model&#39;</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Slicing a DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Slice of vehicle_df (rows 1 to 2, columns &#39;model&#39; and &#39;price&#39;):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vehicle_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+
+<span class="c1"># Filtering data based on a condition</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Vehicles with price over $40,000:</span><span class="se">\n</span><span class="si">{</span><span class="n">vehicle_df</span><span class="p">[</span><span class="n">vehicle_df</span><span class="o">.</span><span class="n">price</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">40000</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="mi">293015627052</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">35000</span><span class="p">,</span> <span class="mi">45000</span><span class="p">,</span> <span class="mi">37000</span><span class="p">,</span> <span class="mi">50000</span><span class="p">]</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="p">}</span>
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">vehicle_df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">vehicle_info</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Vehicle Data:</span><span class="se">\n</span><span class="si">{</span><span class="n">vehicle_df</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> 
+
+<span class="ne">NameError</span>: name &#39;DataFrame&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="arithmetic-operations">
+<h3>Arithmetic Operations<a class="headerlink" href="#arithmetic-operations" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating a new DataFrame</span>
+<span class="n">np_array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">]</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">np_array1</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;DataFrame df1:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Transposing the DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Transposed DataFrame df1:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="o">.</span><span class="n">T</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Arithmetic Operations</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Addition: df1 + 3:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Multiplication: df1 * 5:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">5</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Creating another DataFrame for operation</span>
+<span class="n">np_array2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">np_array2</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;DataFrame df2:</span><span class="se">\n</span><span class="si">{</span><span class="n">df2</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Element-wise addition and multiplication</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Element-wise addition: df1 + df2:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">df2</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Element-wise multiplication: df1 * df2:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="o">.</span><span class="n">mul</span><span class="p">(</span><span class="n">df2</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Applying functions</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Absolute values in df1:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Maximum value in each column of df1:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Minimum value in each row of df1:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sum of each column in df1:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average of each row in df1:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Custom function application</span>
+<span class="n">max_min_diff</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Max - Min per column in df1:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">max_min_diff</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Max - Min per row in df1:</span><span class="se">\n</span><span class="si">{</span><span class="n">df1</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">max_min_diff</span><span class="p">,</span><span class="w"> </span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Applying value_counts to DataFrame</span>
+<span class="n">shape_colors</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;shape&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;triangle&quot;</span><span class="p">,</span> <span class="s2">&quot;circle&quot;</span><span class="p">,</span> <span class="s2">&quot;circle&quot;</span><span class="p">,</span> <span class="s2">&quot;square&quot;</span><span class="p">,</span> <span class="s2">&quot;triangle&quot;</span><span class="p">,</span> <span class="s2">&quot;square&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Shapes and Colors DataFrame:</span><span class="se">\n</span><span class="si">{</span><span class="n">shape_colors</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Counts of unique shape and color combinations:</span><span class="se">\n</span><span class="si">{</span><span class="n">shape_colors</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DataFrame df1:
+          A         B         C
+0  0.018381  0.055265  0.347357
+1  0.656001  0.139697  0.339375
+2  0.742442  0.681375  0.801696
+3  0.631857  0.251695  0.409332
+
+Transposed DataFrame df1:
+          0         1         2         3
+A  0.018381  0.656001  0.742442  0.631857
+B  0.055265  0.139697  0.681375  0.251695
+C  0.347357  0.339375  0.801696  0.409332
+
+Addition: df1 + 3:
+          A         B         C
+0  3.018381  3.055265  3.347357
+1  3.656001  3.139697  3.339375
+2  3.742442  3.681375  3.801696
+3  3.631857  3.251695  3.409332
+
+Multiplication: df1 * 5:
+          A         B         C
+0  0.091904  0.276325  1.736783
+1  3.280004  0.698487  1.696873
+2  3.712210  3.406876  4.008478
+3  3.159287  1.258475  2.046659
+
+DataFrame df2:
+          A         B         C
+0  0.652178  0.350798  0.661221
+1  0.257208  0.758696  0.361774
+2  0.036578  0.760356  0.585513
+3  0.446599  0.258286  0.475202
+
+Element-wise addition: df1 + df2:
+          A         B         C
+0  0.670559  0.406063  1.008578
+1  0.913209  0.898393  0.701148
+2  0.779020  1.441731  1.387208
+3  1.078456  0.509981  0.884534
+
+Element-wise multiplication: df1 * df2:
+          A         B         C
+0  0.011988  0.019387  0.229680
+1  0.168728  0.105988  0.122777
+2  0.027157  0.518088  0.469403
+3  0.282187  0.065009  0.194515
+
+Absolute values in df1:
+          A         B         C
+0  0.018381  0.055265  0.347357
+1  0.656001  0.139697  0.339375
+2  0.742442  0.681375  0.801696
+3  0.631857  0.251695  0.409332
+
+Maximum value in each column of df1:
+A    0.742442
+B    0.681375
+C    0.801696
+dtype: float64
+
+Minimum value in each row of df1:
+0    0.018381
+1    0.139697
+2    0.681375
+3    0.251695
+dtype: float64
+
+Sum of each column in df1:
+A    2.048681
+B    1.128033
+C    1.897759
+dtype: float64
+
+Average of each row in df1:
+0    0.140334
+1    0.378358
+2    0.741838
+3    0.430961
+dtype: float64
+
+Max - Min per column in df1:
+A    0.724061
+B    0.626110
+C    0.462321
+dtype: float64
+
+Max - Min per row in df1:
+0    0.328976
+1    0.516303
+2    0.120320
+3    0.380162
+dtype: float64
+
+Shapes and Colors DataFrame:
+      shape  color
+0  triangle  green
+1    circle  green
+2    circle    red
+3    square    red
+4  triangle   blue
+5    square   blue
+
+Counts of unique shape and color combinations:
+shape     color
+circle    green    1
+          red      1
+square    blue     1
+          red      1
+triangle  blue     1
+          green    1
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="plotting-series-and-dataframe">
+<h3>Plotting Series and DataFrame<a class="headerlink" href="#plotting-series-and-dataframe" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="c1"># Line Plot</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s1">&#39;1/1/2024&#39;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">s</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Line Plot&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Bar Plot</span>
+<span class="n">s</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Bar Plot&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Histogram</span>
+<span class="n">s</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;hist&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Histogram&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Box Plot</span>
+<span class="n">data_tuples</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mf">25.4</span><span class="p">,</span> <span class="mf">15.2</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mf">24.9</span><span class="p">,</span> <span class="mf">16.8</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mf">23.7</span><span class="p">,</span> <span class="mf">18.4</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mf">22.3</span><span class="p">,</span> <span class="mf">19.2</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="s2">&quot;Temperature&quot;</span><span class="p">,</span> <span class="s2">&quot;Rainfall&quot;</span><span class="p">]</span>
+<span class="n">weather_df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">data_tuples</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">weather_df</span><span class="p">[[</span><span class="s1">&#39;Temperature&#39;</span><span class="p">,</span> <span class="s1">&#39;Rainfall&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;box&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Box Plot&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Scatter Plot</span>
+<span class="n">weather_df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;scatter&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Temperature&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Rainfall&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Temperature vs Rainfall Scatter Plot&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/edc2f7702ad5601644b35f77f5e363e28ec9b421dbb1891b53956fbdb508bb1c.png" src="../_images/edc2f7702ad5601644b35f77f5e363e28ec9b421dbb1891b53956fbdb508bb1c.png" />
+<img alt="../_images/506f1e92043d3913b930d2089b6fa1f16061285b147d637b3a7a8b03a2a57b45.png" src="../_images/506f1e92043d3913b930d2089b6fa1f16061285b147d637b3a7a8b03a2a57b45.png" />
+<img alt="../_images/4601231678eba37ca3b74c894bd9279e8ed88276806286ffbd081100f651d5a5.png" src="../_images/4601231678eba37ca3b74c894bd9279e8ed88276806286ffbd081100f651d5a5.png" />
+<img alt="../_images/2e36f28932ba15b4b4dc21cb45bbdde05d1a39a744c753b37ddafdc0e7040bc8.png" src="../_images/2e36f28932ba15b4b4dc21cb45bbdde05d1a39a744c753b37ddafdc0e7040bc8.png" />
+<img alt="../_images/d5d33c35ede2c4055c08fa074cc6065c594b0802ca28dcfbcae070dd487e63e5.png" src="../_images/d5d33c35ede2c4055c08fa074cc6065c594b0802ca28dcfbcae070dd487e63e5.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./samples"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-pandas">What is Pandas?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#series">Series</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-following-examples-cover-various-aspects-of-series-in-pandas-including-handling-of-nan-values-boolean-filtering-scalar-operations-application-of-numpy-functions-and-counting-discrete-values-in-a-series">The following examples cover various aspects of Series in Pandas, including handling of NaN values, boolean filtering, scalar operations, application of numpy functions, and counting discrete values in a Series.</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe">DataFrame</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-operations">Arithmetic Operations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-series-and-dataframe">Plotting Series and DataFrame</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr.Yong Zhuang
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
