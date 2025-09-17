@@ -106,7 +106,7 @@ For your project, you will work with index.html and main.css. Write CSS code in 
 
   - The layout should fill the browser’s width without causing horizontal scrolling.
 
-  ![Layout](../assets/img/project1.jpg)
+  ![Layout](../assets/img/css-html.png)
 
 ## Grading Rubrics
 
@@ -131,7 +131,7 @@ For your project, you will work with index.html and main.css. Write CSS code in 
 
 - Github Page Setup
 
-  - Set up your GitHub repository for GitHub Pages deployment. Follow the steps shown in the image below: ![Layout](../assets/img/project1-githubpage.jpg).
+  - Set up your GitHub repository for GitHub Pages deployment. Follow the steps shown in the image below: ![Layout](../assets/img/github-page.png).
   - Your web application will be accessible at the URL: gvsu-cis371.github.io/YOUR-REPO
 
 - Submit the URL of your GitHub Page in Blackboard.
