@@ -44,6 +44,7 @@ Build a static online store showcasing your proficiency in fundamental CSS and H
           ```
 
         - Navigate to your GitHub account settings(web). Click on `SSH and GPG keys` and then `New SSH key`. Paste the public key that was generated in the first step and click `Add SSH key`.
+        ![github-sshkey](../assets/img/github-sshkey.png)
 
         - Set up your GitHub username and email in a `terminal``. You can do this with the following commands:
 
