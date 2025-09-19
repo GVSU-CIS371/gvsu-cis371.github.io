@@ -328,8 +328,35 @@ document.write(`
 </div>
 </li>
 <li><p>Iterate Over Object Properties</p>
-<p>Use for-loop to <code class="docutils literal notranslate"><span class="pre">console.log</span></code> all properties names and values of all objects in <code class="docutils literal notranslate"><span class="pre">books</span></code>.</p>
+<p>Use for-loop to <code class="docutils literal notranslate"><span class="pre">console.log</span></code> only the property names and values of each object in <code class="docutils literal notranslate"><span class="pre">books</span></code> where the property’s property’s value is of type number.</p>
 </li>
+<li><p>Consider the following code:</p></li>
+</ol>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nx">book1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">books</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
+
+<span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nx">book2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1984&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;George Orwell&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">pages</span><span class="o">:</span><span class="w"> </span><span class="mf">328</span><span class="w"> </span><span class="p">};</span>
+
+
+
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">book1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">book2</span><span class="p">);</span>
+
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">book1</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">book2</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>What will be the output of the two console.log() statements?</p>
+<ol class="arabic simple" start="6">
+<li><p>what is the result of the following code?</p></li>
+</ol>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nx">favoriteBooks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+
+<span class="w"> </span><span class="nx">favoriteBooks</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">books</span><span class="p">[</span><span class="mf">1</span><span class="p">].</span><span class="nx">title</span><span class="p">);</span>
+
+<span class="w"> </span><span class="nx">favoriteBooks</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">books</span><span class="p">[</span><span class="mf">3</span><span class="p">].</span><span class="nx">title</span><span class="p">);</span>
+
+<span class="w"> </span><span class="nx">favoriteBooks</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+</pre></div>
+</div>
+<ol class="arabic" start="7">
 <li><p>Splitting an Array into Two Parts with Destructuring and the Spread Operator</p>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">splitIt</span></code> that takes any <code class="docutils literal notranslate"><span class="pre">Book</span></code> array as input, splits it into two parts: the first two elements and the rest, and returns both parts. Test your function using code below.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">firstTwo</span><span class="p">,</span><span class="w"> </span><span class="nx">theRest</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">splitIt</span><span class="p">(</span><span class="nx">books</span><span class="p">);</span>
