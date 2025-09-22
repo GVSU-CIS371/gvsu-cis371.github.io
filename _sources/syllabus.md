@@ -28,7 +28,7 @@ to our Web Application Programming. This course offers an in-depth exploration o
 | 2, 09/01 | **Labor Day (No Class)** | [Quiz 1](quizzes/1.md) | [CSS 1](assets/pdf/CSS-I.pdf) | {ref}`resources <content:references:w2>` |
 | 3, 09/08 | [CSS 2](assets/pdf/CSS-II.pdf) | [Grid & Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) \| [A1](assignments/css-html.md) | [Quiz 2](quizzes/2.md) | {ref}`resources <content:references:w3>` |
 | 4, 09/15 | [TypeScript 1](assets/pdf/TypeScript-I.pdf) | [TypeScript 2](assets/pdf/TypeScript-II.pdf) | [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
-| 5, 09/22 | A1 Review | TypeScript 3 | TypeScript 4 | {ref}`resources <content:references:w5>` |
+| 5, 09/22 | [A1 Review](assignments/main.css) \| [Term Project](project/term.md) | TypeScript 3 | TypeScript 4 | {ref}`resources <content:references:w5>` |
 | 6, 09/29 | TypeScript 5 | TypeScript 6 | Quiz 4 | {ref}`resources <content:references:w6>` |
 | 7, 10/06 | HTTP \| JS Modules | Vue.js 1 | Vue.js 2 \| A2 | {ref}`resources <content:references:w7>` |
 | 8, 10/13 | Vue.js 3 | Quiz 5 | Promise | {ref}`resources <content:references:w8>` |
