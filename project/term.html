@@ -1,72 +1,73 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CIS 371 Term Project Details &#8212; GVSU CIS 371 - Web Application Programming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Term Project &#8212; GVSU CIS 371 - Web Application Programming</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'project/term';</script>
-    <link rel="shortcut icon" href="https://www.gvsu.edu/cms4/asset/94807988-C47A-2A7B-05628C365AC3C2FA/gvsu_avatar_3[1678817053].jpg"/>
+    <link rel="icon" href="https://www.gvsu.edu/cms4/asset/94807988-C47A-2A7B-05628C365AC3C2FA/gvsu_avatar_3[1678817053].jpg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="1. CSS + HTML" href="../assignments/css-html.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -74,23 +75,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -98,7 +92,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -106,16 +99,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -128,6 +130,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../syllabus.html">
@@ -136,10 +141,24 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    <p class="title logo__title">GVSU CIS 371 - Web Application Programming</p>
+    
+    
+      
+    
+    
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="GVSU CIS 371 - Web Application Programming - Home"/>
+    <img src="../_static/logo.jpg" class="logo__image only-dark pst-js-only" alt="GVSU CIS 371 - Web Application Programming - Home"/>
+  
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -151,7 +170,15 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../weekly-readings.html">Weekly Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">Resources</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../assignments/css-html.html">1. CSS + HTML</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Project</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Term Project</a></li>
 </ul>
 
     </div>
@@ -167,7 +194,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -176,14 +203,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -193,6 +220,53 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GVSU-CIS371/gvsu-cis371.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GVSU-CIS371/gvsu-cis371.github.io/issues/new?title=Issue%20on%20page%20%2Fproject/term.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -258,26 +332,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -288,7 +356,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>CIS 371 Term Project Details</h1>
+    <h1>Term Project</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -299,9 +367,15 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-requirements">Project Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-rubric-100">Grading Rubric (100%)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-overview">Project Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-requirements">Project Requirements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-features-70">Core Features (70%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weekly-progress-via-git-logs-10">Weekly Progress via Git Logs (10%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-presentation-10">In-Class Presentation (10%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-repository-setup">Project Repository Setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables-timeline"><strong>Deliverables &amp; Timeline</strong></a></li>
 </ul>
             </nav>
         </div>
@@ -311,116 +385,126 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="cis-371-term-project-details">
-<h1>CIS 371 Term Project Details<a class="headerlink" href="#cis-371-term-project-details" title="Permalink to this heading">#</a></h1>
-<div class="section" id="objectives">
-<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this heading">#</a></h2>
-<p>The term project is designed to:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="term-project">
+<h1>Term Project<a class="headerlink" href="#term-project" title="Link to this heading">#</a></h1>
+<section id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Demonstrate mastery of skills learned in the course.</p></li>
-<li><p>Provide experience building and presenting a moderately large web application.</p></li>
-<li><p>Encourage teamwork and consistent development practices.</p></li>
+<li><p>Apply and demonstrate the skills learned throughout the semester.</p></li>
+<li><p>Gain experience in developing a functional web application.</p></li>
+<li><p>Work collaboratively on a moderately complex project.</p></li>
 </ul>
-<p>You will work in groups of 2–3 students. Each group will design and implement a <strong>web application</strong> (not just a static web page) that is practical and original. The project should include key features expected in real-world applications and must be deployed with a functioning cloud backend.</p>
-</div>
+</section>
+<section id="project-overview">
+<h2>Project Overview<a class="headerlink" href="#project-overview" title="Link to this heading">#</a></h2>
+<p>You will work in <strong>groups (up to 4 members per team)</strong> to develop a <strong>web application</strong> that is useful for you and other users with similar interests.<br />
+Your app should <strong>not</strong> be just a static webpage but should include <strong>interactive features</strong> and <strong>database integration</strong>.</p>
+<p>You may draw inspiration from existing web or mobile apps, but your implementation must be original in design and functionality.<br />
+While learning from online tutorials is encouraged, submitting an unmodified tutorial project is not allowed.</p>
+<p>All team members must actively contribute to the shared codebase, and participation will be verified via <strong>Git repository logs</strong>.</p>
+</section>
 <hr class="docutils" />
-<div class="section" id="project-requirements">
-<h2>Project Requirements<a class="headerlink" href="#project-requirements" title="Permalink to this heading">#</a></h2>
-<p>Your web application must demonstrate the following:</p>
+<section id="project-requirements">
+<h2>Project Requirements<a class="headerlink" href="#project-requirements" title="Link to this heading">#</a></h2>
+<p>Your web application must include the following features:</p>
+<section id="core-features-70">
+<h3>Core Features (70%)<a class="headerlink" href="#core-features-70" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p><strong>Project Proposal</strong></p>
+<li><p><strong>Complete &amp; Realistic Features (10%)</strong></p>
 <ul class="simple">
-<li><p>Submit a one-page proposal early in the semester.</p></li>
-<li><p>The proposal should include:</p>
-<ul>
-<li><p>Overview of the application.</p></li>
-<li><p>Problem solved and uniqueness.</p></li>
-<li><p>Potential users.</p></li>
-<li><p>Team responsibilities and role distribution.</p></li>
-<li><p>Database design (collections/tables, attributes).</p></li>
-<li><p>Any planned external services.</p></li>
+<li><p>Your app should mimic essential features found in similar real-world apps.</p></li>
+<li><p>Example: A shopping app must include checkout and payment functionality.</p></li>
 </ul>
 </li>
+<li><p><strong>User Authentication (10%)</strong></p>
+<ul class="simple">
+<li><p>Implement a login/logout system for multiple users.</p></li>
 </ul>
 </li>
-<li><p><strong>Complete &amp; Realistic Features</strong></p>
+<li><p><strong>Cloud Database (10%)</strong></p>
 <ul class="simple">
-<li><p>Functional features that reflect real-world app behavior.</p></li>
-<li><p>Example: a shopping app should include cart and checkout.</p></li>
+<li><p>Store and manage data using <strong>Firebase Cloud Firestore</strong> with at least <strong>two collections</strong>.</p></li>
 </ul>
 </li>
-<li><p><strong>User Authentication</strong></p>
+<li><p><strong>Private &amp; Shared Data (10%)</strong></p>
 <ul class="simple">
-<li><p>Implement a secure login/logout system.</p></li>
-<li><p>Support multiple concurrent users.</p></li>
+<li><p>Store <strong>personalized user data</strong> (only visible to the owner).</p></li>
+<li><p>Include <strong>shared data</strong> (accessible by all users).</p></li>
+<li><p>Example: An e-commerce app should allow users to see <strong>their</strong> order history and <strong>public</strong> product listings.</p></li>
 </ul>
 </li>
-<li><p><strong>Cloud Database</strong></p>
+<li><p><strong>Database Operations (10%)</strong></p>
 <ul class="simple">
-<li><p>Use Firebase Cloud Firestore.</p></li>
-<li><p>At least two or three collections (depending on group size).</p></li>
-<li><p>Must support both private (user-specific) and shared data.</p></li>
+<li><p>Implement <strong>CRUD operations</strong> (Create, Read, Update, Delete) in Cloud Firestore.</p></li>
 </ul>
 </li>
-<li><p><strong>Database Operations</strong></p>
+<li><p><strong>Modern Frontend Framework (10%)</strong></p>
 <ul class="simple">
-<li><p>Implement full CRUD (Create, Read, Update, Delete) functionality.</p></li>
+<li><p>Use <strong>Vue.js</strong> or a similar JavaScript framework.</p></li>
 </ul>
 </li>
-<li><p><strong>Frontend Framework</strong></p>
+<li><p><strong>Enhance the visual design of your web app using styling techniques.(10%)</strong></p>
 <ul class="simple">
-<li><p>Use Vue.js (preferred) or a comparable modern frontend framework.</p></li>
+<li><p>This can be achieved through custom CSS or by using a UI framework such as Vuetify or Bootstrap.</p></li>
+<li><p>Ensure the app has a clean, professional, and responsive design.</p></li>
 </ul>
 </li>
-<li><p><strong>Visual Design</strong></p>
+<li><p><strong>Git Repository (-10% penalty if missing)</strong></p>
 <ul class="simple">
-<li><p>Apply CSS or UI frameworks (e.g., Vuetify, Bootstrap) for a responsive, professional look.</p></li>
-</ul>
-</li>
-<li><p><strong>Version Control &amp; Progress</strong></p>
-<ul class="simple">
-<li><p>Maintain the project in a Git repository.</p></li>
-<li><p>Commit regularly to demonstrate consistent progress by all team members.</p></li>
-</ul>
-</li>
-<li><p><strong>In-Class Presentation</strong></p>
-<ul class="simple">
-<li><p>Each group will present their project in class.</p></li>
-<li><p>All members must participate.</p></li>
-<li><p>A live demo is required.</p></li>
+<li><p>Maintain your project in your GitHub repository.</p></li>
 </ul>
 </li>
 </ol>
-</div>
-<hr class="docutils" />
-<div class="section" id="deliverables">
-<h2>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><strong>Proposal Document</strong> (one page).</p></li>
-<li><p><strong>Deployed Web Application</strong> with a publicly accessible URL.</p></li>
-<li><p><strong>Git Repository</strong> with full source code and commit history.</p></li>
-<li><p><strong>In-Class Presentation</strong> and live demo.</p></li>
-</ol>
-</div>
-<hr class="docutils" />
-<div class="section" id="grading-rubric-100">
-<h2>Grading Rubric (100%)<a class="headerlink" href="#grading-rubric-100" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="weekly-progress-via-git-logs-10">
+<h3>Weekly Progress via Git Logs (10%)<a class="headerlink" href="#weekly-progress-via-git-logs-10" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>Project Proposal Quality</strong> – 10%</p></li>
-<li><p><strong>Complete &amp; Realistic Features</strong> – 10%</p></li>
-<li><p><strong>User Authentication</strong> – 10%</p></li>
-<li><p><strong>Cloud Database</strong> – 10%</p></li>
-<li><p><strong>Private &amp; Shared Data</strong> – 10%</p></li>
-<li><p><strong>Database Operations</strong> – 10%</p></li>
-<li><p><strong>Modern Frontend Framework</strong> – 10%</p></li>
-<li><p><strong>Visual Design</strong> – 10%</p></li>
-<li><p><strong>Weekly Progress via Git Logs</strong> – 10%</p></li>
-<li><p><strong>In-Class Presentation</strong> – 10%</p></li>
+<li><p>This project is larger than individual assignments and requires consistent progress.</p></li>
+<li><p>Your Git commit history will be reviewed to ensure regular contributions.</p></li>
 </ul>
+</section>
+<section id="in-class-presentation-10">
+<h3>In-Class Presentation (10%)<a class="headerlink" href="#in-class-presentation-10" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Each group must present their project to the class. All team members must participate.</p></li>
+</ul>
+</section>
+<section id="project-repository-setup">
+<h3>Project Repository Setup<a class="headerlink" href="#project-repository-setup" title="Link to this heading">#</a></h3>
+<p>Each group should create <strong>one GitHub repository</strong> using this <a class="reference external" href="https://classroom.github.com/a/GGVlYJ9R">GitHub Classroom link</a>.<br />
+All team members must collaborate within this repository.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="deliverables-timeline">
+<h2><strong>Deliverables &amp; Timeline</strong><a class="headerlink" href="#deliverables-timeline" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Deliverable</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Deadline</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Project Proposal(10%)</strong></p></td>
+<td><p>Submit a <strong>one-page proposal</strong> outlining your web app idea. The proposal should include: <br> - <strong>App Overview</strong>: The overview of the web application, what problems/tasks being addressed, what is unique about your web app, who are the potential users, and any other relevant information. <br> - <strong>Team Responsibilities</strong>: Task distribution among group members (all must contribute to all aspects). <br> - <strong>Database Design</strong>: Rough design of your database “tables” and the details of each table. For now, describe the details of your DB design as if you would implement them using relational databases (similar to what you learn in CIS333 or CIS353). In reality, these “tables” will be implemented as Cloud Firestore collections/documents. <br> - <strong>External Services</strong>: Additional third party web-services that you plan to incorporate into the project (if any).</p></td>
+<td><p><strong>02/28</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Application Development &amp; Deployment(80%)</strong></p></td>
+<td><p>Deploy the web app on a <strong>publicly accessible website</strong>. Submit the following on Blackboard: <br> - App URL (e.g., GitHub Pages or another hosting service). <br> - If your web app requires special accounts (for instance, admin account) include the userid(s) and password(s). <br> - Git Repository Link.</p></td>
+<td><p><strong>04/23</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>In-Class Presentation(10%)</strong></p></td>
+<td><p>Each group must present their project in class. <br> - The presentation should cover the app’s purpose, key features, technologies used, and a live demonstration. <br> - All team members must participate.</p></td>
+<td><p><strong>04/23</strong></p></td>
+</tr>
+</tbody>
+</table>
 </div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -447,23 +531,30 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
+    <a class="left-prev"
+       href="../assignments/css-html.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>CSS + HTML</p>
+      </div>
+    </a>
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -472,9 +563,15 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-requirements">Project Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-rubric-100">Grading Rubric (100%)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-overview">Project Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-requirements">Project Requirements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-features-70">Core Features (70%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weekly-progress-via-git-logs-10">Weekly Progress via Git Logs (10%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-class-presentation-10">In-Class Presentation (10%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-repository-setup">Project Repository Setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables-timeline"><strong>Deliverables &amp; Timeline</strong></a></li>
 </ul>
   </nav></div>
 
@@ -496,6 +593,7 @@ By Dr.Yong Zhuang
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2025.
@@ -522,8 +620,8 @@ By Dr.Yong Zhuang
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
   </footer>
